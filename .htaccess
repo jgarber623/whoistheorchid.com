@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} !^www\.whoistheorchid\.com$ [NC]
+RewriteRule ^(.*)$ http://www.whoistheorchid.com/$1 [L,R=301]
+AddHandler php5-script .php
