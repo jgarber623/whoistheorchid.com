@@ -37,7 +37,6 @@ header {
 }
 
 article {
-	display: block;
 	margin: 0 auto;
 	width: 410px;
 }
@@ -77,43 +76,42 @@ article sup span {
 	display: none;
 }
 
-aside {
-	color: rgba( 255, 255, 255, 0.2 );
-	display: block;
-	font-size: 10px;
-	text-align: center;
-	margin: 60px auto 0 auto;
-}
-
-aside:hover {
-	color: rgba( 255, 255, 255, 0.3 );
-}
-
-aside li {
-	display: inline;
-}
-
-aside li:after,
-aside li:first-child:before {
-	content: "|||||";
-}
-
-aside a {
-	display: inline-block;
-	font-size: 14px;
-	margin: 0 10px;
-	vertical-align: middle;
-}
-
 footer {
 	color: rgba( 255, 255, 255, 0.2 );
-	display: block;
 	font-size: 14px;
-	margin: 10px auto 0 auto;
+	margin: 0 auto;
 	width: 410px;
 	text-align: center;
 }
 
 footer:hover {
 	color: rgba( 255, 255, 255, 0.3 );
+}
+
+footer ul {
+	color: rgba( 255, 255, 255, 0.2 );
+	display: block;
+	font-size: 10px;
+	text-align: center;
+	margin: 60px auto 10px auto;
+}
+
+footer ul:hover {
+	color: rgba( 255, 255, 255, 0.3 );
+}
+
+footer li {
+	display: inline;
+}
+
+footer li:after,
+footer li:first-child:before {
+	content: "|||||";
+}
+
+footer li a {
+	display: inline-block;
+	font-size: 14px;
+	margin: 0 10px;
+	vertical-align: middle;
 }
