@@ -1,3 +1,8 @@
+---
+layout: none
+permalink: .htaccess
+---
+
 RewriteEngine On
 RewriteCond %{HTTP_HOST} !^www\.whoistheorchid\.com$ [NC]
 RewriteRule ^(.*)$ http://www.whoistheorchid.com/$1 [L,R=301]
