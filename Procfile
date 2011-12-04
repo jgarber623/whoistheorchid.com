@@ -1,0 +1,1 @@
+jekyll: bundle exec jekyll --config config/jekyll.yml
