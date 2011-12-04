@@ -4,7 +4,7 @@ server: true
 source: ./src
 destination: ./public
 
-permalink: :categories/:title
+permalink: /:categories/:title
 
 # safe:        false
 # auto:        false
