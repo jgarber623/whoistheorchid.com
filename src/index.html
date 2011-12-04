@@ -1,57 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="utf-8" />
+---
+layout: application
+---
 
-	<title>The Orchid &mdash; an instrumental post-rock band from Washington, DC</title>
-	
-	<meta name="description" content="The Orchid is an instrumental post-rock band from Washington, DC." />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
-	<!--[if lt IE 9]><script src="javascripts/vendor/html5-1.6.2.min.js"></script><![endif]-->
-	
-	<link rel="stylesheet" href="stylesheets/vendor/reset-2.0.min.css" />
-	<link rel="stylesheet" href="stylesheets/screen.css" />
-</head>
-<body>
+{% assign releases = site.categories.releases %}
 
-	<div class="vcard">
-		<header role="banner">
-			<h1 id="logo" class="fn org"><a href="http://www.whoistheorchid.com/" class="url">The Orchid</a></h1>
-		</header>
-		<article class="hentry" role="main">
-			<h2 class="entry-title">&ldquo;New Mexico&rdquo; EP available now.</h2>
-			
-			<blockquote class="entry-content">
-				<p><a href="http://theorchid.bandcamp.com/album/new-mexico-ep"><img src="images/new-mexico-ep.jpg" alt="New Mexico EP cover art" /></a></p>
-				<p>The Orchid&rsquo;s debut EP is now available in digital formats exclusively on <a href="http://theorchid.bandcamp.com/">Bandcamp</a>. Four dense yet uplifting songs for at least $4<sup><span>.</span>00</sup>. <a href="http://theorchid.bandcamp.com/album/new-mexico-ep">Get your copy today</a>.</p>
-			</blockquote>
-		</article>
-		<footer>
-			<ul role="navigation">
-				<li><a href="http://www.facebook.com/whoistheorchid" rel="me">Facebook</a></li>
-				<li><a href="http://www.last.fm/music/The+Orchid">Last.fm</a></li>
-				<li><a href="http://twitter.com/theorchid" rel="me">Twitter</a></li>
-			</ul>
-			
-			<p>Correspondence: <a href="mailto:booking&#064;whoistheorchid.com">booking&#064;whoistheorchid.com</a></p>
-		</footer>
-	</div>
-	
-	<script>
-		var _gaq = [["_setAccount", "UA-5230764-6"], ["_trackPageview"]];
-
-		(function( d, t ) {
-			var g = d.createElement( t ),
-				s = d.getElementsByTagName( t )[0];
-			
-			g.async = true;
-			g.src = ( "https:" == location.protocol ? "//ssl" : "//www" ) + ".google-analytics.com/ga.js";
-			
-			s.parentNode.insertBefore( g, s );
-		})( document, "script" );
-
-	</script>
-	
-</body>
-</html>
+{% for release in releases limit: 1 %}
+	{{ release.content }}
+{% endfor %}
