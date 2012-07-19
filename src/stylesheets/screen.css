@@ -1,116 +1,136 @@
+/* line 1, ../sass/screen.scss */
 html {
-	background: #070707 url("../images/html.png") no-repeat fixed 50% 0;
+  background: #070707 url("../images/html.png") no-repeat fixed 50% 0;
 }
 
+/* line 5, ../sass/screen.scss */
 body {
-	background: transparent;
-	color: #ced4d7;
-	font: normal 18px/1.5 Baskerville, Georgia, serif;
-	padding: 60px 0;
+  background: transparent;
+  color: #ced4d7;
+  font: normal 18px/1.5 Baskerville, Georgia, serif;
+  padding: 60px 0;
 }
 
+/* line 12, ../sass/screen.scss */
 a {
-	color: #aa8b54;
-	text-decoration: underline;
+  color: #aa8b54;
+  text-decoration: underline;
 }
 
+/* line 18, ../sass/screen.scss */
 a:hover,
 a:focus {
-	color: #c29951;
+  color: #c29951;
 }
 
+/* line 22, ../sass/screen.scss */
 header {
-	background: url("../images/header.png") repeat-x 0 0;
-	display: block;
-	height: 42px;
-	margin-bottom: 60px;
+  background: url("../images/header.png") repeat-x 0 0;
+  display: block;
+  height: 42px;
+  margin-bottom: 60px;
 }
 
+/* line 29, ../sass/screen.scss */
 #logo a {
-	background: url("../images/logo.png") no-repeat 0 0;
-	display: block;
-	height: 42px;
-	margin: 0 auto;
-	overflow: hidden;
-	text-indent: -9999px;
-	width: 208px;
+  background: url("../images/logo.png") no-repeat 0 0;
+  display: block;
+  height: 42px;
+  margin: 0 auto;
+  overflow: hidden;
+  text-indent: -9999px;
+  width: 208px;
 }
 
+/* line 39, ../sass/screen.scss */
 article {
-	margin: 0 auto;
-	width: 410px;
+  margin: 0 auto;
+  width: 410px;
 }
 
+/* line 44, ../sass/screen.scss */
 article h1 {
-	font-size: 28px;
-	line-height: 1.2;
-	text-align: center;
+  font-size: 28px;
+  line-height: 1.2;
+  text-align: center;
 }
 
+/* line 50, ../sass/screen.scss */
 article p {
-	margin-top: 20px;
-	text-align: justify;
+  margin-top: 20px;
+  text-align: justify;
 }
 
+/* line 55, ../sass/screen.scss */
 article p img {
-	border: 1px solid rgba( 255, 255, 255, 0.2 );
-	height: 400px;
-	padding: 4px;
-	width: 400px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  height: 400px;
+  padding: 4px;
+  width: 400px;
 }
 
+/* line 62, ../sass/screen.scss */
 article p a:hover img {
-	border-color: rgba( 255, 255, 255, 0.3 );
+  border-color: rgba(255, 255, 255, 0.3);
 }
 
+/* line 66, ../sass/screen.scss */
 article sup {
-	font-size: 12px;
-	margin: 0 2px;
-	position: relative;
-	text-decoration: underline;
-	top: 4px;
-	vertical-align: super;
+  font-size: 12px;
+  margin: 0 2px;
+  position: relative;
+  text-decoration: underline;
+  top: 4px;
+  vertical-align: super;
 }
 
+/* line 75, ../sass/screen.scss */
 article sup span {
-	display: none;
+  display: none;
 }
 
+/* line 79, ../sass/screen.scss */
 footer {
-	color: rgba( 255, 255, 255, 0.2 );
-	font-size: 14px;
-	margin: 0 auto;
-	width: 410px;
-	text-align: center;
+  color: rgba(255, 255, 255, 0.2);
+  font-size: 14px;
+  margin: 0 auto;
+  width: 410px;
+  text-align: center;
 }
 
+/* line 87, ../sass/screen.scss */
 footer:hover {
-	color: rgba( 255, 255, 255, 0.3 );
+  color: rgba(255, 255, 255, 0.3);
 }
 
+/* line 91, ../sass/screen.scss */
 footer ul {
-	display: block;
-	font-size: 10px;
-	text-align: center;
-	margin: 60px auto 10px auto;
+  display: block;
+  font-size: 10px;
+  text-align: center;
+  margin: 60px auto 10px auto;
 }
 
+/* line 98, ../sass/screen.scss */
 footer ul:hover {
-	color: rgba( 255, 255, 255, 0.3 );
+  color: rgba(255, 255, 255, 0.3);
 }
 
+/* line 102, ../sass/screen.scss */
 footer li {
-	display: inline;
+  display: inline;
 }
 
+/* line 107, ../sass/screen.scss */
 footer li:after,
 footer li:first-child:before {
-	content: "|||||";
+  content: "|||||";
 }
 
+/* line 111, ../sass/screen.scss */
 footer li a {
-	display: inline-block;
-	font-size: 14px;
-	margin: 0 10px;
-	vertical-align: middle;
+  display: inline-block;
+  font-size: 14px;
+  margin: 0 10px;
+  vertical-align: middle;
 }
