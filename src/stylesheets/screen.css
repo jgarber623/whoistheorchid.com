@@ -1,39 +1,83 @@
-/* line 1, ../sass/screen.scss */
-html {
-  background: #070707 url("../images/html.png") no-repeat fixed 50% 0;
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* line 5, ../sass/_reset.scss */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 
-/* line 5, ../sass/screen.scss */
+/* line 5, ../sass/_reset.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 5, ../sass/_reset.scss */
 body {
+  line-height: 1;
+}
+
+/* line 5, ../sass/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 5, ../sass/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 5, ../sass/_reset.scss */
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 5, ../sass/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 3, ../sass/screen.scss */
+html {
+  background: #070707 url("../images/layout/html.png") no-repeat fixed 50% 0;
+}
+
+/* line 7, ../sass/screen.scss */
+body {
+  font: normal 18px/1.5 Baskerville, Georgia, serif;
   background: transparent;
   color: #ced4d7;
-  font: normal 18px/1.5 Baskerville, Georgia, serif;
   padding: 60px 0;
 }
 
-/* line 12, ../sass/screen.scss */
+/* line 14, ../sass/screen.scss */
 a {
   color: #aa8b54;
   text-decoration: underline;
 }
-
-/* line 18, ../sass/screen.scss */
-a:hover,
-a:focus {
+/* line 19, ../sass/screen.scss */
+a:hover, a:focus {
   color: #c29951;
 }
 
-/* line 22, ../sass/screen.scss */
+/* line 24, ../sass/screen.scss */
 header {
-  background: url("../images/header.png") repeat-x 0 0;
+  background: url("../images/layout/header.png") repeat-x 0 0;
   display: block;
   height: 42px;
   margin-bottom: 60px;
 }
 
-/* line 29, ../sass/screen.scss */
+/* line 31, ../sass/screen.scss */
 #logo a {
-  background: url("../images/logo.png") no-repeat 0 0;
+  background: url("../images/layout/logo.png") no-repeat 0 0;
   display: block;
   height: 42px;
   margin: 0 auto;
@@ -42,39 +86,30 @@ header {
   width: 208px;
 }
 
-/* line 39, ../sass/screen.scss */
-article {
-  margin: 0 auto;
-  width: 410px;
-}
-
-/* line 44, ../sass/screen.scss */
+/* line 42, ../sass/screen.scss */
 article h1 {
   font-size: 28px;
   line-height: 1.2;
   text-align: center;
 }
-
-/* line 50, ../sass/screen.scss */
+/* line 48, ../sass/screen.scss */
 article p {
-  margin-top: 20px;
+  margin: 20px auto 0 auto;
   text-align: justify;
+  width: 410px;
 }
-
-/* line 55, ../sass/screen.scss */
+/* line 54, ../sass/screen.scss */
 article p img {
   border: 1px solid rgba(255, 255, 255, 0.2);
   height: 400px;
   padding: 4px;
   width: 400px;
 }
-
-/* line 62, ../sass/screen.scss */
+/* line 61, ../sass/screen.scss */
 article p a:hover img {
   border-color: rgba(255, 255, 255, 0.3);
 }
-
-/* line 66, ../sass/screen.scss */
+/* line 65, ../sass/screen.scss */
 article sup {
   font-size: 12px;
   margin: 0 2px;
@@ -83,8 +118,7 @@ article sup {
   top: 4px;
   vertical-align: super;
 }
-
-/* line 75, ../sass/screen.scss */
+/* line 74, ../sass/screen.scss */
 article sup span {
   display: none;
 }
@@ -94,40 +128,34 @@ footer {
   color: rgba(255, 255, 255, 0.2);
   font-size: 14px;
   margin: 0 auto;
-  width: 410px;
   text-align: center;
+  width: 410px;
 }
-
-/* line 87, ../sass/screen.scss */
+/* line 86, ../sass/screen.scss */
 footer:hover {
   color: rgba(255, 255, 255, 0.3);
 }
-
-/* line 91, ../sass/screen.scss */
+/* line 90, ../sass/screen.scss */
 footer ul {
   display: block;
   font-size: 10px;
-  text-align: center;
   margin: 60px auto 10px auto;
+  text-align: center;
 }
-
-/* line 98, ../sass/screen.scss */
+/* line 97, ../sass/screen.scss */
 footer ul:hover {
   color: rgba(255, 255, 255, 0.3);
 }
-
-/* line 102, ../sass/screen.scss */
+/* line 101, ../sass/screen.scss */
 footer li {
   display: inline;
 }
-
-/* line 107, ../sass/screen.scss */
+/* line 106, ../sass/screen.scss */
 footer li:after,
 footer li:first-child:before {
   content: "|||||";
 }
-
-/* line 111, ../sass/screen.scss */
+/* line 110, ../sass/screen.scss */
 footer li a {
   display: inline-block;
   font-size: 14px;
