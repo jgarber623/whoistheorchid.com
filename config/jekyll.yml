@@ -6,6 +6,8 @@ destination: ./public
 
 permalink: /:categories/:title
 
+exclude: ['sass']
+
 # safe:        false
 # auto:        false
 # server:      false
