@@ -15,32 +15,37 @@
 	<meta name="twitter:site" content="@theorchid">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
+	<link rel="apple-touch-icon-precomposed" href="/theorchid.png">
+	<link rel="shortcut icon" href="/theorchid.png">
 	{% stylesheet application %}
 </head>
 <body>
 
-	<header role="banner">
-		<h1><a href="/" rel="home">The Orchid</a></h1>
-	</header>
+	<div class="container">
+		<header class="global-header" role="banner">
+			<!-- <h1><a href="/" rel="home">The Orchid</a></h1> -->
+			<h1><a href="/" rel="home"><img src="{% asset_path logo.svg %}" alt="The Orchid"></a></h1>
+		</header>
 
-	<main role="main">
-		{{ content }}
-	</main>
+		<main class="global-content" role="main">
+			{{ content }}
+		</main>
 
-	<footer class="h-card" role="contentinfo">
-		<p class="p-note"><a href="/" class="p-name u-url" rel="home">The Orchid</a> is an instrumental post-rock band from <span class="p-locality">Washington</span>, <abbr class="p-region" title="District of Columbia">DC</abbr>.</p>
+		<footer class="global-footer h-card" role="contentinfo">
+			<p class="bio p-note"><a href="/" class="p-name u-url" rel="home">The Orchid</a> is an instrumental post-rock band from <span class="p-locality">Washington</span>, <abbr class="p-region" title="District of Columbia">DC</abbr>.</p>
 
-		<ul>
-			<li><a href="https://theorchid.bandcamp.com/" rel="me">Bandcamp</a></li>
-			<li><a href="https://twitter.com/theorchid" rel="me">Twitter</a></li>
-			<li><a href="https://www.facebook.com/whoistheorchid" rel="me">Facebook</a></li>
-			<li><a href="https://vimeo.com/whoistheorchid" rel="me">Vimeo</a></li>
-		</ul>
+			<ul>
+				<li><a href="https://theorchid.bandcamp.com/" rel="me">Bandcamp</a></li>
+				<li><a href="https://twitter.com/theorchid" rel="me">Twitter</a></li>
+				<li><a href="https://www.facebook.com/whoistheorchid" rel="me">Facebook</a></li>
+				<li><a href="https://vimeo.com/whoistheorchid" rel="me">Vimeo</a></li>
+			</ul>
 
-		<p>Correspondence: <a href="mailto:booking&#064;whoistheorchid&#46;com" class="u-email">booking&#064;whoistheorchid&#46;com</a></p>
+			<p>Correspondence: <a href="mailto:booking&#064;whoistheorchid&#46;com" class="u-email">booking&#064;whoistheorchid&#46;com</a></p>
 
-		<small>Some rights reserved. This site’s content is licensed under a <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" rel="license">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International license</a>. Source code available on <a href="https://github.com/jgarber623/whoistheorchid.com" rel="source">GitHub</a>.</small>
-	</footer>
+			<small>Some rights reserved. This site’s content is licensed under a <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" rel="license">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International license</a>. Source code available on <a href="https://github.com/jgarber623/whoistheorchid.com" rel="source">GitHub</a>.</small>
+		</footer>
+	</div>
 
 </body>
 </html>

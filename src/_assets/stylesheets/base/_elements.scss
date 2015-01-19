@@ -1,0 +1,72 @@
+@-ms-viewport{
+	width: device-width;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+html {
+	background: #070707 image-url("html.png") no-repeat fixed 50% 0;
+	box-sizing: border-box;
+	-webkit-text-size-adjust: 100%;
+}
+
+body {
+	color: #ced4d7;
+	font-family: Baskerville, Georgia, serif;
+	line-height: 1.5;
+	margin: 0;
+	padding: 3rem 0 6rem 0;
+}
+
+/* @group HTML5 elements */
+
+	footer,
+	header,
+	main {
+		display: block;
+	}
+
+/* @end */
+
+/* @group Links */
+
+	a {
+		color: #aa8b54;
+		background: none;
+		text-decoration: underline;
+
+		&:focus,
+		&:hover {
+			color: #c29951;
+		}
+	}
+
+/* @end */
+
+/* @group Text-level semantics */
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		font-weight: 700;
+	}
+
+/* @end */
+
+/* @group Embedded content */
+
+	img {
+		border: 0;
+		-ms-interpolation-mode: bicubic;
+		max-width: 100%;
+		vertical-align: middle;
+	}
+
+/* @end */
