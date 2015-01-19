@@ -14,18 +14,22 @@
 	<meta name="twitter:card" content="summary">
 	<meta name="twitter:site" content="@theorchid">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	{% stylesheet application %}
 </head>
-<body class="h-card">
+<body>
 
 	<header role="banner">
-		<h1><a href="/" rel="home" class="p-name u-url">The Orchid</a></h1>
+		<h1><a href="/" rel="home">The Orchid</a></h1>
 	</header>
 
 	<main role="main">
 		{{ content }}
 	</main>
 
-	<footer role="contentinfo">
+	<footer class="h-card" role="contentinfo">
+		<p class="p-note"><a href="/" class="p-name u-url" rel="home">The Orchid</a> is an instrumental post-rock band from <span class="p-locality">Washington</span>, <abbr class="p-region" title="District of Columbia">DC</abbr>.</p>
+
 		<ul>
 			<li><a href="https://theorchid.bandcamp.com/" rel="me">Bandcamp</a></li>
 			<li><a href="https://twitter.com/theorchid" rel="me">Twitter</a></li>

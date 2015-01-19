@@ -1,3 +1,8 @@
 source: ./src
 destination: ./public
 
+gems: ['jekyll-assets']
+
+assets:
+  css_compressor: sass
+  gzip: false
