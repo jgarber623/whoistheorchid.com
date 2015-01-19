@@ -1,9 +1,0 @@
----
-layout: application
----
-
-{% assign releases = site.categories.releases %}
-
-{% for release in releases limit: 1 %}
-	{{ release.content }}
-{% endfor %}
