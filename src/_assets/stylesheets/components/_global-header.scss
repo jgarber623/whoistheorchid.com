@@ -1,7 +1,14 @@
 .global-header {
+	margin: 3rem auto;
+	max-width: 26em;
 	text-align: center;
 
+	@include breakpoint(35em) {
+		margin: 4.5rem auto;
+	}
+
 	h1 {
+		line-height: 1;
 		margin: 0;
 	}
 }

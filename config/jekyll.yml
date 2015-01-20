@@ -1,8 +1,20 @@
 source: ./src
 destination: ./public
 
-gems: ['jekyll-assets']
+gems: ['jekyll-assets', 'breakpoint']
+
+host: 0.0.0.0
+
+permalink: /:categories/:title
 
 assets:
   css_compressor: sass
   gzip: false
+
+defaults:
+  -
+    scope:
+      path: releases
+      type: posts
+    values:
+      layout: release

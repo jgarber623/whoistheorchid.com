@@ -3,13 +3,15 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>The Orchid — an instrumental post-rock band from Washington, DC</title>
+	{% capture page_title %}The Orchid — {% if page.title %}{{ page.title }}{% else %}an instrumental post-rock band from Washington, DC{% endif %}{% endcapture %}
+
+	<title>{{ page_title }}</title>
 
 	<meta name="apple-mobile-web-app-title" content="The Orchid">
 	<meta name="application-name" content="The Orchid">
 	<meta name="description" content="The Orchid is an instrumental post-rock band from Washington, DC.">
 	<meta name="og:description" itemprop="description" content="The Orchid is an instrumental post-rock band from Washington, DC.">
-	<meta name="og:title" itemprop="name" content="The Orchid">
+	<meta name="og:title" itemprop="name" content="{{ page_title }}">
 	<meta name="mobile-web-app-capable" content="yes">
 	<meta name="twitter:card" content="summary">
 	<meta name="twitter:site" content="@theorchid">
@@ -23,7 +25,6 @@
 
 	<div class="container">
 		<header class="global-header" role="banner">
-			<!-- <h1><a href="/" rel="home">The Orchid</a></h1> -->
 			<h1><a href="/" rel="home"><img src="{% asset_path logo.svg %}" alt="The Orchid"></a></h1>
 		</header>
 
