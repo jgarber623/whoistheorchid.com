@@ -7,5 +7,6 @@ gem 'jekyll-assets'
 gem 'breakpoint'
 
 group :development do
+  gem 'capistrano', '~> 2.15.5'
   gem 'foreman'
 end
