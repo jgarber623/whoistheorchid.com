@@ -3,6 +3,9 @@ GEM
   specs:
     addressable (2.3.6)
     blankslate (2.1.2.4)
+    breakpoint (2.5.0)
+      sass (~> 3.3)
+      sassy-maps (< 1.0.0)
     celluloid (0.16.0)
       timers (~> 4.0.0)
     classifier-reborn (2.0.3)
@@ -74,6 +77,8 @@ GEM
     redcarpet (3.2.2)
     safe_yaml (1.0.4)
     sass (3.4.10)
+    sassy-maps (0.4.0)
+      sass (~> 3.3)
     sprockets (2.12.3)
       hike (~> 1.2)
       multi_json (~> 1.0)
@@ -96,6 +101,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  breakpoint
   foreman
   jekyll
   jekyll-assets

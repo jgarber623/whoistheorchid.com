@@ -1,0 +1,27 @@
+.releases-list {
+	@extend %clearfix;
+	@extend %ui-list;
+
+	li {
+		float: left;
+		margin-bottom: 1rem;
+		padding-right: 0.5rem;
+		width: 50%;
+
+		&:nth-child(even) {
+			float: right;
+			padding: 0 0 0 0.5rem;
+		}
+	}
+
+	a {
+		border: 1px solid rgba(#fff, 0.4);
+		display: block;
+		padding: 0.25rem;
+
+		&:focus,
+		&:hover {
+			border-color: rgba(#fff, 0.45);
+		}
+	}
+}

@@ -1,0 +1,59 @@
+.release-title {
+	font-size: 1.5rem;
+	font-weight: normal;
+	line-height: 1.25;
+	margin: 0;
+	text-align: center;
+
+	@include breakpoint(35em) {
+		font-size: 1.75rem;
+	}
+}
+
+.release-content {
+	font-size: 1.125rem;
+	margin: 0 auto;
+	max-width: 26rem;
+
+	p {
+		margin: 0;
+		text-align: justify;
+	}
+}
+
+.release-artwork {
+	margin: 1.5rem 0;
+
+	a {
+		border: 1px solid rgba(#fff, 0.4);
+		display: block;
+		padding: 0.25rem;
+
+		&:focus,
+		&:hover {
+			border-color: rgba(#fff, 0.45);
+		}
+	}
+}
+
+@include breakpoint(max-height 28em) {
+	.release-content {
+		display: table;
+		margin-top: 1.5rem;
+		max-width: 35rem;
+		width: 100%;
+	}
+
+	.release-artwork {
+		display: table-cell;
+		vertical-align: top;
+		width: 40%;
+	}
+
+	.release-description {
+		display: table-cell;
+		padding-left: 1.5rem;
+		vertical-align: top;
+		width: 60%;
+	}
+}

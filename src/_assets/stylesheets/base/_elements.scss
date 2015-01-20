@@ -19,7 +19,7 @@ body {
 	font-family: Baskerville, Georgia, serif;
 	line-height: 1.5;
 	margin: 0;
-	padding: 3rem 0 6rem 0;
+	padding: 0 0 6rem 0;
 }
 
 /* @group HTML5 elements */
@@ -43,19 +43,23 @@ body {
 		&:hover {
 			color: #c29951;
 		}
+
+		&:focus {
+			outline: 1px dotted rgba(#fff, 0.5);
+		}
 	}
 
 /* @end */
 
 /* @group Text-level semantics */
 
-	h1,
-	h2,
-	h3,
-	h4,
-	h5,
-	h6 {
-		font-weight: 700;
+	sup {
+		font-size: 0.75rem;
+		margin: 0 0.125em;
+		position: relative;
+		text-decoration: underline;
+		top: 0.25em;
+		vertical-align: super;
 	}
 
 /* @end */
@@ -65,8 +69,8 @@ body {
 	img {
 		border: 0;
 		-ms-interpolation-mode: bicubic;
-		max-width: 100%;
 		vertical-align: middle;
+		width: 100%;
 	}
 
 /* @end */
