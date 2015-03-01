@@ -2,6 +2,7 @@
 title: “New Mexico EP” available now.
 album_slug: new-mexico-ep
 album_title: New Mexico EP
+bandcamp_id: 1041240443
 bandcamp_url: https://theorchid.bandcamp.com/album/new-mexico-ep
 ---
 
