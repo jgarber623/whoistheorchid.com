@@ -28,7 +28,7 @@
 
 	<div class="container">
 		<header class="global-header" role="banner">
-			<h1><a href="/" rel="home"><img src="{% asset_path logo.svg %}" alt="The Orchid"></a></h1>
+			<h1><a href="/" rel="home"><img src="data:image/svg+xml;base64,{{ 'logo.svg' | asset | base64 }}" alt="The Orchid"></a></h1>
 		</header>
 
 		<main class="global-content" role="main">
