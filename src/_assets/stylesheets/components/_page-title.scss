@@ -1,0 +1,11 @@
+.page-title {
+	font-size: 1.5rem;
+	font-weight: normal;
+	line-height: 1.25;
+	margin: 0;
+	text-align: center;
+
+	@include breakpoint(35em) {
+		font-size: 1.75rem;
+	}
+}
