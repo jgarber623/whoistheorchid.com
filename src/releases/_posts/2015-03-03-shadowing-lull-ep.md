@@ -2,6 +2,7 @@
 title: “Shadowing Lull EP” available now.
 album_slug: shadowing-lull-ep
 album_title: Shadowing Lull EP
+bandcamp_id: 3995949234
 bandcamp_url: https://theorchid.bandcamp.com/album/shadowing-lull-ep
 ---
 
