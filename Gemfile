@@ -1,12 +1,12 @@
-ruby '2.1.1'
+ruby '2.2.3'
 
-source 'https://rubygems.org'
+source 'https://rubygems.org' do
+  gem 'jekyll'
+  gem 'jekyll-assets'
+  gem 'breakpoint'
 
-gem 'jekyll'
-gem 'jekyll-assets'
-gem 'breakpoint'
-
-group :development do
-  gem 'capistrano', '~> 2.15.5'
-  gem 'foreman'
+  group :development do
+    gem 'capistrano', '~> 2.15.5'
+    gem 'foreman'
+  end
 end

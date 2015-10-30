@@ -115,8 +115,11 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  breakpoint
-  capistrano (~> 2.15.5)
-  foreman
-  jekyll
-  jekyll-assets
+  breakpoint!
+  capistrano (~> 2.15.5)!
+  foreman!
+  jekyll!
+  jekyll-assets!
+
+BUNDLED WITH
+   1.10.6
