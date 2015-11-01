@@ -7,10 +7,6 @@ host: 0.0.0.0
 
 permalink: /:categories/:title
 
-assets:
-  css_compressor: sass
-  gzip: false
-
 defaults:
   -
     scope:
