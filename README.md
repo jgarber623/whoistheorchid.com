@@ -1,6 +1,6 @@
 # The Orchid
 
-Website for Washington, DC, instrumental post-rock band The Orchid. Learn more about us at [our website](http://www.whoistheorchid.com/).
+Website for Washington, DC, instrumental post-rock band The Orchid. Learn more about us at [our website](https://whoistheorchid.com/).
 
 ## License
 
