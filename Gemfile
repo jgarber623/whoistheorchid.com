@@ -6,7 +6,11 @@ source 'https://rubygems.org' do
   gem 'breakpoint'
 
   group :development do
-    gem 'capistrano', '~> 2.15.6'
-    gem 'foreman'
+    gem 'capistrano', '~> 2.15'
+    gem 'foreman', '~> 0.78.0'
+  end
+
+  group :test do
+    gem 'html-proofer', '~> 2.6'
   end
 end
