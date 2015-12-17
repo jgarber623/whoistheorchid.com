@@ -3,4 +3,3 @@
 set -e # halt script on error
 
 bundle exec jekyll build --config config/jekyll.yml
-bundle exec htmlproof ./public --check-favicon --check-html --disable-external
