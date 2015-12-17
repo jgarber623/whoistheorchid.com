@@ -3,4 +3,5 @@ rvm:
   - 2.2.3
 script: ./bin/cibuild
 notifications:
+  email: false
   slack: sixtwothree:yATLmjTW15443qR7jbCWr3RO
