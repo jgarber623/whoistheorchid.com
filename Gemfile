@@ -1,9 +1,9 @@
 ruby '2.2.3'
 
 source 'https://rubygems.org' do
-  gem 'jekyll'
+  gem 'jekyll', '~> 3.0'
   gem 'jekyll-assets'
-  gem 'breakpoint'
+  gem 'breakpoint', '~> 2.5'
 
   group :development do
     gem 'capistrano', '~> 2.15'

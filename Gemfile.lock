@@ -38,7 +38,7 @@ GEM
       typhoeus (~> 0.7)
       yell (~> 2.0)
     i18n (0.7.0)
-    jekyll (3.0.0)
+    jekyll (3.0.1)
       colorator (~> 0.1)
       jekyll-sass-converter (~> 1.0)
       jekyll-watch (~> 1.1)
@@ -62,7 +62,7 @@ GEM
     json (1.8.3)
     kramdown (1.9.0)
     liquid (3.0.6)
-    listen (3.0.3)
+    listen (3.0.5)
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9)
     mercenary (0.3.5)
@@ -86,7 +86,7 @@ GEM
       ffi (>= 0.5.0)
     rouge (1.10.1)
     safe_yaml (1.0.4)
-    sass (3.4.19)
+    sass (3.4.20)
     sassy-maps (0.4.0)
       sass (~> 3.3)
     sprockets (2.12.4)
@@ -112,11 +112,11 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  breakpoint!
+  breakpoint (~> 2.5)!
   capistrano (~> 2.15)!
   foreman (~> 0.78.0)!
   html-proofer (~> 2.6)!
-  jekyll!
+  jekyll (~> 3.0)!
   jekyll-assets!
 
 BUNDLED WITH
