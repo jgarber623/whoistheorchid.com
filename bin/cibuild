@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
-set -e # halt script on error
+set -e
 
 bundle exec jekyll build --config config/jekyll.yml
+bundle exec htmlproof ./public --href-swap "releases/(?<slug>.*):releases/\k<slug>.html"
