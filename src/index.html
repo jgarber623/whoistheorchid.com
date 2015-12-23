@@ -10,7 +10,7 @@ layout: application
 
 		<div class="release-content e-content">
 			<figure class="release-artwork">
-				<a href="{{ release.bandcamp_url }}">
+				<a href="{{ release.bandcamp_url }}" class="bordered-link">
 					<img src="{{ album_artwork_path | asset_path }}" alt="{{ release.album_title }} cover art">
 				</a>
 			</figure>
@@ -21,11 +21,11 @@ layout: application
 		</div>
 
 		{% if release.bandcamp_id %}
-			<iframe src="https://bandcamp.com/EmbeddedPlayer/album={{ release.bandcamp_id }}/size=large/bgcol=333333/linkcol=aa8b54/tracklist=false/artwork=none/transparent=true/ref=https://whoistheorchid.com/" class="release-player" seamless></iframe>
+			{% include bandcamp_player.html bandcamp_id=release.bandcamp_id %}
 		{% endif %}
 	</article>
 {% endfor %}
 
-<a href="/releases" class="past-releases-link">
+<a href="/releases" class="past-releases-link bordered-link">
 	<span>Past Releases</span>
 </a>

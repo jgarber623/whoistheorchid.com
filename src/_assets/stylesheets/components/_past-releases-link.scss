@@ -1,16 +1,8 @@
 .past-releases-link {
-	border: 1px solid rgba(#fff, 0.4);
-	display: block;
 	margin: 4.5rem auto;
 	max-width: 20rem;
-	padding: 0.25rem;
 	text-decoration: none;
 	width: 100%;
-
-	&:focus,
-	&:hover {
-		border-color: rgba(#fff, 0.45);
-	}
 
 	span {
 		background: rgba(#fff, 0.05);

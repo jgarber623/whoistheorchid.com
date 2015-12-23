@@ -11,17 +11,6 @@
 
 .release-artwork {
 	margin: 1.5rem 0;
-
-	a {
-		border: 1px solid rgba(#fff, 0.4);
-		display: block;
-		padding: 0.25rem;
-
-		&:focus,
-		&:hover {
-			border-color: rgba(#fff, 0.45);
-		}
-	}
 }
 
 .release-player {

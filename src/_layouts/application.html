@@ -1,5 +1,5 @@
 <!doctype html>
-<html id="whoistheorchid-com" lang="en-US">
+<html lang="en-US">
 <head>
 	<meta charset="utf-8">
 
@@ -21,15 +21,15 @@
 	<link rel="apple-touch-icon" href="{% asset_path theorchid.png %}">
 	<link rel="shortcut icon" href="{% asset_path theorchid.png %}">
 
-	<style>
-		{% asset application.css %}
-	</style>
+	<style>{% asset application.css %}</style>
 </head>
 <body>
 
 	<div class="container">
 		<header class="global-header" role="banner">
-			<h1><a href="/" rel="home"><img src="data:image/svg+xml;base64,{{ 'logo.svg' | asset | base64 }}" alt="The Orchid"></a></h1>
+			<h1>
+				<a href="/" rel="home">{% asset logo.svg %}</a>
+			</h1>
 		</header>
 
 		<main class="global-content" role="main">
