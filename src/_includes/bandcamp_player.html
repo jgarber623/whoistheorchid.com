@@ -1,9 +1,7 @@
-<script id="bandcamp-player">
-	(function(d) {
-		window.onload = function() {
-			var s=d.getElementById('bandcamp-player'),i=d.createElement('iframe');
-			i.src='https://bandcamp.com/EmbeddedPlayer/album={{ include.bandcamp_id }}/size=large/bgcol=333333/linkcol=aa8b54/tracklist=false/artwork=none/transparent=true/ref='+location.href;
-			i.className='release-player';i.title='Bandcamp Player';i.setAttribute('seamless','seamless');s.parentNode.insertBefore(i,s);
-		};
-	})(document);
+<iframe class="release-player" id="bandcamp-player" seamless title="Bandcamp Player"></iframe>
+
+<script>
+	window.onload = function() {
+		document.getElementById('bandcamp-player').src='https://bandcamp.com/EmbeddedPlayer/album={{ include.bandcamp_id }}/size=large/bgcol=333333/linkcol=aa8b54/tracklist=false/artwork=none/transparent=true/ref='+location.href;
+	};
 </script>
