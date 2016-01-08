@@ -1,7 +1,7 @@
 <iframe id="bandcamp-player" seamless title="Bandcamp Player"></iframe>
 
 <script>
-	if ('addEventListener' in window) {
+	if (window.addEventListener) {
 		window.addEventListener('load', function() {
 			document.getElementById('bandcamp-player').src='https://bandcamp.com/EmbeddedPlayer/album={{ include.bandcamp_id }}/size=large/bgcol=333333/linkcol=aa8b54/tracklist=false/artwork=none/transparent=true/ref='+location.href;
 		});
