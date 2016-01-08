@@ -1,7 +1,10 @@
 source: ./src
 destination: ./public
 
-gems: ['jekyll-assets', 'breakpoint']
+gems:
+  - breakpoint
+  - jekyll-assets
+  - sass-globbing
 
 host: 0.0.0.0
 
