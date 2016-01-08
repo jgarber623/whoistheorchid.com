@@ -9,6 +9,7 @@ set :application, 'whoistheorchid.com'
 set :repository, 'git@github.com:jgarber623/whoistheorchid.com.git'
 set :deploy_to, '/var/www/whoistheorchid-com'
 set :user, 'www-data'
+set :default_environment, { JEKYLL_ENV: 'production' }
 set :deploy_via, :remote_cache
 set :ssh_options, { forward_agent: true }
 set :use_sudo, false
