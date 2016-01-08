@@ -2,7 +2,7 @@
 ---
 
 (function() {
-	var version = '{{ "now" | date: "%FT%T" }}';
+	var version = 'v{{ "now" | date: "%Y%m%d%H%M%S" }}';
 
 	var clearOldCaches = function() {
 		return caches.keys().then(function(keys) {
