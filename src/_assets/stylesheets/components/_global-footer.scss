@@ -18,24 +18,24 @@
 
 	li {
 		display: inline-block;
-
-		&:after,
-		&:first-child:before {
-			content: "|||||";
-			font-size: 0.625rem;
-			margin-left: 0.25rem;
-			position: relative;
-			top: -2px;
-		}
-
-		&:first-child:before {
-			margin-right: 0.25rem;
-		}
+		margin: 0 0.25rem;
 
 		a {
-			display: inline-block;
-			margin: -0.125em 0;
-			padding: 0.125em 0.5em;
+			color: rgba(#fff, 0.4);
+			display: block;
+			padding: 0.5rem;
+
+			&:focus,
+			&:hover {
+				color: rgba(#fff, 0.45);
+			}
+		}
+
+		svg {
+			fill: currentcolor;
+			height: 1.5rem;
+			vertical-align: middle;
+			width: 1.5rem;
 		}
 	}
 
