@@ -7,6 +7,23 @@
 		margin: 0;
 		text-align: justify;
 	}
+
+	blockquote {
+		font-style: italic;
+		margin: 1.5rem 0 0 0;
+
+		p {
+			text-align: center;
+
+			&:before {
+				content: "“";
+			}
+
+			&:after {
+				content: "”"
+			}
+		}
+	}
 }
 
 .release-artwork {
