@@ -1,12 +1,14 @@
 ---
 ---
 
-(function() {
-	var version = 'v{{ "now" | date: "%Y%m%d%H%M%S" }}';
+(() => {
+	'use strict';
 
-	var clearOldCaches = function() {
-		return caches.keys().then(function(keys) {
-			return Promise.all(keys.map(function(key) {
+	let version = 'v{{ "now" | date: "%Y%m%d%H%M%S" }}';
+
+	let clearOldCaches = () => {
+		return caches.keys().then(keys => {
+			return Promise.all(keys.map(key => {
 				if (key.indexOf(version) === -1) {
 					return caches.delete(key);
 				}
@@ -14,8 +16,8 @@
 		});
 	};
 
-	var updateCache = function() {
-		return caches.open(version).then(function(cache) {
+	let updateCache = () => {
+		return caches.open(version).then(cache => {
 			cache.addAll([
 				'{% asset_path html.png %}',
 				'{% asset_path theorchid.png %}',
@@ -35,24 +37,24 @@
 	};
 
 	// Clear old caches…
-	self.addEventListener('activate', function(event) {
-		event.waitUntil(clearOldCaches().then(function() {
+	self.addEventListener('activate', event => {
+		event.waitUntil(clearOldCaches().then(() => {
 			return self.clients.claim();
 		}));
 	});
 
 	// Load resources from the cache first, then the network…
-	self.addEventListener('fetch', function(event) {
-		var request = event.request;
+	self.addEventListener('fetch', event => {
+		let request = event.request;
 
-		event.respondWith(caches.match(request).then(function(response) {
+		event.respondWith(caches.match(request).then(response => {
 			return response || fetch(request);
 		}));
 	});
 
 	// Populate the cache…
-	self.addEventListener('install', function(event) {
-		event.waitUntil(updateCache().then(function() {
+	self.addEventListener('install', event => {
+		event.waitUntil(updateCache().then(() => {
 			return self.skipWaiting();
 		}));
 	});

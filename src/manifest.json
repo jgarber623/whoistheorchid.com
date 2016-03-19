@@ -1,0 +1,15 @@
+---
+---
+
+{
+	"name": "The Orchid",
+	"icons": [{
+		"src": "{% asset_path theorchid.png %}",
+		"sizes": "180x180",
+		"type": "image/png"
+	}],
+	"start_url": "/",
+	"display": "standalone",
+	"background_color": "#070707",
+	"theme_color": "#070707"
+}
