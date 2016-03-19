@@ -31,7 +31,8 @@
 				'/releases',
 				'/releases/beyond-the-vast-endless-sea',
 				'/releases/new-mexico-ep',
-				'/releases/shadowing-lull-ep'
+				'/releases/shadowing-lull-ep',
+				'/shows'
 			]);
 		});
 	};
