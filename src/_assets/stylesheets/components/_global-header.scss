@@ -1,6 +1,6 @@
 .global-header {
-	margin: 3rem auto;
-	max-width: 26em;
+	margin: 0 auto 3rem auto;
+	max-width: 26rem;
 	text-align: center;
 
 	@include breakpoint(35em) {

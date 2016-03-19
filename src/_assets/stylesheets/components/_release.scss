@@ -1,6 +1,6 @@
 .release-content {
 	font-size: 1.125rem;
-	margin: 0 auto;
+	margin: 0 auto 3rem auto;
 	max-width: 26rem;
 
 	p {
@@ -34,33 +34,24 @@
 	border: 0;
 	display: block;
 	height: 7.5rem;
-	margin-top: 3rem;
 	width: 100%;
 }
 
-@include breakpoint(max-height 28em) {
+@include breakpoint((min-width 35em) (max-height 28em)) {
 	.release-content {
-		display: table;
-		margin-top: 1.5rem;
+		display: flex;
+		justify-content: space-around;
+		margin-top: 3rem;
 		max-width: 35rem;
-		width: 100%;
 	}
 
 	.release-artwork {
-		display: table-cell;
-		vertical-align: top;
+		margin: 0;
 		width: 40%;
 	}
 
 	.release-description {
-		display: table-cell;
 		padding-left: 1.5rem;
-		vertical-align: top;
 		width: 60%;
-	}
-
-	#bandcamp-player {
-		margin: 1.5rem auto 0 auto;
-		max-width: 35rem;
 	}
 }

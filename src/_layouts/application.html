@@ -8,6 +8,7 @@
 	<title>{{ page_title }}</title>
 
 	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
 	<meta name="apple-mobile-web-app-title" content="The Orchid">
 	<meta name="application-name" content="The Orchid">
 	<meta name="description" content="The Orchid is an instrumental post-rock band from Washington, DC.">
@@ -28,17 +29,32 @@
 <body>
 
 	<div class="container">
-		<header class="global-header" role="banner">
+		<header class="global-header">
 			<h1>
 				<a href="/" rel="home">{% asset logo.svg %}</a>
 			</h1>
 		</header>
 
-		<main class="global-content" role="main">
+		<main class="global-content">
 			{{ content }}
 		</main>
 
-		<footer class="global-footer h-card" role="contentinfo">
+		<nav class="global-navigation">
+			<ul class="ui-list">
+				<li>
+					<a href="/" rel="home" class="bordered-link">
+						<span>Home</span>
+					</a>
+				</li>
+				<li>
+					<a href="/releases" class="bordered-link">
+						<span>Releases</span>
+					</a>
+				</li>
+			</ul>
+		</nav>
+
+		<footer class="global-footer h-card">
 			<p class="bio p-note"><a href="/" class="p-name u-url" rel="home">The Orchid</a> is an instrumental post-rock band from <span class="p-locality">Washington</span>, <abbr class="p-region" title="District of Columbia">DC</abbr>.</p>
 
 			<ul class="ui-list">
@@ -56,9 +72,22 @@
 	</div>
 
 	<script>
-		if (navigator.serviceWorker) {
-			navigator.serviceWorker.register('/service-worker.js');
-		}
+		(function(w, n) {
+			if (n.serviceWorker) {
+				n.serviceWorker.register('/service-worker.js');
+			}
+
+			if (n.standalone && w.addEventListener) {
+				var l=w.location,r=/^(a|html)$/i;
+
+				w.addEventListener('click',function(event){
+					var d=event.target;while(!r.test(d.nodeName))d=d.parentNode;
+					if(d.href&&~d.href.indexOf(l.host)){event.preventDefault();w.location=d.href;}
+				});
+
+				document.body.classList.add('standalone');
+			}
+		})(window, navigator);
 	</script>
 
 </body>
