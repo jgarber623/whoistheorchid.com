@@ -19,6 +19,8 @@
 	let updateCache = () => {
 		return caches.open(version).then(cache => {
 			cache.addAll([
+				'{% asset_path application.css %}',
+				'{% asset_path application.js %}',
 				'{% asset_path html.png %}',
 				'{% asset_path theorchid.png %}',
 				'{% asset_path releases/beyond-the-vast-endless-sea-800.jpg %}',

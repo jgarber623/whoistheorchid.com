@@ -23,8 +23,7 @@
 	<link rel="apple-touch-icon" href="{% asset_path theorchid.png %}">
 	<link rel="manifest" href="/manifest.json">
 	<link rel="shortcut icon" href="{% asset_path theorchid.png %}">
-
-	<style>{% asset application.css %}</style>
+	<link rel="stylesheet" href="{% asset_path application.css %}">
 </head>
 <body>
 
@@ -77,22 +76,22 @@
 	</div>
 
 	<script>
-		(function(w, n) {
-			if (n.serviceWorker) {
-				n.serviceWorker.register('/service-worker.js');
-			}
+		function loadJS(e,c) {
+			var d=document,r=d.createElement('script'),o=d.getElementsByTagName('script')[0];
+			r.src=e;r.async=true;o.parentNode.insertBefore(r,o);if(typeof c==='function')r.onload=c;return r;
+		}
 
-			if (n.standalone && w.addEventListener) {
-				var l=w.location,r=/^(a|html)$/i;
+		if (document.querySelector) {
+			loadJS('{% asset_path application.js %}');
+		}
 
-				w.addEventListener('click',function(event){
-					var d=event.target;while(!r.test(d.nodeName))d=d.parentNode;
-					if(d.href&&~d.href.indexOf(l.host)){event.preventDefault();w.location=d.href;}
-				});
+		if (navigator.serviceWorker) {
+			navigator.serviceWorker.register('/service-worker.js');
+		}
 
-				document.body.classList.add('standalone');
-			}
-		})(window, navigator);
+		if (navigator.standalone) {
+			loadJS('{% asset_path standalone.js %}');
+		}
 	</script>
 
 </body>

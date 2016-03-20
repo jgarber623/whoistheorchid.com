@@ -2,7 +2,7 @@ ruby '2.2.4'
 
 source 'https://rubygems.org' do
   gem 'breakpoint', '~> 2.5'
-  gem 'jekyll', '~> 3.0'
+  gem 'jekyll', '~> 3.1'
   gem 'jekyll-assets', '~> 2.1'
   gem 'sass-globbing', '~> 1.1'
 
