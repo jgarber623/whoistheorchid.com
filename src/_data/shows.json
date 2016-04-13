@@ -6,7 +6,20 @@
 			"locality": "Washington",
 			"region": "DC"
 		},
-		"bands": "Meow vs. Meow, The Chance, Flowers on the Razor Wire"
+		"bands": [
+			{
+				"name": "Meow vs. Meow",
+				"url": "http://meowvsmeow.com/"
+			},
+			{
+				"name": "The Chance",
+				"url": "http://www.thechancemusic.net/"
+			},
+			{
+				"name": "Flowers on the Razor Wire",
+				"url": "http://www.flowersontherazorwire.com/"
+			}
+		]
 	},
 	{
 		"date": "2009-05-26",
@@ -16,7 +29,16 @@
 			"region": "DC"
 		},
 		"url": "http://www.last.fm/event/1040114",
-		"bands": "Bellflur, We Read Minds"
+		"bands": [
+			{
+				"name": "Bellflur",
+				"url": "http://www.bellflur.com/"
+			},
+			{
+				"name": "We Read Minds",
+				"url": "http://wereadminds.com/"
+			}
+		]
 	},
 	{
 		"date": "2009-06-24",
@@ -35,7 +57,16 @@
 			"region": "DC"
 		},
 		"url": "https://www.facebook.com/events/153918795398/",
-		"bands": "The Modern Society, Sarah Pray"
+		"bands": [
+			{
+				"name": "The Modern Society",
+				"url": "https://myspace.com/themodernsociety"
+			},
+			{
+				"name": "Sarah Pray",
+				"url": "http://www.sarahpraymusic.com/"
+			}
+		]
 	},
 	{
 		"date": "2009-10-22",
@@ -45,17 +76,27 @@
 			"region": "DC"
 		},
 		"url": "http://www.facebook.com/events/173472281755/",
-		"bands": "Lost In The Trees"
+		"bands": [
+			{
+				"name": "Lost In The Trees",
+				"url": "http://www.lostinthetrees.com/"
+			}
+		]
 	},
 	{
 		"date": "2009-11-17",
 		"venue": "IOTA",
 		"location": {
-			"locality": "Arlington, VA",
-			"region": "DC"
+			"locality": "Arlington",
+			"region": "VA"
 		},
 		"url": "http://www.last.fm/event/1288963",
-		"bands": "El Ten Eleven"
+		"bands": [
+			{
+				"name": "El Ten Eleven",
+				"url": "http://www.elteneleven.com/"
+			}
+		]
 	},
 	{
 		"date": "2010-02-25",
@@ -65,7 +106,12 @@
 			"region": "DC"
 		},
 		"url": "https://www.facebook.com/events/302610670587/",
-		"bands": "Shadows and Ghosts"
+		"bands": [
+			{
+				"name": "Shadows and Ghosts",
+				"url": "https://myspace.com/shadowsandghosts"
+			}
+		]
 	},
 	{
 		"date": "2010-06-07",
@@ -75,17 +121,27 @@
 			"region": "DC"
 		},
 		"url": "http://www.facebook.com/events/129525480392349/",
-		"bands": "Fall Catalogue"
+		"bands": [
+			{
+				"name": "Fall Catalogue",
+				"url": "https://myspace.com/fallcatalogue"
+			}
+		]
 	},
 	{
 		"date": "2010-09-27",
 		"venue": "IOTA",
 		"location": {
-			"locality": "Arlington, VA",
-			"region": "DC"
+			"locality": "Arlington",
+			"region": "VA"
 		},
 		"url": "http://www.last.fm/event/1675042",
-		"bands": "Six Gallery"
+		"bands": [
+			{
+				"name": "Six Gallery",
+				"url": "https://sixgallery.bandcamp.com/"
+			}
+		]
 	},
 	{
 		"date": "2011-01-29",
@@ -95,7 +151,16 @@
 			"region": "VA"
 		},
 		"url": "http://www.facebook.com/events/177558898946784/",
-		"bands": "Lobo Marino, Dave Watkins"
+		"bands": [
+			{
+				"name": "Lobo Marino",
+				"url": "http://www.lobomarinomusic.com/"
+			},
+			{
+				"name": "Dave Watkins",
+				"url": "http://www.davewatkinsmusic.com/"
+			}
+		]
 	},
 	{
 		"date": "2011-02-03",
@@ -105,7 +170,16 @@
 			"region": "PA"
 		},
 		"url": "http://www.facebook.com/events/133809370014333/",
-		"bands": "Bells Bells Bells, Acres of Diamonds"
+		"bands": [
+			{
+				"name": "Bells Bells Bells",
+				"url": "https://myspace.com/bellsbellsbells"
+			},
+			{
+				"name": "Acres of Diamonds",
+				"url": "https://acresofdiamonds.bandcamp.com/"
+			}
+		]
 	},
 	{
 		"date": "2011-04-13",
@@ -115,7 +189,16 @@
 			"region": "DC"
 		},
 		"url": "http://www.facebook.com/events/207087389317150/",
-		"bands": "Mittenfields, The Plums"
+		"bands": [
+			{
+				"name": "Mittenfields",
+				"url": "http://mittenfieldsmittenfields.com/"
+			},
+			{
+				"name": "The Plums",
+				"url": "http://www.myspace.com/plumsband"
+			}
+		]
 	},
 	{
 		"date": "2011-06-26",
@@ -125,7 +208,16 @@
 			"region": "DC"
 		},
 		"url": "http://www.last.fm/event/1934765",
-		"bands": "The End of the Ocean, Sunlight Ascending"
+		"bands": [
+			{
+				"name": "The End of the Ocean",
+				"url": "http://theendoftheocean.com/"
+			},
+			{
+				"name": "Sunlight Ascending",
+				"url": "https://sunlight-ascending.bandcamp.com/"
+			}
+		]
 	},
 	{
 		"date": "2011-06-27",
@@ -135,7 +227,20 @@
 			"region": "MD"
 		},
 		"url": "http://www.last.fm/event/1934769",
-		"bands": "The End of the Ocean, Sunlight Ascending, Until Sunrise"
+		"bands": [
+			{
+				"name": "The End of the Ocean",
+				"url": "http://theendoftheocean.com/"
+			},
+			{
+				"name": "Sunlight Ascending",
+				"url": "https://sunlight-ascending.bandcamp.com/"
+			},
+			{
+				"name": "Until Sunrise",
+				"url": "https://untilsunrise.bandcamp.com/"
+			}
+		]
 	},
 	{
 		"date": "2011-07-27",
@@ -145,17 +250,35 @@
 			"region": "DC"
 		},
 		"url": "http://www.facebook.com/events/127712017317703/",
-		"bands": "Teen Mom, Battle House"
+		"bands": [
+			{
+				"name": "Teen Mom",
+				"url": "http://teenmomdc.com/"
+			},
+			{
+				"name": "Battle House",
+				"url": "http://www.batlhaus.com/"
+			}
+		]
 	},
 	{
 		"date": "2011-10-28",
 		"venue": "IOTA",
 		"location": {
-			"locality": "Arlington, VA",
-			"region": "DC"
+			"locality": "Arlington",
+			"region": "VA"
 		},
 		"url": "http://www.facebook.com/events/290564657639169/",
-		"bands": "TONE, The Ascent of Everest"
+		"bands": [
+			{
+				"name": "TONE",
+				"url": "http://tone-dc.com/"
+			},
+			{
+				"name": "The Ascent of Everest",
+				"url": "https://www.facebook.com/theascentofeverest"
+			}
+		]
 	},
 	{
 		"date": "2012-01-19",
@@ -165,7 +288,16 @@
 			"region": "DC"
 		},
 		"url": "http://www.facebook.com/events/250181448367754/",
-		"bands": "Zvoov, Degollado"
+		"bands": [
+			{
+				"name": "Zvoov",
+				"url": "https://zvoov.bandcamp.com/"
+			},
+			{
+				"name": "Degollado",
+				"url": "https://degollado.bandcamp.com/"
+			}
+		]
 	},
 	{
 		"date": "2012-02-24",
@@ -175,7 +307,16 @@
 			"region": "DC"
 		},
 		"url": "http://www.facebook.com/events/210094305755386/",
-		"bands": "Justin Trawick Group, Tauk"
+		"bands": [
+			{
+				"name": "Justin Trawick Group",
+				"url": "http://www.justintrawick.com/"
+			},
+			{
+				"name": "Tauk",
+				"url": "http://www.taukband.com/"
+			}
+		]
 	},
 	{
 		"date": "2012-04-28",
@@ -185,7 +326,16 @@
 			"region": "DC"
 		},
 		"url": "http://www.facebook.com/events/286952451385114/",
-		"bands": "TONE, The Blue Letter"
+		"bands": [
+			{
+				"name": "TONE",
+				"url": "http://tone-dc.com/"
+			},
+			{
+				"name": "The Blue Letter",
+				"url": "https://www.facebook.com/theblueletter"
+			}
+		]
 	},
 	{
 		"date": "2012-07-31",
@@ -195,7 +345,16 @@
 			"region": "DC"
 		},
 		"url": "http://www.facebook.com/events/426952400681295/",
-		"bands": "The End of the Ocean, sansyou"
+		"bands": [
+			{
+				"name": "The End of the Ocean",
+				"url": "http://theendoftheocean.com/"
+			},
+			{
+				"name": "sansyou",
+				"url": "http://sansyoumusic.com/"
+			}
+		]
 	},
 	{
 		"date": "2012-10-10",
@@ -205,17 +364,35 @@
 			"region": "DC"
 		},
 		"url": "https://www.facebook.com/events/396734423725230/",
-		"bands": "Spikes Out, Port-Royal"
+		"bands": [
+			{
+				"name": "Spikes Out",
+				"url": "http://spikesout.com/"
+			},
+			{
+				"name": "Port-Royal",
+				"url": "http://www.port-royal.it/"
+			}
+		]
 	},
 	{
 		"date": "2012-11-08",
-		"venue": "Rock ’n’ Roll Hotel",
+		"venue": "Rock 'n' Roll Hotel",
 		"location": {
 			"locality": "Washington",
 			"region": "DC"
 		},
 		"url": "https://www.facebook.com/events/119895418158440/",
-		"bands": "Errors, The Twilight Sad"
+		"bands": [
+			{
+				"name": "Errors",
+				"url": "http://www.weareerrors.com/"
+			},
+			{
+				"name": "The Twilight Sad",
+				"url": "http://www.thetwilightsad.com/"
+			}
+		]
 	},
 	{
 		"date": "2015-05-16",
@@ -225,7 +402,20 @@
 			"region": "DC"
 		},
 		"url": "https://www.facebook.com/events/1075635229118848/",
-		"bands": "The Dealbreakers, ShowPony, A Troop of Echoes"
+		"bands": [
+			{
+				"name": "The Dealbreakers",
+				"url": "https://thedealbreakersnova.bandcamp.com/"
+			},
+			{
+				"name": "ShowPony",
+				"url": "http://www.showponyband.com/"
+			},
+			{
+				"name": "A Troop of Echoes",
+				"url": "http://atroopofechoes.com/"
+			}
+		]
 	},
 	{
 		"date": "2016-02-20",
@@ -235,6 +425,15 @@
 			"region": "DC"
 		},
 		"url": "https://www.facebook.com/events/599841410165172/",
-		"bands": "Time Columns, TONE"
+		"bands": [
+			{
+				"name": "Time Columns",
+				"url": "http://www.timecolumns.com/"
+			},
+			{
+				"name": "TONE",
+				"url": "http://tone-dc.com/"
+			}
+		]
 	}
 ]
