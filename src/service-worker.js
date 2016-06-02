@@ -22,7 +22,7 @@
 				'{% asset_path application.css %}',
 				'{% asset_path application.js %}',
 				'{% asset_path html.png %}',
-				'{% asset_path theorchid.png %}',
+				'{% asset_path theorchid-256x256.png %}',
 				'{% asset_path releases/beyond-the-vast-endless-sea-800.jpg %}',
 				'{% asset_path releases/new-mexico-ep-800.jpg %}',
 				'{% asset_path releases/shadowing-lull-ep-800.jpg %}'
