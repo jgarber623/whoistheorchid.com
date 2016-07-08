@@ -9,7 +9,7 @@
 }
 
 html {
-	background: #070707 image-url("html.png") no-repeat fixed 50% 0;
+	background: #101010 image-url("html.png") no-repeat fixed 50% 100%;
 	box-sizing: border-box;
 	-webkit-text-size-adjust: 100%;
 }
@@ -35,8 +35,8 @@ body {
 /* @group Links */
 
 	a {
-		color: #aa8b54;
 		background: none;
+		color: #aa8b54;
 		text-decoration: underline;
 
 		&:focus,

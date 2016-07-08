@@ -12,7 +12,7 @@
 	<meta name="apple-mobile-web-app-title" content="The Orchid">
 	<meta name="application-name" content="The Orchid">
 	<meta name="description" content="The Orchid is an instrumental post-rock band from Washington, DC.">
-	<meta name="theme-color" content="#070707">
+	<meta name="theme-color" content="#101010">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<meta name="twitter:card" content="summary">
@@ -29,17 +29,17 @@
 <body>
 
 	<div class="container">
-		<header class="global-header">
+		<header class="global-header" role="banner">
 			<h1>
 				<a href="/" rel="home">{% asset logo.svg %}</a>
 			</h1>
 		</header>
 
-		<main class="global-content">
+		<main class="global-content" role="main">
 			{{ content }}
 		</main>
 
-		<nav class="global-navigation">
+		<nav class="global-navigation" role="navigation">
 			<ul class="ui-list">
 				<li>
 					<a href="/" class="bordered-link" rel="home">
@@ -59,7 +59,7 @@
 			</ul>
 		</nav>
 
-		<footer class="global-footer h-card">
+		<footer class="global-footer h-card" role="contentinfo">
 			<p class="bio p-note"><a href="/" class="p-name u-url" rel="home">The Orchid</a> is an instrumental post-rock band from <span class="p-locality">Washington</span>, <abbr class="p-region" title="District of Columbia">DC</abbr>.</p>
 
 			<ul class="ui-list">

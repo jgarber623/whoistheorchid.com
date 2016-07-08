@@ -24,7 +24,7 @@
 	],
 	"display": "standalone",
 	"orientation": "portrait",
-	"background_color": "#070707",
-	"theme_color": "#070707",
+	"background_color": "#101010",
+	"theme_color": "#101010",
 	"lang": "en-US"
 }
