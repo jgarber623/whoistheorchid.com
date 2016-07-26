@@ -35,17 +35,8 @@
 			</h1>
 		</header>
 
-		<main class="global-content" role="main">
-			{{ content }}
-		</main>
-
 		<nav class="global-navigation" role="navigation">
 			<ul class="ui-list">
-				<li>
-					<a href="/" class="bordered-link" rel="home">
-						<span>Home</span>
-					</a>
-				</li>
 				<li>
 					<a href="/releases" class="bordered-link">
 						<span>Releases</span>
@@ -56,8 +47,17 @@
 						<span>Shows</span>
 					</a>
 				</li>
+				<li>
+					<a href="/biography" class="bordered-link">
+						<span><abbr data-suffix="graphy" title="Biography">Bio</abbr></span>
+					</a>
+				</li>
 			</ul>
 		</nav>
+
+		<main class="global-content" role="main">
+			{{ content }}
+		</main>
 
 		<footer class="global-footer h-card" role="contentinfo">
 			<p class="bio p-note"><a href="/" class="p-name u-url" rel="home">The Orchid</a> is an instrumental post-rock band from <span class="p-locality">Washington</span>, <abbr class="p-region" title="District of Columbia">DC</abbr>.</p>

@@ -23,6 +23,7 @@
 				'{% asset_path application.js %}',
 				'{% asset_path html.png %}',
 				'{% asset_path theorchid-256x256.png %}',
+				'{% asset_path releases/apogee-perigee-800.jpg %}',
 				'{% asset_path releases/beyond-the-vast-endless-sea-800.jpg %}',
 				'{% asset_path releases/new-mexico-ep-800.jpg %}',
 				'{% asset_path releases/shadowing-lull-ep-800.jpg %}'
@@ -31,10 +32,12 @@
 			return cache.addAll([
 				'/',
 				'/releases',
+				'/releases/apogee-perigee',
 				'/releases/beyond-the-vast-endless-sea',
 				'/releases/new-mexico-ep',
 				'/releases/shadowing-lull-ep',
-				'/shows'
+				'/shows',
+				'/biography'
 			]);
 		});
 	};

@@ -1,3 +1,11 @@
+$profiles: (
+	bandcamp: #629aa9,
+	twitter: #55acee,
+	facebook: #3b5998,
+	soundcloud: #f30,
+	vimeo: #1ab7ea
+);
+
 .global-footer {
 	color: rgba(#fff, 0.4);
 	text-align: center;
@@ -30,14 +38,6 @@
 				color: rgba(#fff, 0.45);
 			}
 		}
-
-		$profiles: (
-			bandcamp: #629aa9,
-			twitter: #55acee,
-			facebook: #3b5998,
-			soundcloud: #f30,
-			vimeo: #1ab7ea
-		);
 
 		@each $profile, $color in $profiles {
 			a[href*="#{$profile}"] {

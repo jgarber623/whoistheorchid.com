@@ -5,10 +5,10 @@ layout: application
 {% for release in site.categories.releases limit: 1 %}
 	{% capture album_artwork_path %}releases/{{ release.album_slug }}-800.jpg{% endcapture %}
 
-	<article class="release h-entry">
+	<article class="release article h-entry">
 		<h1 class="page-title p-name">{{ release.title }}</h1>
 
-		<div class="release-content e-content">
+		<div class="release-content article-content e-content">
 			<figure class="release-artwork">
 				<a href="{{ release.bandcamp_url }}" class="bordered-link">
 					<img src="{{ album_artwork_path | asset_path }}" alt="{{ release.album_title }} cover art">
