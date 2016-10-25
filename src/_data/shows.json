@@ -458,5 +458,20 @@
 				"url": "https://thegreatesthoax.bandcamp.com/"
 			}
 		]
+	},
+	{
+		"date": "2016-11-12",
+		"venue": "Cafe Nola",
+		"location": {
+			"locality": "Frederick",
+			"region": "MD"
+		},
+		"url": "https://www.facebook.com/events/1762585477337244/",
+		"bands": [
+			{
+				"name": "Time Columns",
+				"url": "http://www.timecolumns.com/"
+			}
+		]
 	}
 ]
