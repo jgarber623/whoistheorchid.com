@@ -12,7 +12,7 @@ title: Shows
 				<h2 class="p-name">
 					<time class="dt-start" datetime="{{ show.date }}">
 						{% if show.url | length %}
-							<a href="{{ show.show_url }}" class="u-url">{{ show.date | datetime_to_string }}</a>
+							<a href="{{ show.url }}" class="u-url">{{ show.date | datetime_to_string }}</a>
 						{% else %}
 							{{ show.date | datetime_to_string }}
 						{% endif %}
