@@ -28,7 +28,13 @@ title: Shows
 				{% if show.bands | length %}
 					<ul class="ui-list clearfix">
 						{% for band in show.bands %}
-							<li class="h-card"><a href="{{ band.url }}" class="p-name u-url">{{ band.name }}</a></li>
+							<li class="h-card">
+								{% if band.url | length %}
+									<a href="{{ band.url }}" class="p-name u-url">{{ band.name }}</a>
+								{% else %}
+									<span class="p-name">{{ band.name }}</span>
+								{% endif %}
+							</li>
 						{% endfor %}
 					</ul>
 				{% endif %}

@@ -8,16 +8,14 @@
 		},
 		"bands": [
 			{
-				"name": "Meow vs. Meow",
-				"url": "http://meowvsmeow.com/"
+				"name": "Meow vs. Meow"
 			},
 			{
 				"name": "The Chance",
 				"url": "https://www.facebook.com/thechancedc"
 			},
 			{
-				"name": "Flowers on the Razor Wire",
-				"url": "http://www.flowersontherazorwire.com/"
+				"name": "Flowers on the Razor Wire"
 			}
 		]
 	},
@@ -31,8 +29,7 @@
 		"url": "https://www.facebook.com/events/10153244853636085/",
 		"bands": [
 			{
-				"name": "Bellflur",
-				"url": "http://www.bellflur.com/"
+				"name": "Bellflur"
 			},
 			{
 				"name": "We Read Minds",
@@ -256,8 +253,7 @@
 				"url": "http://teenmomdc.com/"
 			},
 			{
-				"name": "Battle House",
-				"url": "http://www.batlhaus.com/"
+				"name": "Battle House"
 			}
 		]
 	},
@@ -366,8 +362,7 @@
 		"url": "https://www.facebook.com/events/396734423725230/",
 		"bands": [
 			{
-				"name": "Spikes Out",
-				"url": "http://spikesout.com/"
+				"name": "Spikes Out"
 			},
 			{
 				"name": "Port-Royal",
