@@ -1,8 +1,10 @@
 $profiles: (
 	bandcamp: #629aa9,
-	twitter: #55acee,
 	facebook: #3b5998,
+	itunes: #fff,
 	soundcloud: #f30,
+	spotify: #2ebd59,
+	twitter: #55acee,
 	vimeo: #1ab7ea
 );
 
@@ -21,12 +23,12 @@ $profiles: (
 	}
 
 	ul {
-		margin: 1.5rem 0;
+		margin: 1.25rem 0;
 	}
 
 	li {
 		display: inline-block;
-		margin: 0 0.25rem;
+		margin: 0.25rem;
 
 		a {
 			color: rgba(#fff, 0.4);
