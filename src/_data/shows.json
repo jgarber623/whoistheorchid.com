@@ -487,5 +487,20 @@
 				"url": "http://www.boatburning.com/"
 			}
 		]
+	},
+	{
+		"date": "2017-01-21",
+		"venue": "Logan Fringe Arts Space",
+		"location": {
+			"locality": "Washington",
+			"region": "DC"
+		},
+		"url": "https://www.facebook.com/events/1463139857034325/",
+		"bands": [
+			{
+				"name": "California Accent",
+				"url": "https://californiaaccent.bandcamp.com/"
+			}
+		]
 	}
 ]
