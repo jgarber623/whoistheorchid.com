@@ -39,7 +39,7 @@
 	},
 	{
 		"date": "2009-06-24",
-		"venue": "Artomatic",
+		"event": "Artomatic",
 		"location": {
 			"locality": "Washington",
 			"region": "DC"
@@ -490,6 +490,7 @@
 	},
 	{
 		"date": "2017-01-21",
+		"event": "Capital Fringe",
 		"venue": "Logan Fringe Arts Space",
 		"location": {
 			"locality": "Washington",
@@ -500,6 +501,76 @@
 			{
 				"name": "California Accent",
 				"url": "https://californiaaccent.bandcamp.com/"
+			}
+		]
+	},
+	{
+		"date": "2017-02-18",
+		"event": "Auditory Learning Experience : Cinematic",
+		"location": {
+			"locality": "Williamsport",
+			"region": "MD"
+		},
+		"url": "https://www.facebook.com/events/701877223309457/",
+		"bands": [
+			{
+				"name": "Asucré",
+				"url": "https://asucre.bandcamp.com/"
+			},
+			{
+				"name": "evolv",
+				"url": "https://evolv.bandcamp.com/"
+			},
+			{
+				"name": "BLK TAG",
+				"url": "http://blk_tag.adams-dress.com/"
+			},
+			{
+				"name": "smallhands",
+				"url": "https://smallhandsva.bandcamp.com/"
+			},
+			{
+				"name": "Dan Miñoza",
+				"url": "https://www.facebook.com/minozadan"
+			},
+			{
+				"name": "INSECT FACTORY",
+				"url": "https://insectfactory.bandcamp.com/"
+			},
+			{
+				"name": "James Wolf",
+				"url": "https://jwolf333.bandcamp.com/"
+			},
+			{
+				"name": "onewayness",
+				"url": "https://www.onewayness.com/"
+			},
+			{
+				"name": "Christopher Feltner",
+				"url": "https://christophersfeltner.bandcamp.com/"
+			},
+			{
+				"name": "Brendan Cooper (p.zorito)",
+				"url": "https://pzorito.bandcamp.com/"
+			},
+			{
+				"name": "Jason Shawn (dRed)",
+				"url": "https://dred.bandcamp.com/"
+			},
+			{
+				"name": "David Kresge (Goodnight Stars, Goodnight Air)",
+				"url": "https://www.facebook.com/davidkresge"
+			},
+			{
+				"name": "SPT",
+				"url": "https://www.facebook.com/seenplattetunnel"
+			},
+			{
+				"name": "Phoenix Auto Group"
+			},
+			{
+				"name": "Paul Cogle (PSC3)",
+				"url": "https://www.facebook.com/paul.cogle"
 			}
 		]
 	}

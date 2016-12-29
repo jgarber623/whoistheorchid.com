@@ -20,7 +20,12 @@ title: Shows
 				</h2>
 
 				<p class="p-location h-card">
-					<span class="p-name">{{ show.venue }}</span>,
+					{% if show.event | length %}
+						{{ show.event }},
+					{% endif %}
+					{% if show.venue | length %}
+						<span class="p-name">{{ show.venue }}</span>,
+					{% endif %}
 					<span class="p-locality">{{ show.location.locality }}</span>,
 					<span class="p-region">{{ show.location.region }}</span>
 				</p>
