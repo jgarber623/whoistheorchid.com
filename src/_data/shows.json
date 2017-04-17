@@ -514,20 +514,12 @@
 		"url": "https://www.facebook.com/events/701877223309457/",
 		"bands": [
 			{
-				"name": "Asucré",
-				"url": "https://asucre.bandcamp.com/"
-			},
-			{
-				"name": "evolv",
-				"url": "https://evolv.bandcamp.com/"
+				"name": "Paul Cogle (PSC3)",
+				"url": "https://www.facebook.com/paul.cogle"
 			},
 			{
 				"name": "BLK TAG",
 				"url": "http://blk_tag.adams-dress.com/"
-			},
-			{
-				"name": "smallhands",
-				"url": "https://smallhandsva.bandcamp.com/"
 			},
 			{
 				"name": "Dan Miñoza",
@@ -538,16 +530,8 @@
 				"url": "https://insectfactory.bandcamp.com/"
 			},
 			{
-				"name": "James Wolf",
-				"url": "https://jwolf333.bandcamp.com/"
-			},
-			{
 				"name": "onewayness",
 				"url": "https://www.onewayness.com/"
-			},
-			{
-				"name": "Christopher Feltner",
-				"url": "https://christophersfeltner.bandcamp.com/"
 			},
 			{
 				"name": "Brendan Cooper (p.zorito)",
@@ -558,19 +542,43 @@
 				"url": "https://dred.bandcamp.com/"
 			},
 			{
+				"name": "James Wolf",
+				"url": "https://jwolf333.bandcamp.com/"
+			},
+			{
+				"name": "Asucré",
+				"url": "https://asucre.bandcamp.com/"
+			},
+			{
+				"name": "Phoenix Auto Group"
+			},
+			{
 				"name": "David Kresge (Goodnight Stars, Goodnight Air)",
 				"url": "https://www.facebook.com/davidkresge"
+			},
+			{
+				"name": "evolv",
+				"url": "https://evolv.bandcamp.com/"
+			},
+			{
+				"name": "smallhands",
+				"url": "https://smallhandsva.bandcamp.com/"
+			},
+			{
+				"name": "Stag & Owl",
+				"url": "https://www.stagandowl.com/"
+			},
+			{
+				"name": "Cheshi",
+				"url": "https://cheshi.bandcamp.com/"
 			},
 			{
 				"name": "SPT",
 				"url": "https://www.facebook.com/seenplattetunnel"
 			},
 			{
-				"name": "Phoenix Auto Group"
-			},
-			{
-				"name": "Paul Cogle (PSC3)",
-				"url": "https://www.facebook.com/paul.cogle"
+				"name": "Christopher Feltner",
+				"url": "https://christophersfeltner.bandcamp.com/"
 			}
 		]
 	}
