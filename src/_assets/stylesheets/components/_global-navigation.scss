@@ -41,7 +41,7 @@
 		text-decoration: none;
 
 		@include breakpoint(24rem) {
-			&:after {
+			&::after {
 				content: attr(data-suffix);
 			}
 		}

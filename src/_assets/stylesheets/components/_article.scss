@@ -14,12 +14,12 @@
 	cite {
 		font-style: normal;
 
-		&:before {
+		&::before {
 			content: "“";
 		}
 
-		&:after {
-			content: "”"
+		&::after {
+			content: "”";
 		}
 	}
 
@@ -28,12 +28,12 @@
 		margin: 1.5rem 0 0 0;
 
 		p {
-			&:before {
+			&::before {
 				content: "“";
 			}
 
-			&:after {
-				content: "”"
+			&::after {
+				content: "”";
 			}
 		}
 

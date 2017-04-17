@@ -20,7 +20,7 @@
 	}
 
 	ul {
-		&:before {
+		&::before {
 			content: "w/";
 			float: left;
 			margin-right: 0.25rem;
@@ -30,13 +30,13 @@
 			float: left;
 			font-size: 0;
 
-			&:after {
+			&::after {
 				content: ",";
 				font-size: 1rem;
 				margin-right: 0.25rem;
 			}
 
-			&:last-child:after {
+			&:last-child::after {
 				content: "";
 				margin: 0;
 			}
