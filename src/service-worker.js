@@ -26,7 +26,9 @@
 				'{% asset_path releases/apogee-perigee-800.jpg %}',
 				'{% asset_path releases/beyond-the-vast-endless-sea-800.jpg %}',
 				'{% asset_path releases/new-mexico-ep-800.jpg %}',
-				'{% asset_path releases/shadowing-lull-ep-800.jpg %}'
+				'{% asset_path releases/shadowing-lull-ep-800.jpg %}',
+				'{% asset_path compilations/code-red-an-international-compilation-to-benefit-the-aclu-800.jpg %}',
+				'{% asset_path compilations/we-stand-an-international-compilation-in-support-of-planned-parenthood-800.jpg %}'
 			]);
 
 			return cache.addAll([
