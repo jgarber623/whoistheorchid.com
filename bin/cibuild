@@ -1,6 +1,0 @@
-#!/usr/bin/env bash
-
-set -e
-
-bundle exec jekyll build --config config/jekyll.yml
-bundle exec htmlproofer ./public --url-swap "releases/(?<slug>[a-z0-9\-]*$):releases/\k<slug>.html"

@@ -8,7 +8,7 @@ source 'https://rubygems.org' do
 
   group :development do
     gem 'capistrano', '~> 2.15'
-    gem 'foreman', '~> 0.84.0'
+    gem 'rake', '~> 12.0'
   end
 
   group :test do
