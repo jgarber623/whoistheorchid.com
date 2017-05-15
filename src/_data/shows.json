@@ -580,5 +580,20 @@
 				"url": "https://christophersfeltner.bandcamp.com/"
 			}
 		]
-	}
+	},
+	{
+		"date": "2017-06-05",
+		"venue": "Galaxy Hut",
+		"location": {
+			"locality": "Arlington",
+			"region": "VA"
+		},
+		"url": "https://www.facebook.com/events/1860457464204194/",
+		"bands": [
+			{
+				"name": "Barrows",
+				"url": "http://barrowstheband.com/"
+			}
+		]
+	},
 ]
