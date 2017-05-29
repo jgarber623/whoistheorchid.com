@@ -1,6 +1,3 @@
-Dir.glob('lib/tasks/*.rake').each { |file| load file }
+Dir.glob('lib/rake/tasks/*.rake').each { |r| import r }
 
-task :default do
-  Rake::Task['jekyll:build'].invoke
-  Rake::Task['htmlproofer'].invoke
-end
+task default: ['jekyll:build', 'htmlproofer']
