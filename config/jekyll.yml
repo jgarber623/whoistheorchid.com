@@ -6,13 +6,10 @@ gems:
   - jekyll-assets
   - sass-globbing
 
-host: 0.0.0.0
-
 permalink: /:categories/:title
 
 defaults:
-  -
-    scope:
+  - scope:
       path: releases
       type: posts
     values:
