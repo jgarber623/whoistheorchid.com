@@ -11,7 +11,7 @@ title: Shows
 			<div class="show h-event">
 				<h2 class="p-name">
 					<time class="dt-start" datetime="{{ show.date }}">
-						{% if show.url | length %}
+						{% if show.url %}
 							<a href="{{ show.url }}" class="u-url">{{ show.date | datetime_to_string }}</a>
 						{% else %}
 							{{ show.date | datetime_to_string }}
@@ -20,24 +20,24 @@ title: Shows
 				</h2>
 
 				<p class="p-location h-card">
-					{% if show.event | length %}
-						{{ show.event }},
+					{% if show.name %}
+						{{ show.name }},
 					{% endif %}
-					{% if show.venue | length %}
-						<span class="p-name">{{ show.venue }}</span>,
+					{% if show.location.name %}
+						<span class="p-name">{{ show.location.name }}</span>,
 					{% endif %}
 					<span class="p-locality">{{ show.location.locality }}</span>,
 					<span class="p-region">{{ show.location.region }}</span>
 				</p>
 
-				{% if show.bands | length %}
+				{% if show.artists %}
 					<ul class="ui-list clearfix">
-						{% for band in show.bands %}
+						{% for artist in show.artists %}
 							<li class="h-card">
-								{% if band.url | length %}
-									<a href="{{ band.url }}" class="p-name u-url">{{ band.name }}</a>
+								{% if artist.url %}
+									<a href="{{ artist.url }}" class="p-name u-url">{{ artist.name }}</a>
 								{% else %}
-									<span class="p-name">{{ band.name }}</span>
+									<span class="p-name">{{ artist.name }}</span>
 								{% endif %}
 							</li>
 						{% endfor %}
