@@ -121,7 +121,7 @@
   url: 'https://www.facebook.com/events/1113933371965876'
   artists:
     - name: Mittenfields
-      url: 'http://mittenfieldsmittenfields.com'
+      url: 'https://mittenfields.bandcamp.com'
     - name: The Plums
       url: 'http://www.myspace.com/plumsband'
 
@@ -196,7 +196,7 @@
     - name: Justin Trawick Group
       url: 'http://www.justintrawick.com'
     - name: Tauk
-      url: 'http://www.taukband.com'
+      url: 'https://tauk.bandcamp.com'
 
 - date: 2012-04-28
   location:
@@ -350,7 +350,7 @@
     - name: smallhands
       url: 'https://smallhandsva.bandcamp.com'
     - name: Stag & Owl
-      url: 'https://www.stagandowl.com'
+      url: 'https://www.facebook.com/stagandowl'
     - name: Cheshi
       url: 'https://cheshi.bandcamp.com'
     - name: SPT
