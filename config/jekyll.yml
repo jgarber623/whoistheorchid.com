@@ -1,10 +1,12 @@
 source: ./src
 destination: ./public
 
-gems:
+plugins:
   - breakpoint
   - jekyll-assets
   - sass-globbing
+
+host: 0.0.0.0
 
 permalink: /:categories/:title
 
