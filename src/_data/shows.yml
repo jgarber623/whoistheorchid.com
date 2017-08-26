@@ -14,7 +14,7 @@
     name: DC9
     locality: Washington
     region: DC
-  url: 'https://www.facebook.com/events/10153244853636085/'
+  url: 'https://www.facebook.com/events/10153244853636085'
   artists:
     - name: Bellflur
     - name: We Read Minds
@@ -25,46 +25,46 @@
   location:
     locality: Washington
     region: DC
-  url: 'https://www.facebook.com/events/10153857711095550/'
+  url: 'https://www.facebook.com/events/10153857711095550'
 
 - date: 2009-09-15
   location:
     name: The Red & The Black
     locality: Washington
     region: DC
-  url: 'https://www.facebook.com/events/10153149674060399/'
+  url: 'https://www.facebook.com/events/10153149674060399'
   artists:
       - name: The Modern Society
         url: 'https://myspace.com/themodernsociety'
       - name: Sarah Pray
-        url: 'http://www.sarahpraymusic.com/'
+        url: 'http://www.sarahpraymusic.com'
 
 - date: 2009-10-22
   location:
     name: DC9
     locality: Washington
     region: DC
-  url: 'https://www.facebook.com/events/10153425667396756/'
+  url: 'https://www.facebook.com/events/10153425667396756'
   artists:
     - name: Lost In The Trees
-      url: 'http://www.lostinthetrees.com/'
+      url: 'http://www.lostinthetrees.com'
 
 - date: 2009-11-17
   location:
     name: IOTA
     locality: Arlington
     region: VA
-  url: 'https://www.facebook.com/events/10153729098913943/'
+  url: 'https://www.facebook.com/events/10153729098913943'
   artists:
     - name: El Ten Eleven
-      url: 'http://www.elteneleven.com/'
+      url: 'http://www.elteneleven.com'
 
 - date: 2010-02-25
   location:
     name: The Red & The Black
     locality: Washington
     region: DC
-  url: 'https://www.facebook.com/events/10152753020665588/'
+  url: 'https://www.facebook.com/events/10152753020665588'
   artists:
     - name: Shadows and Ghosts
       url: 'https://myspace.com/shadowsandghosts'
@@ -74,7 +74,7 @@
     name: Velvet Lounge
     locality: Washington
     region: DC
-  url: 'https://www.facebook.com/events/956194604392095/'
+  url: 'https://www.facebook.com/events/956194604392095'
   artists:
     - name: Fall Catalogue
       url: 'https://myspace.com/fallcatalogue'
@@ -84,44 +84,44 @@
     name: IOTA
     locality: Arlington
     region: VA
-  url: 'https://www.facebook.com/events/1053172734710617/'
+  url: 'https://www.facebook.com/events/1053172734710617'
   artists:
     - name: Six Gallery
-      url: 'https://sixgallery.bandcamp.com/'
+      url: 'https://sixgallery.bandcamp.com'
 
 - date: 2011-01-29
   location:
     name: Gibson's Grille
     locality: Richmond
     region: VA
-  url: 'https://www.facebook.com/events/888913237813766/'
+  url: 'https://www.facebook.com/events/888913237813766'
   artists:
     - name: Lobo Marino
-      url: 'http://www.lobomarinomusic.com/'
+      url: 'http://www.lobomarinomusic.com'
     - name: Dave Watkins
-      url: 'http://www.davewatkinsmusic.com/'
+      url: 'http://www.davewatkinsmusic.com'
 
 - date: 2011-02-03
   location:
     name: Kung Fu Necktie
     locality: Philadelphia
     region: PA
-  url: 'https://www.facebook.com/events/947689738614902/'
+  url: 'https://www.facebook.com/events/947689738614902'
   artists:
     - name: Bells Bells Bells
       url: 'https://myspace.com/bellsbellsbells'
     - name: Acres of Diamonds
-      url: 'https://acresofdiamonds.bandcamp.com/'
+      url: 'https://acresofdiamonds.bandcamp.com'
 
 - date: 2011-04-13
   location:
     name: DC9
     locality: Washington
     region: DC
-  url: 'https://www.facebook.com/events/1113933371965876/'
+  url: 'https://www.facebook.com/events/1113933371965876'
   artists:
     - name: Mittenfields
-      url: 'http://mittenfieldsmittenfields.com/'
+      url: 'http://mittenfieldsmittenfields.com'
     - name: The Plums
       url: 'http://www.myspace.com/plumsband'
 
@@ -130,36 +130,36 @@
     name: Velvet Lounge
     locality: Washington
     region: DC
-  url: 'https://www.facebook.com/events/1153275551365180/'
+  url: 'https://www.facebook.com/events/1153275551365180'
   artists:
     - name: The End of the Ocean
-      url: 'http://theendoftheocean.com/'
+      url: 'http://theendoftheocean.com'
     - name: Sunlight Ascending
-      url: 'https://sunlight-ascending.bandcamp.com/'
+      url: 'https://sunlight-ascending.bandcamp.com'
 
 - date: 2011-06-27
   location:
     name: Charm City Art Space
     locality: Baltimore
     region: MD
-  url: 'https://www.facebook.com/events/1076135535733864/'
+  url: 'https://www.facebook.com/events/1076135535733864'
   artists:
     - name: The End of the Ocean
-      url: 'http://theendoftheocean.com/'
+      url: 'http://theendoftheocean.com'
     - name: Sunlight Ascending
-      url: 'https://sunlight-ascending.bandcamp.com/'
+      url: 'https://sunlight-ascending.bandcamp.com'
     - name: Until Sunrise
-      url: 'https://untilsunrise.bandcamp.com/'
+      url: 'https://untilsunrise.bandcamp.com'
 
 - date: 2011-07-27
   location:
     name: Velvet Lounge
     locality: Washington
     region: DC
-  url: 'https://www.facebook.com/events/820771184678446/'
+  url: 'https://www.facebook.com/events/820771184678446'
   artists:
     - name: Teen Mom"
-      url: 'http://teenmomdc.com/'
+      url: 'http://teenmomdc.com'
     - name: Battle House
 
 - date: 2011-10-28
@@ -167,10 +167,10 @@
     name: IOTA
     locality: Arlington
     region: VA
-  url: 'https://www.facebook.com/events/1023019594393668/'
+  url: 'https://www.facebook.com/events/1023019594393668'
   artists:
     - name: TONE
-      url: 'http://tone-dc.com/'
+      url: 'http://tone-dc.com'
     - name: The Ascent of Everest
       url: 'https://www.facebook.com/theascentofeverest'
 
@@ -179,34 +179,34 @@
     name: Velvet Lounge
     locality: Washington
     region: DC
-  url: 'https://www.facebook.com/events/660925060674461/'
+  url: 'https://www.facebook.com/events/660925060674461'
   artists:
     - name: Zvoov
-      url: 'https://zvoov.bandcamp.com/'
+      url: 'https://zvoov.bandcamp.com'
     - name: Degollado
-      url: 'https://degollado.bandcamp.com/'
+      url: 'https://degollado.bandcamp.com'
 
 - date: 2012-02-24
   location:
     name: Black Cat
     locality: Washington
     region: DC
-  url: 'https://www.facebook.com/events/763510217080456/'
+  url: 'https://www.facebook.com/events/763510217080456'
   artists:
     - name: Justin Trawick Group
-      url: 'http://www.justintrawick.com/'
+      url: 'http://www.justintrawick.com'
     - name: Tauk
-      url: 'http://www.taukband.com/'
+      url: 'http://www.taukband.com'
 
 - date: 2012-04-28
   location:
     name: Velvet Lounge
     locality: Washington
     region: DC
-  url: 'https://www.facebook.com/events/839928279420859/'
+  url: 'https://www.facebook.com/events/839928279420859'
   artists:
     - name: TONE
-      url: 'http://tone-dc.com/'
+      url: 'http://tone-dc.com'
     - name: The Blue Letter
       url: 'https://www.facebook.com/theblueletter'
 
@@ -215,97 +215,97 @@
     name: The Red Palace
     locality: Washington
     region: DC
-  url: 'https://www.facebook.com/events/426952400681295/'
+  url: 'https://www.facebook.com/events/426952400681295'
   artists:
     - name: The End of the Ocean
-      url: 'http://theendoftheocean.com/'
+      url: 'http://theendoftheocean.com'
     - name: sansyou
-      url: 'http://sansyoumusic.com/'
+      url: 'http://sansyoumusic.com'
 
 - date: 2012-10-10
   location:
     name: Velvet Lounge
     locality: Washington
     region: DC
-  url: 'https://www.facebook.com/events/396734423725230/'
+  url: 'https://www.facebook.com/events/396734423725230'
   artists:
     - name: Spikes Out
     - name: Port-Royal
-      url: 'http://www.port-royal.it/'
+      url: 'http://www.port-royal.it'
 
 - date: 2012-11-08
   location:
     name: Rock & Roll Hotel
     locality: Washington
     region: DC
-  url: 'https://www.facebook.com/events/119895418158440/'
+  url: 'https://www.facebook.com/events/119895418158440'
   artists:
     - name: Errors
-      url: 'http://www.weareerrors.com/'
+      url: 'http://www.weareerrors.com'
     - name: The Twilight Sad
-      url: 'http://www.thetwilightsad.com/'
+      url: 'http://www.thetwilightsad.com'
 
 - date: 2015-05-16
   location:
     name: Velvet Lounge
     locality: Washington
     region: DC
-  url: 'https://www.facebook.com/events/1075635229118848/'
+  url: 'https://www.facebook.com/events/1075635229118848'
   artists:
     - name: The Dealbreakers
-      url: 'https://thedealbreakersnova.bandcamp.com/'
+      url: 'https://thedealbreakersnova.bandcamp.com'
     - name: ShowPony
-      url: 'http://www.showponyband.com/'
+      url: 'http://www.showponyband.com'
     - name: A Troop of Echoes
-      url: 'http://atroopofechoes.com/'
+      url: 'http://atroopofechoes.com'
 
 - date: 2016-02-20
   location:
     name: Velvet Lounge
     locality: Washington
     region: DC
-  url: 'https://www.facebook.com/events/599841410165172/'
+  url: 'https://www.facebook.com/events/599841410165172'
   artists:
     - name: Time Columns
-      url: 'http://www.timecolumns.com/'
+      url: 'http://www.timecolumns.com'
     - name: TONE
-      url: 'http://tone-dc.com/'
+      url: 'http://tone-dc.com'
 
 - date: 2016-06-01
   location:
     name: Velvet Lounge
     locality: Washington
     region: DC
-  url: 'https://www.facebook.com/events/1720347458237118/'
+  url: 'https://www.facebook.com/events/1720347458237118'
   artists:
     - name: Fine, Fine
-      url: 'https://finefine.bandcamp.com/'
+      url: 'https://finefine.bandcamp.com'
     - name: Shy, Low
-      url: 'http://shylowmusic.com/'
+      url: 'http://shylowmusic.com'
     - name: The Greatest Hoax
-      url: 'https://thegreatesthoax.bandcamp.com/'
+      url: 'https://thegreatesthoax.bandcamp.com'
 
 - date: 2016-11-12
   location:
     name: Cafe Nola
     locality: Frederick
     region: MD
-  url: 'https://www.facebook.com/events/1762585477337244/'
+  url: 'https://www.facebook.com/events/1762585477337244'
   artists:
     - name: Time Columns
-      url: 'http://www.timecolumns.com/'
+      url: 'http://www.timecolumns.com'
 
 - date: 2016-12-08
   location:
     name: Rock & Roll Hotel
     locality: Washington
     region: DC
-  url: 'https://www.facebook.com/events/1135001993262257/'
+  url: 'https://www.facebook.com/events/1135001993262257'
   artists:
     - name: TONE
-      url: 'http://tone-dc.com/'
+      url: 'http://tone-dc.com'
     - name: Boat Burning
-      url: 'http://www.boatburning.com/'
+      url: 'http://www.boatburning.com'
 
 - date: 2017-01-21
   name: Capital Fringe
@@ -313,10 +313,10 @@
     name: Logan Fringe Arts Space
     locality: Washington
     region: DC
-  url: 'https://www.facebook.com/events/1463139857034325/'
+  url: 'https://www.facebook.com/events/1463139857034325'
   artists:
     - name: California Accent
-      url: 'https://californiaaccent.bandcamp.com/'
+      url: 'https://californiaaccent.bandcamp.com'
 
 - date: 2017-02-18
   name: 'Auditory Learning Experience : Cinematic'
@@ -327,46 +327,46 @@
     - name: Paul Cogle (PSC3)
       url: 'https://www.facebook.com/paul.cogle'
     - name: BLK TAG
-      url: 'http://blk_tag.adams-dress.com/'
+      url: 'http://blk_tag.adams-dress.com'
     - name: Dan Miñoza
       url: 'https://www.facebook.com/minoza.music'
     - name: INSECT FACTORY
-      url: 'https://insectfactory.bandcamp.com/'
+      url: 'https://insectfactory.bandcamp.com'
     - name: onewayness
-      url: 'https://www.onewayness.com/'
+      url: 'https://www.onewayness.com'
     - name: Brendan Cooper (p.zorito)
-      url: 'https://pzorito.bandcamp.com/'
+      url: 'https://pzorito.bandcamp.com'
     - name: Jason Shawn (dRed)
-      url: 'https://dred.bandcamp.com/'
+      url: 'https://dred.bandcamp.com'
     - name: James Wolf
-      url: 'https://jwolf333.bandcamp.com/'
+      url: 'https://jwolf333.bandcamp.com'
     - name: Asucré
-      url: 'https://asucre.bandcamp.com/'
+      url: 'https://asucre.bandcamp.com'
     - name: Phoenix Auto Group
     - name: David Kresge (Goodnight Stars, Goodnight Air)
       url: 'https://www.facebook.com/davidkresge'
     - name: evolv
-      url: 'https://evolv.bandcamp.com/'
+      url: 'https://evolv.bandcamp.com'
     - name: smallhands
-      url: 'https://smallhandsva.bandcamp.com/'
+      url: 'https://smallhandsva.bandcamp.com'
     - name: Stag & Owl
-      url: 'https://www.stagandowl.com/'
+      url: 'https://www.stagandowl.com'
     - name: Cheshi
-      url: 'https://cheshi.bandcamp.com/'
+      url: 'https://cheshi.bandcamp.com'
     - name: SPT
       url: 'https://www.facebook.com/seenplattetunnel'
     - name: Christopher Feltner
-      url: 'https://christophersfeltner.bandcamp.com/'
+      url: 'https://christophersfeltner.bandcamp.com'
 
 - date: 2017-06-05
   location:
     name: Galaxy Hut
     locality: Arlington
     region: VA
-  url: 'https://www.facebook.com/events/1860457464204194/'
+  url: 'https://www.facebook.com/events/1860457464204194'
   artists:
     - name: Barrows
-      url: 'http://barrowstheband.com/'
+      url: 'http://barrowstheband.com'
 
 - date: 2017-10-14
   name: Cognitive Frisson
@@ -374,13 +374,13 @@
     name: Dharma Studio
     locality: Winchester
     region: VA
-  url: 'https://www.facebook.com/events/111397642864725/'
+  url: 'https://www.facebook.com/events/111397642864725'
   artists:
     - name: Cheshi
-      url: 'https://cheshi.bandcamp.com/'
+      url: 'https://cheshi.bandcamp.com'
     - name: evolv
-      url: 'https://evolv.bandcamp.com/'
+      url: 'https://evolv.bandcamp.com'
     - name: Guillermo Pizarro
-      url: 'https://guillermopizarro.bandcamp.com/'
+      url: 'https://guillermopizarro.bandcamp.com'
     - name: Colin Phils
-      url: 'https://colinphils.bandcamp.com/'
+      url: 'https://colinphils.bandcamp.com'
