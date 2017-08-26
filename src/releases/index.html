@@ -7,15 +7,15 @@ title: Releases
 	<h1 class="page-title">Releases</h1>
 
 	<ol class="releases-list ui-list clearfix" reversed>
-		{% for release in site.categories.releases %}
-			{% capture album_artwork_path %}releases/{{ release.album_slug }}-800.jpg{% endcapture %}
+		{% for release in site.categories.releases -%}
+			{% capture album_artwork_path -%}releases/{{ release.album_slug }}-800.jpg{% endcapture -%}
 
 			<li>
 				<a href="{{ release.url }}" class="bordered-link">
 					<img src="{{ album_artwork_path | asset_path }}" alt="{{ release.album_title }} cover art">
 				</a>
 			</li>
-		{% endfor %}
+		{% endfor -%}
 	</ol>
 </section>
 
@@ -23,14 +23,14 @@ title: Releases
 	<h1 class="page-title">Compilations</h1>
 
 	<ol class="releases-list ui-list clearfix" reversed>
-		{% for compilation in site.data.compilations reversed %}
+		{% for compilation in site.data.compilations reversed -%}
 			<li>
-				{% capture album_artwork_path %}compilations/{{ compilation.slug }}-800.jpg{% endcapture %}
+				{% capture album_artwork_path -%}compilations/{{ compilation.slug }}-800.jpg{% endcapture -%}
 
 				<a href="{{ compilation.url }}" class="bordered-link">
 					<img src="{{ album_artwork_path | asset_path }}" alt="{{ compilation.title }} cover art">
 				</a>
 			</li>
-		{% endfor %}
+		{% endfor -%}
 	</ol>
 </section>

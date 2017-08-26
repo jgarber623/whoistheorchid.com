@@ -3,21 +3,27 @@
 <head>
 	<meta charset="utf-8">
 
-	{% capture page_title %}The Orchid — {% if page.title %}{{ page.title }}{% else %}an instrumental post-rock band from Washington, DC{% endif %}{% endcapture %}
+	{% capture page_title -%}
+		{%- if page.title -%}
+			{{ page.title }} — {{ site.title }}
+		{%- else -%}
+			{{ site.title }} — an instrumental post-rock band from Washington, DC
+		{%- endif -%}
+	{% endcapture -%}
 
 	<title>{{ page_title }}</title>
 
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-status-bar-style" content="black">
-	<meta name="apple-mobile-web-app-title" content="The Orchid">
-	<meta name="application-name" content="The Orchid">
-	<meta name="description" content="The Orchid is an instrumental post-rock band from Washington, DC.">
+	<meta name="apple-mobile-web-app-title" content="{{ site.title }}">
+	<meta name="application-name" content="{{ site.title }}">
+	<meta name="description" content="{{ site.description }}">
 	<meta name="theme-color" content="#101010">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<meta name="twitter:card" content="summary">
 	<meta name="twitter:site" content="@theorchid">
-	<meta property="og:description" content="The Orchid is an instrumental post-rock band from Washington, DC.">
+	<meta property="og:description" content="{{ site.description }}">
 	<meta property="og:image" content="https://whoistheorchid.com{% asset_path theorchid-256x256.png %}">
 	<meta property="og:title" content="{{ page_title }}">
 
