@@ -367,3 +367,20 @@
   artists:
     - name: Barrows
       url: 'http://barrowstheband.com/'
+
+- date: 2017-10-14
+  name: Cognitive Frisson
+  location:
+    name: Dharma Studio
+    locality: Winchester
+    region: VA
+  url: 'https://www.facebook.com/events/111397642864725/'
+  artists:
+    - name: Cheshi
+      url: 'https://cheshi.bandcamp.com/'
+    - name: evolv
+      url: 'https://evolv.bandcamp.com/'
+    - name: Guillermo Pizarro
+      url: 'https://guillermopizarro.bandcamp.com/'
+    - name: Colin Phils
+      url: 'https://colinphils.bandcamp.com/'
