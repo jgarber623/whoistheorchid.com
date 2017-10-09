@@ -257,7 +257,7 @@
     - name: ShowPony
       url: 'http://www.showponyband.com'
     - name: A Troop of Echoes
-      url: 'http://atroopofechoes.com'
+      url: 'https://atroopofechoes.com'
 
 - date: 2016-02-20
   location:
