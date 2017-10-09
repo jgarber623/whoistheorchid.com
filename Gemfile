@@ -7,7 +7,9 @@ source 'https://rubygems.org' do
   gem 'sass-globbing', '~> 1.1', '>= 1.1.5'
 
   group :development do
-    gem 'capistrano', '~> 2.15', '>= 2.15.9'
+    gem 'capistrano', '~> 3.9', '>= 3.9.1'
+    gem 'capistrano-bundler', '~> 1.3'
+    gem 'capistrano-chruby', '~> 0.1.2'
     gem 'rake', '~> 12.1'
   end
 
