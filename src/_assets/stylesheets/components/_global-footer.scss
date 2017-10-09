@@ -42,7 +42,7 @@ $profiles: (
 		}
 
 		@each $profile, $color in $profiles {
-			a[href*="#{$profile}"] {
+			[href*="#{$profile}"] {
 				&:focus,
 				&:hover {
 					color: $color;
