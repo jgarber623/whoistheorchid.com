@@ -1,6 +1,8 @@
 require 'html-proofer'
 
-desc 'Test the site with html-proofer'
-task :htmlproofer do
+desc 'Test the site with sass-lint and html-proofer'
+task :test do
+  sh 'sass-lint -v -q'
+
   HTMLProofer.check_directory('./public', assume_extension: true).run
 end
