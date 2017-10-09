@@ -3,6 +3,7 @@
 Website for Washington, DC, instrumental post-rock band The Orchid. Learn more about us at [our website](https://whoistheorchid.com).
 
 [![Build Status](https://img.shields.io/travis/jgarber623/whoistheorchid.com/master.svg?label=build%20status)](https://travis-ci.org/jgarber623/whoistheorchid.com)
+[![Known Vulnerabilities](https://snyk.io/test/github/jgarber623/whoistheorchid.com/badge.svg)](https://snyk.io/test/github/jgarber623/whoistheorchid.com)
 
 ## License
 
