@@ -1,9 +1,7 @@
 module Jekyll
   module DatetimeToStringFilter
     def datetime_to_string(input)
-      datetime = time(input)
-
-      datetime.strftime("%B #{ordinalize datetime.strftime("%-d")}, %Y")
+      input.strftime("%B #{ordinalize input.strftime("%-d")}, %Y")
     end
 
     def ordinalize(input)
