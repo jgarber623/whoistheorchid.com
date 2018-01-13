@@ -24,20 +24,20 @@
 	<meta name="twitter:card" content="summary">
 	<meta name="twitter:site" content="@theorchid">
 	<meta property="og:description" content="{{ site.description }}">
-	<meta property="og:image" content="https://whoistheorchid.com{% asset_path theorchid-256x256.png %}">
+	<meta property="og:image" content="https://whoistheorchid.com{% asset theorchid-256x256.png @path %}">
 	<meta property="og:title" content="{{ page_title }}">
 
-	<link rel="apple-touch-icon" href="{% asset_path theorchid-256x256.png %}">
+	<link rel="apple-touch-icon" href="{% asset theorchid-256x256.png @path %}">
 	<link rel="manifest" href="/manifest.json">
-	<link rel="shortcut icon" href="{% asset_path theorchid-256x256.png %}">
-	<link rel="stylesheet" href="{% asset_path application.css %}">
+	<link rel="shortcut icon" href="{% asset theorchid-256x256.png @path %}">
+	{% asset application.css !type %}
 </head>
 <body>
 
 	<div class="container">
 		<header class="global-header" role="banner">
 			<h1>
-				<a href="/" rel="home">{% asset logo.svg %}</a>
+				<a href="/" rel="home">{% asset logo.svg @inline %}</a>
 			</h1>
 		</header>
 
@@ -69,13 +69,13 @@
 			<p class="bio p-note"><a href="/" class="p-name u-url" rel="home">The Orchid</a> is an instrumental post-rock band from <span class="p-locality">Washington</span>, <abbr class="p-region" title="District of Columbia">DC</abbr>.</p>
 
 			<ul class="ui-list">
-				<li><a href="https://theorchid.bandcamp.com" rel="me">{% asset icons/bandcamp.svg %}</a></li>
-				<li><a href="https://twitter.com/theorchid" rel="me">{% asset icons/twitter.svg %}</a></li>
-				<li><a href="https://www.facebook.com/whoistheorchid" rel="me">{% asset icons/facebook.svg %}</a></li>
-				<li><a href="https://itunes.apple.com/us/artist/the-orchid/id77784209" rel="me">{% asset icons/apple-music.svg %}</a></li>
-				<li><a href="https://open.spotify.com/artist/2n128iwOn5uLS8568XNRCQ" rel="me">{% asset icons/spotify.svg %}</a></li>
-				<li><a href="https://soundcloud.com/whoistheorchid" rel="me">{% asset icons/soundcloud.svg %}</a></li>
-				<li><a href="https://vimeo.com/whoistheorchid" rel="me">{% asset icons/vimeo.svg %}</a></li>
+				<li><a href="https://theorchid.bandcamp.com" rel="me">{% asset icons/bandcamp.svg @inline %}</a></li>
+				<li><a href="https://twitter.com/theorchid" rel="me">{% asset icons/twitter.svg @inline %}</a></li>
+				<li><a href="https://www.facebook.com/whoistheorchid" rel="me">{% asset icons/facebook.svg @inline %}</a></li>
+				<li><a href="https://itunes.apple.com/us/artist/the-orchid/id77784209" rel="me">{% asset icons/apple-music.svg @inline %}</a></li>
+				<li><a href="https://open.spotify.com/artist/2n128iwOn5uLS8568XNRCQ" rel="me">{% asset icons/spotify.svg @inline %}</a></li>
+				<li><a href="https://soundcloud.com/whoistheorchid" rel="me">{% asset icons/soundcloud.svg @inline %}</a></li>
+				<li><a href="https://vimeo.com/whoistheorchid" rel="me">{% asset icons/vimeo.svg @inline %}</a></li>
 			</ul>
 
 			<p>Correspondence: <a href="mailto:booking&#064;whoistheorchid&#46;com" class="u-email">booking&#064;whoistheorchid&#46;com</a></p>
@@ -91,15 +91,15 @@
 		}
 
 		if (document.querySelector) {
-			loadJS('{% asset_path application.js %}');
+			loadJS('{% asset application.js @path %}');
 		}
 
 		if (navigator.serviceWorker) {
-			// navigator.serviceWorker.register('/service-worker.js');
+			navigator.serviceWorker.register('/service-worker.js');
 		}
 
 		if (navigator.standalone) {
-			loadJS('{% asset_path standalone.js %}');
+			loadJS('{% asset standalone.js @path %}');
 		}
 	</script>
 

@@ -7,17 +7,17 @@
 	"start_url": "/",
 	"icons": [
 		{
-			"src": "{% asset_path theorchid-256x256.png %}",
+			"src": "{% asset theorchid-256x256.png @path %}",
 			"sizes": "256x256",
 			"type": "image/png"
 		},
 		{
-			"src": "{% asset_path theorchid-384x384.png %}",
+			"src": "{% asset theorchid-384x384.png @path %}",
 			"sizes": "384x384",
 			"type": "image/png"
 		},
 		{
-			"src": "{% asset_path theorchid-512x512.png %}",
+			"src": "{% asset theorchid-512x512.png @path %}",
 			"sizes": "512x512",
 			"type": "image/png"
 		}

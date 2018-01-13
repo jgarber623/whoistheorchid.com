@@ -1,11 +1,6 @@
 source: ./src
 destination: ./public
 
-plugins:
-  - breakpoint
-  - jekyll-assets
-  - sass-globbing
-
 host: 0.0.0.0
 
 title: The Orchid
@@ -19,3 +14,15 @@ defaults:
       type: posts
     values:
       layout: release
+
+assets:
+  defaults:
+    css:
+      integrity: false
+    img:
+      integrity: false
+    js:
+      integrity: false
+  sources:
+    - _assets/javascripts
+    - _assets/stylesheets

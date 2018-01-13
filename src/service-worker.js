@@ -19,16 +19,16 @@
 	let updateCache = () => {
 		return caches.open(version).then(cache => {
 			cache.addAll([
-				'{% asset_path application.css %}',
-				'{% asset_path application.js %}',
-				'{% asset_path html.png %}',
-				'{% asset_path theorchid-256x256.png %}',
-				'{% asset_path releases/apogee-perigee-800.jpg %}',
-				'{% asset_path releases/beyond-the-vast-endless-sea-800.jpg %}',
-				'{% asset_path releases/new-mexico-ep-800.jpg %}',
-				'{% asset_path releases/shadowing-lull-ep-800.jpg %}',
-				'{% asset_path compilations/code-red-an-international-compilation-to-benefit-the-aclu-800.jpg %}',
-				'{% asset_path compilations/we-stand-an-international-compilation-in-support-of-planned-parenthood-800.jpg %}'
+				'{% asset application.css @path %}',
+				'{% asset application.js @path %}',
+				'{% asset html.png @path %}',
+				'{% asset theorchid-256x256.png @path %}',
+				'{% asset releases/apogee-perigee-800.jpg @path %}',
+				'{% asset releases/beyond-the-vast-endless-sea-800.jpg @path %}',
+				'{% asset releases/new-mexico-ep-800.jpg @path %}',
+				'{% asset releases/shadowing-lull-ep-800.jpg @path %}',
+				'{% asset compilations/code-red-an-international-compilation-to-benefit-the-aclu-800.jpg @path %}',
+				'{% asset compilations/we-stand-an-international-compilation-in-support-of-planned-parenthood-800.jpg @path %}'
 			]);
 
 			return cache.addAll([
