@@ -18,7 +18,7 @@ namespace :test do
   desc 'Lint JavaScript with ESLint'
   task :javascript do
     puts '=> Linting JavaScript with ESLint...'
-    system 'eslint src/_assets/javascripts' or raise
+    system 'eslint src' or raise
   end
 
   desc 'Lint stylesheets with Sass Lint'
