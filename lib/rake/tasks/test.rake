@@ -15,6 +15,12 @@ namespace :test do
     }).run
   end
 
+  desc 'Lint JavaScript with ESLint'
+  task :javascript do
+    puts '=> Linting JavaScript with ESLint...'
+    system 'eslint src/_assets/javascripts' or raise
+  end
+
   desc 'Lint stylesheets with Sass Lint'
   task :sass do
     puts '=> Linting stylesheets with Sass Lint...'
@@ -22,4 +28,4 @@ namespace :test do
   end
 end
 
-task test: ['test:html', 'test:sass']
+task test: ['test:html', 'test:javascript', 'test:sass']

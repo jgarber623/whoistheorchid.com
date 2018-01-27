@@ -8,7 +8,7 @@ before_install:
   - gem update --system
   - gem update bundler
   - nvm install node
-  - npm install -g sass-lint
+  - npm install -g eslint sass-lint
 script:
   - bin/rake test:html
   - bin/rake test:sass
