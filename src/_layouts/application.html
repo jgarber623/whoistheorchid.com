@@ -94,10 +94,6 @@
 			loadJS('{% asset application.js @path %}');
 		}
 
-		if (navigator.serviceWorker) {
-			navigator.serviceWorker.register('/service-worker.js');
-		}
-
 		if (navigator.standalone) {
 			loadJS('{% asset standalone.js @path %}');
 		}
