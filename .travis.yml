@@ -1,16 +1,17 @@
 dist: trusty
 sudo: false
 language: ruby
-cache: bundler
+cache:
+  bundler: true
+  directories:
+    - $(npm config get prefix)/lib/node_modules
 rvm:
   - 2.4.3
 before_install:
-  - gem update --system
-  - gem update bundler
-  - nvm install node
   - npm install -g eslint eslint-plugin-frontmatter sass-lint
 script:
   - bin/rake test:html
+  - bin/rake test:javascript
   - bin/rake test:sass
 notifications:
   email: false
