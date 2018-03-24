@@ -4,29 +4,29 @@ title: Releases
 ---
 
 <section class="releases">
-	<h1 class="page-title">Releases</h1>
+  <h1 class="page-title">Releases</h1>
 
-	<ol class="releases-list ui-list clearfix" reversed>
-		{% for release in site.categories.releases -%}
-			<li>
-				<a href="{{ release.url }}" class="bordered-link">
-					{% asset "releases/{{ release.album_slug }}-800.jpg" alt="{{ release.album_title }} cover art" %}
-				</a>
-			</li>
-		{% endfor -%}
-	</ol>
+  <ol class="releases-list ui-list clearfix" reversed>
+    {% for release in site.categories.releases -%}
+      <li>
+        <a href="{{ release.url }}" class="bordered-link">
+          {% asset "releases/{{ release.album_slug }}-800.jpg" alt="{{ release.album_title }} cover art" %}
+        </a>
+      </li>
+    {% endfor -%}
+  </ol>
 </section>
 
 <section class="releases">
-	<h1 class="page-title">Compilations</h1>
+  <h1 class="page-title">Compilations</h1>
 
-	<ol class="releases-list ui-list clearfix" reversed>
-		{% for compilation in site.data.compilations reversed -%}
-			<li>
-				<a href="{{ compilation.url }}" class="bordered-link">
-					{% asset "compilations/{{ compilation.slug }}-800.jpg" alt="{{ compilation.title }} cover art" %}
-				</a>
-			</li>
-		{% endfor -%}
-	</ol>
+  <ol class="releases-list ui-list clearfix" reversed>
+    {% for compilation in site.data.compilations reversed -%}
+      <li>
+        <a href="{{ compilation.url }}" class="bordered-link">
+          {% asset "compilations/{{ compilation.slug }}-800.jpg" alt="{{ compilation.title }} cover art" %}
+        </a>
+      </li>
+    {% endfor -%}
+  </ol>
 </section>

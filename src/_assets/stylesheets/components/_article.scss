@@ -1,44 +1,44 @@
 .article-content {
-	font-size: 1.125rem;
-	margin: 0 auto 3rem auto;
+  font-size: 1.125rem;
+  margin: 0 auto 3rem auto;
 
-	p {
-		margin: 1.5rem 0;
-		text-align: justify;
+  p {
+    margin: 1.5rem 0;
+    text-align: justify;
 
-		&:first-child {
-			margin-top: 0;
-		}
-	}
+    &:first-child {
+      margin-top: 0;
+    }
+  }
 
-	cite {
-		font-style: normal;
+  cite {
+    font-style: normal;
 
-		&::before {
-			content: "“";
-		}
+    &::before {
+      content: "“";
+    }
 
-		&::after {
-			content: "”";
-		}
-	}
+    &::after {
+      content: "”";
+    }
+  }
 
-	blockquote {
-		font-style: italic;
-		margin: 1.5rem 0 0 0;
+  blockquote {
+    font-style: italic;
+    margin: 1.5rem 0 0 0;
 
-		p {
-			&::before {
-				content: "“";
-			}
+    p {
+      &::before {
+        content: "“";
+      }
 
-			&::after {
-				content: "”";
-			}
-		}
+      &::after {
+        content: "”";
+      }
+    }
 
-		cite {
-			font-style: inherit;
-		}
-	}
+    cite {
+      font-style: inherit;
+    }
+  }
 }

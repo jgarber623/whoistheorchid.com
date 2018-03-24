@@ -1,11 +1,11 @@
 .releases-list li {
-	float: left;
-	margin-bottom: 1rem;
-	padding-right: 0.5rem;
-	width: 50%;
+  float: left;
+  margin-bottom: 1rem;
+  padding-right: 0.5rem;
+  width: 50%;
 
-	&:nth-child(even) {
-		float: right;
-		padding: 0 0 0 0.5rem;
-	}
+  &:nth-child(even) {
+    float: right;
+    padding: 0 0 0 0.5rem;
+  }
 }

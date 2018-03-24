@@ -1,53 +1,53 @@
 .show {
-	background: rgba(#fff, 0.05);
-	padding: 1rem;
+  background: rgba(#fff, 0.05);
+  padding: 1rem;
 
-	h2 {
-		font-size: 1.25rem;
-		font-weight: normal;
-		line-height: 1.25;
-		margin: 0;
-	}
+  h2 {
+    font-size: 1.25rem;
+    font-weight: normal;
+    line-height: 1.25;
+    margin: 0;
+  }
 
-	sup {
-		margin: 0;
-		text-decoration: none;
-		top: 0.05em;
-	}
+  sup {
+    margin: 0;
+    text-decoration: none;
+    top: 0.05em;
+  }
 
-	p {
-		margin: 0.5rem 0;
-	}
+  p {
+    margin: 0.5rem 0;
+  }
 
-	ul {
-		&::before {
-			content: "w/";
-			float: left;
-			margin-right: 0.25rem;
-		}
+  ul {
+    &::before {
+      content: "w/";
+      float: left;
+      margin-right: 0.25rem;
+    }
 
-		li {
-			float: left;
-			font-size: 0;
+    li {
+      float: left;
+      font-size: 0;
 
-			&::after {
-				content: ",";
-				font-size: 1rem;
-				margin-right: 0.25rem;
-			}
+      &::after {
+        content: ",";
+        font-size: 1rem;
+        margin-right: 0.25rem;
+      }
 
-			&:last-child::after {
-				content: "";
-				margin: 0;
-			}
+      &:last-child::after {
+        content: "";
+        margin: 0;
+      }
 
-			+ li {
-				margin-top: 0;
-			}
+      + li {
+        margin-top: 0;
+      }
 
-			> * {
-				font-size: 1rem;
-			}
-		}
-	}
+      > * {
+        font-size: 1rem;
+      }
+    }
+  }
 }

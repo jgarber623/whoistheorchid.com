@@ -1,66 +1,66 @@
 $profiles: (
-	bandcamp: #629aa9,
-	facebook: #3b5998,
-	itunes: #fff,
-	soundcloud: #f30,
-	spotify: #2ebd59,
-	twitter: #55acee,
-	vimeo: #1ab7ea
+  bandcamp: #629aa9,
+  facebook: #3b5998,
+  itunes: #fff,
+  soundcloud: #f30,
+  spotify: #2ebd59,
+  twitter: #55acee,
+  vimeo: #1ab7ea
 );
 
 .global-footer {
-	color: rgba(#fff, 0.4);
-	text-align: center;
+  color: rgba(#fff, 0.4);
+  text-align: center;
 
-	.bio a {
-		color: inherit;
-		text-decoration: none;
-	}
+  .bio a {
+    color: inherit;
+    text-decoration: none;
+  }
 
-	abbr {
-		border: 0;
-		text-decoration: none;
-	}
+  abbr {
+    border: 0;
+    text-decoration: none;
+  }
 
-	ul {
-		margin: 1.25rem 0;
-	}
+  ul {
+    margin: 1.25rem 0;
+  }
 
-	li {
-		display: inline-block;
-		margin: 0.25rem;
+  li {
+    display: inline-block;
+    margin: 0.25rem;
 
-		a {
-			color: rgba(#fff, 0.4);
-			display: block;
-			padding: 0.5rem;
+    a {
+      color: rgba(#fff, 0.4);
+      display: block;
+      padding: 0.5rem;
 
-			&:focus,
-			&:hover {
-				color: rgba(#fff, 0.45);
-			}
-		}
+      &:focus,
+      &:hover {
+        color: rgba(#fff, 0.45);
+      }
+    }
 
-		@each $profile, $color in $profiles {
-			[href*="#{$profile}"] {
-				&:focus,
-				&:hover {
-					color: $color;
-				}
-			}
-		}
+    @each $profile, $color in $profiles {
+      [href*="#{$profile}"] {
+        &:focus,
+        &:hover {
+          color: $color;
+        }
+      }
+    }
 
-		svg {
-			fill: currentcolor;
-			height: 1.5rem;
-			vertical-align: middle;
-			width: 1.5rem;
-		}
-	}
+    svg {
+      fill: currentcolor;
+      height: 1.5rem;
+      vertical-align: middle;
+      width: 1.5rem;
+    }
+  }
 
-	small {
-		display: block;
-		font-size: 0.875rem;
-		margin-top: 3rem;
-	}
+  small {
+    display: block;
+    font-size: 0.875rem;
+    margin-top: 3rem;
+  }
 }

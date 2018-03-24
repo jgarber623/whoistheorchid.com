@@ -1,103 +1,103 @@
 <!doctype html>
 <html lang="en-US">
 <head>
-	<meta charset="utf-8">
+  <meta charset="utf-8">
 
-	{% capture page_title -%}
-		{%- if page.title -%}
-			{{ page.title }} — {{ site.title }}
-		{%- else -%}
-			{{ site.title }} — an instrumental post-rock band from Washington, DC
-		{%- endif -%}
-	{% endcapture -%}
+  {% capture page_title -%}
+    {%- if page.title -%}
+      {{ page.title }} — {{ site.title }}
+    {%- else -%}
+      {{ site.title }} — an instrumental post-rock band from Washington, DC
+    {%- endif -%}
+  {% endcapture -%}
 
-	<title>{{ page_title }}</title>
+  <title>{{ page_title }}</title>
 
-	<meta name="apple-mobile-web-app-capable" content="yes">
-	<meta name="apple-mobile-web-app-status-bar-style" content="black">
-	<meta name="apple-mobile-web-app-title" content="{{ site.title }}">
-	<meta name="application-name" content="{{ site.title }}">
-	<meta name="description" content="{{ site.description }}">
-	<meta name="theme-color" content="#101010">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="{{ site.title }}">
+  <meta name="application-name" content="{{ site.title }}">
+  <meta name="description" content="{{ site.description }}">
+  <meta name="theme-color" content="#101010">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<meta name="twitter:card" content="summary">
-	<meta name="twitter:site" content="@theorchid">
-	<meta property="og:description" content="{{ site.description }}">
-	<meta property="og:image" content="https://whoistheorchid.com{% asset theorchid-256x256.png @path %}">
-	<meta property="og:title" content="{{ page_title }}">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@theorchid">
+  <meta property="og:description" content="{{ site.description }}">
+  <meta property="og:image" content="https://whoistheorchid.com{% asset theorchid-256x256.png @path %}">
+  <meta property="og:title" content="{{ page_title }}">
 
-	<link rel="apple-touch-icon" href="{% asset theorchid-256x256.png @path %}">
-	<link rel="manifest" href="/manifest.json">
-	<link rel="shortcut icon" href="{% asset theorchid-256x256.png @path %}">
-	{% asset application.css !type %}
+  <link rel="apple-touch-icon" href="{% asset theorchid-256x256.png @path %}">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="shortcut icon" href="{% asset theorchid-256x256.png @path %}">
+  {% asset application.css !type %}
 </head>
 <body>
 
-	<div class="container">
-		<header class="global-header" role="banner">
-			<h1>
-				<a href="/" rel="home">{% asset logo.svg @inline %}</a>
-			</h1>
-		</header>
+  <div class="container">
+    <header class="global-header" role="banner">
+      <h1>
+        <a href="/" rel="home">{% asset logo.svg @inline %}</a>
+      </h1>
+    </header>
 
-		<nav class="global-navigation" role="navigation">
-			<ul class="ui-list">
-				<li>
-					<a href="/releases" class="bordered-link">
-						<span>Releases</span>
-					</a>
-				</li>
-				<li>
-					<a href="/shows" class="bordered-link">
-						<span>Shows</span>
-					</a>
-				</li>
-				<li>
-					<a href="/biography" class="bordered-link">
-						<span><abbr data-suffix="graphy" title="Biography">Bio</abbr></span>
-					</a>
-				</li>
-			</ul>
-		</nav>
+    <nav class="global-navigation" role="navigation">
+      <ul class="ui-list">
+        <li>
+          <a href="/releases" class="bordered-link">
+            <span>Releases</span>
+          </a>
+        </li>
+        <li>
+          <a href="/shows" class="bordered-link">
+            <span>Shows</span>
+          </a>
+        </li>
+        <li>
+          <a href="/biography" class="bordered-link">
+            <span><abbr data-suffix="graphy" title="Biography">Bio</abbr></span>
+          </a>
+        </li>
+      </ul>
+    </nav>
 
-		<main class="global-content" role="main">
-			{{ content }}
-		</main>
+    <main class="global-content" role="main">
+      {{ content }}
+    </main>
 
-		<footer class="global-footer h-card" role="contentinfo">
-			<p class="bio p-note"><a href="/" class="p-name u-url" rel="home">The Orchid</a> is an instrumental post-rock band from <span class="p-locality">Washington</span>, <abbr class="p-region" title="District of Columbia">DC</abbr>.</p>
+    <footer class="global-footer h-card" role="contentinfo">
+      <p class="bio p-note"><a href="/" class="p-name u-url" rel="home">The Orchid</a> is an instrumental post-rock band from <span class="p-locality">Washington</span>, <abbr class="p-region" title="District of Columbia">DC</abbr>.</p>
 
-			<ul class="ui-list">
-				<li><a href="https://theorchid.bandcamp.com" rel="me">{% asset icons/bandcamp.svg @inline %}</a></li>
-				<li><a href="https://twitter.com/theorchid" rel="me">{% asset icons/twitter.svg @inline %}</a></li>
-				<li><a href="https://www.facebook.com/whoistheorchid" rel="me">{% asset icons/facebook.svg @inline %}</a></li>
-				<li><a href="https://itunes.apple.com/us/artist/the-orchid/id77784209" rel="me">{% asset icons/apple-music.svg @inline %}</a></li>
-				<li><a href="https://open.spotify.com/artist/2n128iwOn5uLS8568XNRCQ" rel="me">{% asset icons/spotify.svg @inline %}</a></li>
-				<li><a href="https://soundcloud.com/whoistheorchid" rel="me">{% asset icons/soundcloud.svg @inline %}</a></li>
-				<li><a href="https://vimeo.com/whoistheorchid" rel="me">{% asset icons/vimeo.svg @inline %}</a></li>
-			</ul>
+      <ul class="ui-list">
+        <li><a href="https://theorchid.bandcamp.com" rel="me">{% asset icons/bandcamp.svg @inline %}</a></li>
+        <li><a href="https://twitter.com/theorchid" rel="me">{% asset icons/twitter.svg @inline %}</a></li>
+        <li><a href="https://www.facebook.com/whoistheorchid" rel="me">{% asset icons/facebook.svg @inline %}</a></li>
+        <li><a href="https://itunes.apple.com/us/artist/the-orchid/id77784209" rel="me">{% asset icons/apple-music.svg @inline %}</a></li>
+        <li><a href="https://open.spotify.com/artist/2n128iwOn5uLS8568XNRCQ" rel="me">{% asset icons/spotify.svg @inline %}</a></li>
+        <li><a href="https://soundcloud.com/whoistheorchid" rel="me">{% asset icons/soundcloud.svg @inline %}</a></li>
+        <li><a href="https://vimeo.com/whoistheorchid" rel="me">{% asset icons/vimeo.svg @inline %}</a></li>
+      </ul>
 
-			<p>Correspondence: <a href="mailto:booking&#064;whoistheorchid&#46;com" class="u-email">booking&#064;whoistheorchid&#46;com</a></p>
+      <p>Correspondence: <a href="mailto:booking&#064;whoistheorchid&#46;com" class="u-email">booking&#064;whoistheorchid&#46;com</a></p>
 
-			<small>Some rights reserved. This site’s content is licensed under a <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" rel="license">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International license</a>. Source code available on <a href="https://github.com/jgarber623/whoistheorchid.com" rel="source">GitHub</a>.</small>
-		</footer>
-	</div>
+      <small>Some rights reserved. This site’s content is licensed under a <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" rel="license">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International license</a>. Source code available on <a href="https://github.com/jgarber623/whoistheorchid.com" rel="source">GitHub</a>.</small>
+    </footer>
+  </div>
 
-	<script>
-		function loadJS(e,c) {
-			var d=document,r=d.createElement('script'),o=d.getElementsByTagName('script')[0];
-			r.src=e;r.async=true;o.parentNode.insertBefore(r,o);if(typeof c==='function')r.onload=c;return r;
-		}
+  <script>
+    function loadJS(e,c) {
+      var d=document,r=d.createElement('script'),o=d.getElementsByTagName('script')[0];
+      r.src=e;r.async=true;o.parentNode.insertBefore(r,o);if(typeof c==='function')r.onload=c;return r;
+    }
 
-		if (document.querySelector) {
-			loadJS('{% asset application.js @path %}');
-		}
+    if (document.querySelector) {
+      loadJS('{% asset application.js @path %}');
+    }
 
-		if (navigator.standalone) {
-			loadJS('{% asset standalone.js @path %}');
-		}
-	</script>
+    if (navigator.standalone) {
+      loadJS('{% asset standalone.js @path %}');
+    }
+  </script>
 
 </body>
 </html>

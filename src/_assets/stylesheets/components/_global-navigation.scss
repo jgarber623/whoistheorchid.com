@@ -1,57 +1,57 @@
 @mixin standalone {
-	background: #101010;
-	bottom: 0;
-	left: 0;
-	margin: 0 -0.25rem;
-	padding: 0.5rem 1rem;
-	position: fixed;
-	right: 0;
-	z-index: 1;
+  background: #101010;
+  bottom: 0;
+  left: 0;
+  margin: 0 -0.25rem;
+  padding: 0.5rem 1rem;
+  position: fixed;
+  right: 0;
+  z-index: 1;
 }
 
 .global-navigation {
-	margin: 3rem -0.25rem;
+  margin: 3rem -0.25rem;
 
-	ul {
-		display: flex;
-		justify-content: center;
-	}
+  ul {
+    display: flex;
+    justify-content: center;
+  }
 
-	li {
-		margin: 0 0.25rem;
-		width: 100%;
-	}
+  li {
+    margin: 0 0.25rem;
+    width: 100%;
+  }
 
-	a {
-		display: block;
-		margin: 0 auto;
-		max-width: 18rem;
-		text-decoration: none;
-	}
+  a {
+    display: block;
+    margin: 0 auto;
+    max-width: 18rem;
+    text-decoration: none;
+  }
 
-	span {
-		background: rgba(#fff, 0.05);
-		display: block;
-		font-size: 1.125rem;
-		padding: 0.25rem 0.5rem;
-		text-align: center;
-	}
+  span {
+    background: rgba(#fff, 0.05);
+    display: block;
+    font-size: 1.125rem;
+    padding: 0.25rem 0.5rem;
+    text-align: center;
+  }
 
-	abbr {
-		text-decoration: none;
+  abbr {
+    text-decoration: none;
 
-		@include breakpoint(24rem) {
-			&::after {
-				content: attr(data-suffix);
-			}
-		}
-	}
+    @include breakpoint(24rem) {
+      &::after {
+        content: attr(data-suffix);
+      }
+    }
+  }
 
-	@media (display-mode: standalone) {
-		@include standalone;
-	}
+  @media (display-mode: standalone) {
+    @include standalone;
+  }
 
-	.standalone & {
-		@include standalone;
-	}
+  .standalone & {
+    @include standalone;
+  }
 }

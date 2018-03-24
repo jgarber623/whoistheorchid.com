@@ -1,37 +1,37 @@
 .release-content {
-	max-width: 26rem;
+  max-width: 26rem;
 
-	blockquote p {
-		text-align: center;
-	}
+  blockquote p {
+    text-align: center;
+  }
 }
 
 .release-artwork {
-	margin: 1.5rem 0;
+  margin: 1.5rem 0;
 }
 
 .bandcamp-player {
-	border: 0;
-	display: block;
-	height: 7.5rem;
-	width: 100%;
+  border: 0;
+  display: block;
+  height: 7.5rem;
+  width: 100%;
 }
 
 @include breakpoint((min-width 35em) (max-height 28em)) {
-	.release-content {
-		display: flex;
-		justify-content: space-around;
-		margin-top: 3rem;
-		max-width: 35rem;
-	}
+  .release-content {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3rem;
+    max-width: 35rem;
+  }
 
-	.release-artwork {
-		margin: 0;
-		width: 40%;
-	}
+  .release-artwork {
+    margin: 0;
+    width: 40%;
+  }
 
-	.release-description {
-		padding-left: 1.5rem;
-		width: 60%;
-	}
+  .release-description {
+    padding-left: 1.5rem;
+    width: 60%;
+  }
 }

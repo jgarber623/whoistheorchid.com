@@ -3,27 +3,27 @@
 
 {
   "short_name": "The Orchid",
-	"name": "The Orchid",
-	"icons": [
-		{
-			"src": "{% asset theorchid-256x256.png @path %}",
-			"sizes": "256x256",
-			"type": "image/png"
-		},
-		{
-			"src": "{% asset theorchid-384x384.png @path %}",
-			"sizes": "384x384",
-			"type": "image/png"
-		},
-		{
-			"src": "{% asset theorchid-512x512.png @path %}",
-			"sizes": "512x512",
-			"type": "image/png"
-		}
-	],
+  "name": "The Orchid",
+  "icons": [
+    {
+      "src": "{% asset theorchid-256x256.png @path %}",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "{% asset theorchid-384x384.png @path %}",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "{% asset theorchid-512x512.png @path %}",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
   "start_url": "/",
   "background_color": "#101010",
   "theme_color": "#101010",
-	"display": "standalone",
-	"orientation": "portrait"
+  "display": "standalone",
+  "orientation": "portrait"
 }
