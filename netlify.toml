@@ -79,8 +79,8 @@ JEKYLL_ENV = "production"
   force = true
 
 [[redirects]]
-  from = "/releases/:name"
-  to = "/releases/:name/index.html"
+  from = "/releases/:slug"
+  to = "/releases/:slug.html"
   status = 200
   force = true
 
