@@ -2,9 +2,8 @@
 ---
 
 {
+  "short_name": "The Orchid",
 	"name": "The Orchid",
-	"short_name": "The Orchid",
-	"start_url": "/",
 	"icons": [
 		{
 			"src": "{% asset theorchid-256x256.png @path %}",
@@ -22,9 +21,9 @@
 			"type": "image/png"
 		}
 	],
+  "start_url": "/",
+  "background_color": "#101010",
+  "theme_color": "#101010",
 	"display": "standalone",
-	"orientation": "portrait",
-	"background_color": "#101010",
-	"theme_color": "#101010",
-	"lang": "en-US"
+	"orientation": "portrait"
 }
