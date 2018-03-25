@@ -1,7 +1,7 @@
 (function(window) {
   'use strict';
 
-  // Handle click events on same-origin links…
+  // Handle click events on same-origin links
   var location = window.location,
       regex = /^(a|html)$/i;
 
@@ -19,6 +19,6 @@
     }
   });
 
-  // Update `<html>` element's `class`…
+  // Update `<html>` element's `class`
   document.documentElement.classList.add('standalone');
 })(window);
