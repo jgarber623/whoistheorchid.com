@@ -7,15 +7,6 @@
   X-Frame-Options: SAMEORIGIN
   X-XSS-Protection: 1; mode=block
 
-/assets/*
-  Cache-Control: max-age=31536000, immutable
-
-/assets/*.css
-  X-Content-Type-Options: nosniff
-
-/assets/*.js
-  X-Content-Type-Options: nosniff
-
 /biography
   Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src * data:; media-src *; child-src 'self' https://bandcamp.com; frame-ancestors 'none';
   X-Frame-Options: SAMEORIGIN
@@ -35,6 +26,15 @@
   Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src * data:; media-src *; child-src 'self' https://bandcamp.com; frame-ancestors 'none';
   X-Frame-Options: SAMEORIGIN
   X-XSS-Protection: 1; mode=block
+
+/assets/*
+  Cache-Control: max-age=31536000, immutable
+
+/assets/*.css
+  X-Content-Type-Options: nosniff
+
+/assets/*.js
+  X-Content-Type-Options: nosniff
 
 /manifest.webmanifest
   Content-Type: application/manifest+json; charset=UTF-8
