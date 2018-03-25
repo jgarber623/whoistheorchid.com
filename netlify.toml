@@ -67,9 +67,10 @@ JEKYLL_ENV = "production"
     X-Content-Type-Options = "nosniff"
 
 [[redirects]]
-  from = "/assets/*"
-  to = "/assets/:splat"
+  from = "/biography"
+  to = "/biography/index.html"
   status = 200
+  force = true
 
 [[redirects]]
   from = "/releases/:slug"
@@ -78,7 +79,13 @@ JEKYLL_ENV = "production"
   force = true
 
 [[redirects]]
-  from = "/*"
-  to = "/:splat/index.html"
+  from = "/releases"
+  to = "/releases/index.html"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/shows"
+  to = "/shows/index.html"
   status = 200
   force = true
