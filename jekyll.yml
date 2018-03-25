@@ -1,6 +1,10 @@
 source: ./src
 destination: ./public
 
+include:
+  - _headers
+  - _redirects
+
 host: 0.0.0.0
 
 title: The Orchid

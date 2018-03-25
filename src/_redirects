@@ -1,0 +1,4 @@
+/biography        /biography/index.html   200!
+/releases/:slug   /releases/:slug.html    200!
+/releases         /releases/index.html    200!
+/shows            /shows/index.html       200!
