@@ -22,11 +22,11 @@ defaults:
 assets:
   defaults:
     css:
-      integrity: false
+      integrity: true
     img:
       integrity: false
     js:
-      integrity: false
+      integrity: true
   sources:
     - _assets/javascripts
     - _assets/stylesheets
