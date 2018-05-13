@@ -220,7 +220,7 @@
     - name: The End of the Ocean
       url: 'http://theendoftheocean.com'
     - name: sansyou
-      url: 'http://sansyoumusic.com'
+      url: 'https://sansyou.bandcamp.com'
 
 - date: 2012-10-10
   location:
