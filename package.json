@@ -1,6 +1,14 @@
 {
   "name": "whoistheorchid.com",
   "private": true,
+  "scripts": {
+    "build": "bundle exec jekyll build --config jekyll.yml --profile --trace",
+    "start": "bundle exec jekyll serve --config jekyll.yml --trace",
+    "test": "npm run test:html && npm run test:javascript && npm run test:sass",
+    "test:html": "bundle exec htmlproofer ./public --assume-extension --only-4xx",
+    "test:javascript": "$(npm bin)/eslint src/_assets/javascripts",
+    "test:sass": "$(npm bin)/sass-lint --no-exit --verbose"
+  },
   "devDependencies": {
     "eslint": "^4.19.1",
     "eslint-plugin-frontmatter": "0.0.5",
