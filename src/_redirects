@@ -1,3 +1,5 @@
+https://whoistheorchid-com.netlify.com/* https://whoistheorchid.com/:splat 301!
+
 /biography        /biography/index.html   200!
 /releases/:slug   /releases/:slug.html    200!
 /releases         /releases/index.html    200!
