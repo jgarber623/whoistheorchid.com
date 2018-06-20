@@ -3,7 +3,6 @@ destination: ./public
 
 include:
   - _headers
-  - _redirects
 
 host: 0.0.0.0
 
@@ -30,3 +29,10 @@ assets:
   sources:
     - _assets/javascripts
     - _assets/stylesheets
+
+netlify:
+  redirects:
+    - https://whoistheorchid-com.netlify.com/* https://whoistheorchid.com/:splat 301!
+    - /biography/*    /biography/:splat.html    200!
+    - /releases/*     /releases/:splat.html     200!
+    - /shows/*        /shows/:splat.html        200!
