@@ -1,5 +1,1 @@
 https://whoistheorchid-com.netlify.com/* https://whoistheorchid.com/:splat 301!
-
-/biography/*   /biography/:splat.html    200!
-/releases/*    /releases/:splat.html     200!
-/shows/*       /shows/:splat.html        200!
