@@ -49,13 +49,13 @@ netlify:
         - "Cache-Control: max-age=31536000, immutable"
     - paths:
         - /assets/*.css
+        - /assets/*.js
       headers:
         - "X-Content-Type-Options: nosniff"
     - paths:
         - /assets/*.js
       headers:
         - "Content-Type: text/javascript; charset=UTF-8"
-        - "X-Content-Type-Options: nosniff"
     - paths:
         - /manifest.webmanifest
       headers:
