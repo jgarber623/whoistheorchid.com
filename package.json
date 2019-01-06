@@ -5,7 +5,7 @@
     "build": "bundle exec jekyll build --config jekyll.yml --profile --trace",
     "start": "bundle exec jekyll serve --config jekyll.yml --trace",
     "test": "$(npm bin)/npm-run-all --print-label test:*",
-    "test:html": "bundle exec htmlproofer ./public --assume-extension --only-4xx",
+    "test:html": "bundle exec htmlproofer ./public --assume-extension --only-4xx --url-ignore /vimeo.com/",
     "test:javascript": "$(npm bin)/eslint src/_assets/javascripts",
     "test:sass": "$(npm bin)/sass-lint --no-exit --verbose"
   },
