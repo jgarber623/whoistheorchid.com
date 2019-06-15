@@ -431,3 +431,13 @@
       url: https://tiredallthetime.bandcamp.com
     - name: Elizabeth Colour Wheel
       url: https://elizabethcolourwheel.bandcamp.com
+
+- date: 2019-06-30
+  location:
+    name: Galaxy Hut
+    locality: Arlington
+    region: VA
+  url: https://www.facebook.com/events/451898005623706
+  artists:
+    - name: Koshari
+      url: https://koshari.bandcamp.com
