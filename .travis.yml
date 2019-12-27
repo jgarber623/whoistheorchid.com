@@ -1,19 +1,10 @@
-language: ruby
-cache:
-  directories:
-    - node_modules
-    - vendor/bundle
-before_install:
-  - gem update --system
-  - gem install bundler
-  - nvm install node
-install:
-  - bundle install --path vendor/bundle
-  - npm install
+dist: xenial
+language: node_js
+node_js:
+  - 10
+cache: npm
 before_script:
   - npm run build
-script:
-  - npm test
 notifications:
   email: false
   slack:
