@@ -40,7 +40,7 @@
   abbr {
     text-decoration: none;
 
-    @include breakpoint(24rem) {
+    @media (min-width: 24rem) {
       &::after {
         content: attr(data-suffix);
       }

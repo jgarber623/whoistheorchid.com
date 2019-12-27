@@ -1,8 +1,6 @@
-// sass-lint:disable no-vendor-prefixes
 @-ms-viewport {
   width: device-width;
 }
-// sass-lint:enable no-vendor-prefixes
 
 *,
 *::before,
@@ -10,13 +8,11 @@
   box-sizing: inherit;
 }
 
-// sass-lint:disable no-vendor-prefixes
 html {
   -webkit-text-size-adjust: 100%;
-  background: #101010 asset-url("html.png") no-repeat fixed 50% 100%;
+  background: #101010 url("../images/html.png") no-repeat fixed 50% 100%;
   box-sizing: border-box;
 }
-// sass-lint:enable no-vendor-prefixes
 
 body {
   color: #ced4d7;
@@ -56,14 +52,12 @@ sup {
   vertical-align: super;
 }
 
-// sass-lint:disable no-vendor-prefixes
 img {
   -ms-interpolation-mode: bicubic;
   border: 0;
   vertical-align: middle;
   width: 100%;
 }
-// sass-lint:enable no-vendor-prefixes
 
 svg:not(:root) {
   overflow: hidden;

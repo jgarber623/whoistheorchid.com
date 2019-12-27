@@ -5,7 +5,7 @@
   margin: 0 0 1.5rem 0;
   text-align: center;
 
-  @include breakpoint(35em) {
+  @media (min-width: 35em) {
     font-size: 1.75rem;
   }
 }

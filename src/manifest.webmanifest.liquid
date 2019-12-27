@@ -1,0 +1,29 @@
+---
+permalink: /manifest.webmanifest
+---
+{
+  "short_name": "{{ site.name }}",
+  "name": "{{ site.name }}",
+  "icons": [
+    {
+      "src": "/assets/images/theorchid-256x256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/images/theorchid-384x384.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/images/theorchid-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "{{ site.theme_color }}",
+  "theme_color": "{{ site.theme_color }}",
+  "display": "standalone",
+  "orientation": "portrait"
+}

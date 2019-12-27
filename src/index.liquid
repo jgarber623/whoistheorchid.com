@@ -1,0 +1,27 @@
+---
+layout: base
+---
+
+{%- for release in collections.release -%}
+  {%- assign release = release -%}
+{%- endfor -%}
+
+<article class="release article h-entry">
+  <h1 class="page-title p-name">{{ release.data.title }}</h1>
+
+  <div class="release-content article-content e-content">
+    <figure class="release-artwork">
+      <a href="{{ release.data.bandcamp.url }}" class="bordered-link">
+        <img src="/assets/images/releases/{{ release.fileSlug }}-800.jpg" alt="{{ release.data.bandcamp.title }} cover art">
+      </a>
+    </figure>
+
+    <div class="release-description">
+      {{ release.templateContent }}
+    </div>
+  </div>
+
+  {% if release.data.bandcamp.id -%}
+    {% include bandcamp_player id: release.data.bandcamp.id %}
+  {% endif -%}
+</article>

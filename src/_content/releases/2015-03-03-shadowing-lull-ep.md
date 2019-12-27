@@ -1,9 +1,9 @@
 ---
 title: “Shadowing Lull EP” available now.
-album_slug: shadowing-lull-ep
-album_title: Shadowing Lull EP
-bandcamp_id: 3995949234
-bandcamp_url: https://theorchid.bandcamp.com/album/shadowing-lull-ep
+bandcamp:
+  id: 3995949234
+  title: Shadowing Lull EP
+  url: https://theorchid.bandcamp.com/album/shadowing-lull-ep
 ---
 
 Available exclusively on [Bandcamp](https://theorchid.bandcamp.com/album/shadowing-lull-ep), the <cite>Shadowing Lull EP</cite> features two new interpretations of the classic song paired with remixes by [Jonah Matranga](http://jonahmatranga.com) and [John Whitlock](http://www.johnwhitlock.tv/).

@@ -1,0 +1,10 @@
+---
+layout: page
+title: Shows
+---
+
+<ol class="shows-list ui-list" reversed>
+  {% for show in shows reversed -%}
+    {% include show with show %}
+  {% endfor -%}
+</ol>

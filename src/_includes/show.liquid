@@ -1,0 +1,32 @@
+<li>
+  <div class="show h-event">
+    <h2 class="p-name">
+      <time class="dt-start" datetime="{{ show.date | date: '%Y-%m-%d' }}">
+        {% if show.url -%}
+          <a href="{{ show.url }}" class="u-url">{{ show.date | display_date }}</a>
+        {% else -%}
+          {{ show.date | display_date }}
+        {% endif -%}
+      </time>
+    </h2>
+
+    <p class="p-location h-card">
+      {% if show.name -%}
+        “{{ show.name }},”
+      {% endif -%}
+      {% if show.location.name -%}
+        <span class="p-name">{{ show.location.name }}</span>,
+      {% endif -%}
+      <span class="p-locality">{{ show.location.locality }}</span>,
+      <span class="p-region">{{ show.location.region }}</span>
+    </p>
+
+    {% if show.artists -%}
+      <ul class="ui-list clearfix">
+        {% for artist in show.artists -%}
+          {% include artist with artist %}
+        {% endfor -%}
+      </ul>
+    {% endif -%}
+  </div>
+</li>

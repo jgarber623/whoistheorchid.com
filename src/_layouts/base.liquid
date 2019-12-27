@@ -4,10 +4,10 @@
   <meta charset="utf-8">
 
   {% capture page_title -%}
-    {%- if page.title -%}
-      {{ page.title }} — {{ site.title }}
+    {%- if title -%}
+      {{ title }} — {{ site.name }}
     {%- else -%}
-      {{ site.title }} — an instrumental post-rock band from Washington, DC
+      {{ site.name }} — an instrumental post-rock band from Washington, DC
     {%- endif -%}
   {% endcapture -%}
 
@@ -15,29 +15,29 @@
 
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="{{ site.title }}">
-  <meta name="application-name" content="{{ site.title }}">
+  <meta name="apple-mobile-web-app-title" content="{{ site.name }}">
+  <meta name="application-name" content="{{ site.name }}">
   <meta name="description" content="{{ site.description }}">
-  <meta name="theme-color" content="#101010">
+  <meta name="theme-color" content="{{ site.theme_color }}">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <meta name="twitter:card" content="summary">
   <meta name="twitter:site" content="@theorchid">
   <meta property="og:description" content="{{ site.description }}">
-  <meta property="og:image" content="https://whoistheorchid.com{% asset theorchid-256x256.png @path %}">
+  <meta property="og:image" content="{{ site.url }}/assets/images/theorchid-256x256.png">
   <meta property="og:title" content="{{ page_title }}">
 
-  <link rel="apple-touch-icon" href="{% asset theorchid-256x256.png @path %}">
+  <link rel="apple-touch-icon" href="/assets/images/theorchid-256x256.png">
   <link rel="manifest" href="/manifest.webmanifest">
-  <link rel="shortcut icon" href="{% asset theorchid-256x256.png @path %}">
-  {% asset application.css !type %}
+  <link rel="shortcut icon" href="/assets/images/theorchid-256x256.png">
+  <link rel="stylesheet" href="/assets/stylesheets/application.css">
 </head>
 <body>
 
   <div class="container">
     <header class="global-header" role="banner">
       <h1>
-        <a href="/" rel="home">{% asset logo.svg @inline %}</a>
+        <a href="/" rel="home">{% include ../assets/images/logo.svg %}</a>
       </h1>
     </header>
 
@@ -69,18 +69,18 @@
       <p class="bio p-note"><a href="/" class="p-name u-url" rel="home">The Orchid</a> is an instrumental post-rock band from <span class="p-locality">Washington</span>, <abbr class="p-region" title="District of Columbia">DC</abbr>.</p>
 
       <ul class="ui-list">
-        <li><a href="https://theorchid.bandcamp.com" rel="me">{% asset icons/bandcamp.svg @inline %}</a></li>
-        <li><a href="https://twitter.com/theorchid" rel="me">{% asset icons/twitter.svg @inline %}</a></li>
-        <li><a href="https://www.facebook.com/whoistheorchid" rel="me">{% asset icons/facebook.svg @inline %}</a></li>
-        <li><a href="https://itunes.apple.com/us/artist/the-orchid/id77784209" rel="me">{% asset icons/apple-music.svg @inline %}</a></li>
-        <li><a href="https://open.spotify.com/artist/2n128iwOn5uLS8568XNRCQ" rel="me">{% asset icons/spotify.svg @inline %}</a></li>
-        <li><a href="https://soundcloud.com/whoistheorchid" rel="me">{% asset icons/soundcloud.svg @inline %}</a></li>
-        <li><a href="https://vimeo.com/whoistheorchid" rel="me">{% asset icons/vimeo.svg @inline %}</a></li>
+        <li><a href="https://theorchid.bandcamp.com" rel="me">{% include ../assets/images/icons/bandcamp.svg %}</a></li>
+        <li><a href="https://twitter.com/theorchid" rel="me">{% include ../assets/images/icons/twitter.svg %}</a></li>
+        <li><a href="https://www.facebook.com/whoistheorchid" rel="me">{% include ../assets/images/icons/facebook.svg %}</a></li>
+        <li><a href="https://itunes.apple.com/us/artist/the-orchid/id77784209" rel="me">{% include ../assets/images/icons/apple-music.svg %}</a></li>
+        <li><a href="https://open.spotify.com/artist/2n128iwOn5uLS8568XNRCQ" rel="me">{% include ../assets/images/icons/spotify.svg %}</a></li>
+        <li><a href="https://soundcloud.com/whoistheorchid" rel="me">{% include ../assets/images/icons/soundcloud.svg %}</a></li>
+        <li><a href="https://vimeo.com/whoistheorchid" rel="me">{% include ../assets/images/icons/vimeo.svg %}</a></li>
       </ul>
 
       <p>Correspondence: <a href="mailto:booking&#064;whoistheorchid&#46;com" class="u-email">booking&#064;whoistheorchid&#46;com</a></p>
 
-      <small>Some rights reserved. This site’s content is licensed under a <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" rel="license">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International license</a>. Source code available on <a href="https://github.com/jgarber623/whoistheorchid.com" rel="source">GitHub</a>.</small>
+      <small>Some rights reserved. This site’s content is licensed under a <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" rel="license">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International license</a>. Source code available on <a href="{{ pkg.repository.url }}" rel="source">GitHub</a>.</small>
     </footer>
   </div>
 
@@ -91,11 +91,11 @@
     }
 
     if (document.querySelector) {
-      loadJS('{% asset application.js @path %}');
+      loadJS('/assets/javascripts/application.js');
     }
 
     if (navigator.standalone) {
-      loadJS('{% asset standalone.js @path %}');
+      loadJS('/assets/javascripts/standalone.js');
     }
   </script>
 
