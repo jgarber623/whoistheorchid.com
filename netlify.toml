@@ -1,0 +1,44 @@
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src * data:; media-src *; child-src 'self' https://bandcamp.com; frame-ancestors 'none';"
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains"
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "SAMEORIGIN"
+    X-XSS-Protection = "1; mode=block"
+
+[[headers]]
+  for = "/assets/*.js"
+  [headers.values]
+    Content-Type = "text/javascript; charset=UTF-8"
+
+[[headers]]
+  for = "/favicon.ico"
+  [headers.values]
+    Content-Type = "image/x-icon"
+
+[[headers]]
+  for = "/manifest.webmanifest"
+  [headers.values]
+    Content-Type = "application/manifest+json; charset=UTF-8"
+
+[[redirects]]
+  from   = "https://whoistheorchid-com.netlify.com/*"
+  to     = "https://whoistheorchid.com/:splat"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/biography/*"
+  to     = "/biography/:splat.html"
+  status = 200
+
+[[redirects]]
+  from   = "/releases/*"
+  to     = "/releases/:splat.html"
+  status = 200
+
+[[redirects]]
+  from   = "/shows/*"
+  to     = "/shows/:splat.html"
+  status = 200
