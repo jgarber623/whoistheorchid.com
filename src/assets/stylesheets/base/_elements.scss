@@ -9,9 +9,9 @@
 }
 
 html {
-  -webkit-text-size-adjust: 100%;
   background: #101010 url("../images/html.png") no-repeat fixed 50% 100%;
   box-sizing: border-box;
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
@@ -53,8 +53,8 @@ sup {
 }
 
 img {
-  -ms-interpolation-mode: bicubic;
   border: 0;
+  -ms-interpolation-mode: bicubic;
   vertical-align: middle;
   width: 100%;
 }
