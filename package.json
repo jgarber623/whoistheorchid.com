@@ -25,13 +25,11 @@
     "start:eleventy": "npx @11ty/eleventy --quiet --serve",
     "start:gulp": "npx gulp --color watch",
     "test": "npx npm-run-all --continue-on-error --print-label test:*",
-    "test:javascripts": "npx eslint --color **/*.js",
     "test:stylesheets": "npx stylelint --color **/*.scss"
   },
   "devDependencies": {
     "@11ty/eleventy": "^0.10.0-beta.1",
     "dayjs": "^1.8.18",
-    "eslint": "^6.8.0",
     "gulp": "^4.0.2",
     "gulp-sass": "^4.0.2",
     "node-sass": "^4.13.0",
