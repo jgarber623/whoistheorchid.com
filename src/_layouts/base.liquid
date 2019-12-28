@@ -13,8 +13,6 @@
 
   <title>{{ page_title }}</title>
 
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="apple-mobile-web-app-title" content="{{ site.name }}">
   <meta name="application-name" content="{{ site.name }}">
   <meta name="description" content="{{ site.description }}">
@@ -92,10 +90,6 @@
 
     if (document.querySelector) {
       loadJS('/assets/javascripts/application.js');
-    }
-
-    if (navigator.standalone) {
-      loadJS('/assets/javascripts/standalone.js');
     }
   </script>
 
