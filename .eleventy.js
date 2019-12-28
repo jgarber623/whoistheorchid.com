@@ -11,7 +11,6 @@ module.exports = eleventy => {
   eleventy.addFilter('prettify', require('./lib/filters/prettify.js'));
 
   eleventy.addPassthroughCopy('./src/assets/images');
-  eleventy.addPassthroughCopy('./src/assets/javascripts');
   eleventy.addPassthroughCopy('./src/favicon.ico');
   eleventy.addPassthroughCopy('./src/robots.txt');
 
