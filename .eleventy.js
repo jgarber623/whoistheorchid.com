@@ -12,6 +12,8 @@ module.exports = eleventy => {
   eleventy.addPassthroughCopy('./src/favicon.ico');
   eleventy.addPassthroughCopy('./src/robots.txt');
 
+  eleventy.addWatchTarget('./src/assets/stylesheets');
+
   return {
     dir: {
       input: './src',
