@@ -1,11 +1,9 @@
-const yaml = require('js-yaml');
-
 module.exports = eleventy => {
   eleventy.setBrowserSyncConfig(require('./bs-config.js'));
 
   eleventy.setLibrary('md', require('./lib/libraries/markdown.js'));
 
-  eleventy.addDataExtension('yml', contents => yaml.safeLoad(contents));
+  eleventy.addDataExtension('yml', require('./lib/extensions/yaml.js'));
 
   eleventy.addFilter('display_date', require('./lib/filters/display_date.js'));
   eleventy.addFilter('prettify', require('./lib/filters/prettify.js'));
