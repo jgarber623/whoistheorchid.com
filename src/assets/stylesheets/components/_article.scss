@@ -27,6 +27,7 @@
     font-style: italic;
     margin: 1.5rem 0 0 0;
 
+    // stylelint-disable no-descending-specificity
     p {
       &::before {
         content: "\201C";
@@ -36,6 +37,7 @@
         content: "\201D";
       }
     }
+    // stylelint-enable no-descending-specificity
 
     cite {
       font-style: inherit;

@@ -30,6 +30,7 @@ $profiles: (
     display: inline-block;
     margin: 0.25rem;
 
+    // stylelint-disable no-descending-specificity
     a {
       color: rgba(#fff, 0.4);
       display: block;
@@ -40,6 +41,7 @@ $profiles: (
         color: rgba(#fff, 0.45);
       }
     }
+    // stylelint-enable no-descending-specificity
 
     @each $profile, $color in $profiles {
       [href*="#{$profile}"] {
