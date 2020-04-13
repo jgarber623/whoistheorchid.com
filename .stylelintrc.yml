@@ -3,7 +3,7 @@ plugins:
   - stylelint-order
   - stylelint-scss
 ignoreFiles:
-  - '/node_modules/'
-  - '/public/'
+  - './node_modules/**/*'
+  - './public/**/*'
 rules:
   order/properties-alphabetical-order: true
