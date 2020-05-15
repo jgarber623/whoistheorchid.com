@@ -24,7 +24,7 @@
   },
   "devDependencies": {
     "@11ty/eleventy": "^0.11.0",
-    "dayjs": "^1.8.26",
+    "dayjs": "^1.8.27",
     "node-sass": "^4.14.1",
     "node-sass-glob-importer": "^5.3.2",
     "rimraf": "^3.0.2",
