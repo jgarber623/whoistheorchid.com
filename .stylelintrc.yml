@@ -1,9 +1,0 @@
-extends: 'stylelint-config-recommended-scss'
-plugins:
-  - stylelint-order
-  - stylelint-scss
-ignoreFiles:
-  - './node_modules/**/*'
-  - './public/**/*'
-rules:
-  order/properties-alphabetical-order: true

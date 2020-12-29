@@ -16,21 +16,25 @@
   },
   "scripts": {
     "build": "npx @11ty/eleventy --quiet",
-    "clean": "npx rimraf public",
+    "clean": "rm -rf public",
     "prebuild": "npm run clean",
     "prestart": "npm run clean",
     "start": "npx @11ty/eleventy --quiet --serve",
-    "test": "npx stylelint --color **/*.scss"
+    "test": "FORCE_COLOR=1 npx npm-run-all --continue-on-error --serial test:**",
+    "test:scripts": "npx eslint .",
+    "test:styles": "npx stylelint ./src/**/*.css"
   },
   "devDependencies": {
     "@11ty/eleventy": "^0.11.1",
-    "dayjs": "^1.9.7",
-    "node-sass": "^5.0.0",
-    "node-sass-glob-importer": "^5.3.2",
-    "rimraf": "^3.0.2",
+    "cssnano": "^4.1.10",
+    "dayjs": "^1.9.8",
+    "eslint": "^7.16.0",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.2.1",
+    "postcss-easy-import": "^3.0.0",
+    "postcss-nesting": "^7.0.1",
     "stylelint": "^13.8.0",
-    "stylelint-config-recommended-scss": "^4.2.0",
-    "stylelint-order": "^4.1.0",
-    "stylelint-scss": "^3.18.0"
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-order": "^4.1.0"
   }
 }
