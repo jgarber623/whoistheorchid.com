@@ -1,0 +1,98 @@
+.global-footer {
+  color: rgba(255, 255, 255, 0.4);
+  text-align: center;
+
+  & .bio a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  & abbr {
+    border: 0;
+    text-decoration: none;
+  }
+
+  & ul {
+    margin: 1.25rem 0;
+  }
+
+  & li {
+    display: inline-block;
+    margin: 0.25rem;
+
+    /* stylelint-disable no-descending-specificity */
+    & a {
+      color: rgba(255, 255, 255, 0.4);
+      display: block;
+      padding: 0.5rem;
+
+      &:focus,
+      &:hover {
+        color: rgba(255, 255, 255, 0.45);
+      }
+    }
+    /* stylelint-enable no-descending-specificity */
+
+    & [href*="bandcamp"] {
+      &:focus,
+      &:hover {
+        color: var(--profile-bandcamp);
+      }
+    }
+
+    & [href*="facebook"] {
+      &:focus,
+      &:hover {
+        color: var(--profile-facebook);
+      }
+    }
+
+    & [href*="itunes"] {
+      &:focus,
+      &:hover {
+        color: var(--profile-itunes);
+      }
+    }
+
+    & [href*="soundcloud"] {
+      &:focus,
+      &:hover {
+        color: var(--profile-soundcloud);
+      }
+    }
+
+    & [href*="spotify"] {
+      &:focus,
+      &:hover {
+        color: var(--profile-spotify);
+      }
+    }
+
+    & [href*="twitter"] {
+      &:focus,
+      &:hover {
+        color: var(--profile-twitter);
+      }
+    }
+
+    & [href*="vimeo"] {
+      &:focus,
+      &:hover {
+        color: var(--profile-vimeo);
+      }
+    }
+
+    & svg {
+      fill: currentColor;
+      height: 1.5rem;
+      vertical-align: middle;
+      width: 1.5rem;
+    }
+  }
+
+  & small {
+    display: block;
+    font-size: 0.875rem;
+    margin-top: 3rem;
+  }
+}

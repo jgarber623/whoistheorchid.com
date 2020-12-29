@@ -1,19 +1,27 @@
-const sass = require('node-sass');
-const sassGlobImporter = require('node-sass-glob-importer');
+const fs = require('fs');
+const path = require('path');
+const postcss = require('postcss');
+
+const postcssPlugins = [
+  require('postcss-easy-import'),
+  require('postcss-nesting'),
+  require('cssnano')({
+    preset: 'default'
+  })
+];
+
 
 module.exports = class {
   data() {
     return {
-      inputFilePath: './src/assets/stylesheets/application.scss',
-      permalink: data => data.inputFilePath.replace(/\.\/src\//, '').replace(/\.scss/, '.css')
-    }
+      permalink: '/assets/stylesheets/application.css'
+    };
   }
 
-  render({ inputFilePath }) {
-    return sass.renderSync({
-      file: inputFilePath,
-      importer: sassGlobImporter(),
-      outputStyle: 'compressed'
-    }).css.toString();
+  render({ permalink }) {
+    const inputFilePath = path.join('./src', permalink);
+    const css = fs.readFileSync(inputFilePath).toString();
+
+    return postcss(postcssPlugins).process(css, { from: inputFilePath, to: permalink }).then(result => result.css);
   }
 };

@@ -1,33 +1,33 @@
 .show {
-  background: rgba(#fff, 0.05);
+  background: rgba(255, 255, 255, 0.05);
   font-size: 1rem;
   padding: 1rem;
 
-  h2 {
+  & h2 {
     font-size: 1.25rem;
     font-weight: normal;
     line-height: 1.25;
     margin: 0;
   }
 
-  sup {
+  & sup {
     margin: 0;
     text-decoration: none;
     top: 0.05em;
   }
 
-  p {
+  & p {
     margin: 0.5rem 0;
   }
 
-  ul {
+  & ul {
     &::before {
       content: "w/";
       float: left;
       margin-right: 0.25rem;
     }
 
-    li {
+    & li {
       float: left;
       font-size: 0;
 
@@ -42,11 +42,11 @@
         margin: 0;
       }
 
-      + li {
+      & + li {
         margin-top: 0;
       }
 
-      > * {
+      & > * {
         font-size: 1rem;
       }
     }

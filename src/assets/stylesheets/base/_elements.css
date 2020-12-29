@@ -39,7 +39,7 @@ a {
   }
 
   &:focus {
-    outline: 1px dotted rgba(#fff, 0.5);
+    outline: 1px dotted rgba(255, 255, 255, 0.5);
   }
 }
 

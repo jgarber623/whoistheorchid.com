@@ -1,0 +1,10 @@
+.bordered-link {
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  display: block;
+  padding: 0.25rem;
+
+  &:focus,
+  &:hover {
+    border-color: rgba(255, 255, 255, 0.45);
+  }
+}

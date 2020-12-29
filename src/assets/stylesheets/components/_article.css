@@ -2,7 +2,7 @@
   font-size: 1.125rem;
   margin: 0 auto 3rem auto;
 
-  p {
+  & p {
     margin: 1.5rem 0;
     text-align: justify;
 
@@ -11,7 +11,7 @@
     }
   }
 
-  cite {
+  & cite {
     font-style: normal;
 
     &::before {
@@ -23,12 +23,12 @@
     }
   }
 
-  blockquote {
+  & blockquote {
     font-style: italic;
     margin: 1.5rem 0 0 0;
 
-    // stylelint-disable no-descending-specificity
-    p {
+    /* stylelint-disable no-descending-specificity */
+    & p {
       &::before {
         content: "\201C";
       }
@@ -37,9 +37,9 @@
         content: "\201D";
       }
     }
-    // stylelint-enable no-descending-specificity
+    /* stylelint-enable no-descending-specificity */
 
-    cite {
+    & cite {
       font-style: inherit;
     }
   }
