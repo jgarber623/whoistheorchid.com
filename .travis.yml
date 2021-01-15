@@ -1,9 +1,0 @@
-dist: xenial
-language: node_js
-before_script:
-  - npm run build
-notifications:
-  email: false
-  slack:
-    rooms:
-      secure: hTZfOCNG4aSmj9Cq4XnOT24vVkJPdECDad1IYY+H0bNHfGfeboLJSjhVg3I8XxpQl+UgPXKyGCveRfRJQsMwxIaqKEGwRpFsfoBHo4v3pPruQQK6MgkBCJvrz556hW+u7wsyHo1d7pbI3Gj4kP+nFw6JvMBCIMCDfpfg/a6PQNKAsoooQ6LGHla3Xnvd96+QjDT5mD0x99NAK8dZifKhkO6fImnCJjlSnqF3024/vDLDccFyXCsJeu+7fq8SZTV3eEwVTw3bOsmVYCOKcjB53fSNE0Awwq4D+DWr5ER+4mnZKWska6He9ys6LRDicDmwk5+Qw6NcBiwN79Xmz7uoJDvCuV1yAL/MFgl0FVm/vE+it3RV3a+TYb5CQfqKgPW+6tmv3bDsGCvak300HD7KZgR9LslGDSUreDiL4XT9EVx6RWvC44mK9TJNvfHeFXaTL0RRZLfj/FHFQHPM3pEZFzf337jGyPGgAiFPI/GqNWrScxjMkuXxcj5jRAuWId1ySXGf/VZkFFD8yjRgHCq5JJspXWTnF5fOvISrCEfacJ99dYV+d1sV6JNQ/2z31MuPG2TAUby1rzKdeiLYl5JGzgIjtmcQRHHjSBa4E6OKSB72rN4Re3jQqfwSYOR8KMFJc7+ccZa2tjV2juCUh6i6cP+c6CdkD9+9ZYiDLT0bros=
