@@ -15,14 +15,14 @@
     "url": "https://github.com/jgarber623/whoistheorchid.com"
   },
   "scripts": {
-    "build": "npx @11ty/eleventy --quiet",
+    "build": "eleventy --quiet",
     "clean": "rm -rf public",
     "prebuild": "npm run clean",
     "prestart": "npm run clean",
-    "start": "npx @11ty/eleventy --quiet --serve",
-    "test": "FORCE_COLOR=1 npx npm-run-all --continue-on-error --serial test:**",
-    "test:scripts": "npx eslint .",
-    "test:styles": "npx stylelint ./src/**/*.css"
+    "start": "eleventy --quiet --serve",
+    "test": "FORCE_COLOR=1 npm-run-all --continue-on-error --serial test:**",
+    "test:scripts": "eslint .",
+    "test:styles": "stylelint ./src/**/*.css"
   },
   "devDependencies": {
     "@11ty/eleventy": "^0.11.1",
