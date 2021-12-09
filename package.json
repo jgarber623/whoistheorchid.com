@@ -2,27 +2,21 @@
   "private": true,
   "name": "whoistheorchid.com",
   "homepage": "https://github.com/jgarber623/whoistheorchid.com",
-  "bugs": {
-    "url": "https://github.com/jgarber623/whoistheorchid.com/issues"
-  },
+  "bugs": "https://github.com/jgarber623/whoistheorchid.com/issues",
   "license": "CC-BY-NC-SA-4.0",
-  "author": {
-    "name": "Jason Garber",
-    "url": "https://sixtwothree.org"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/jgarber623/whoistheorchid.com"
-  },
+  "author": "Jason Garber <jason@sixtwothree.org> (https://sixtwothree.org)",
+  "repository": "github.com:jgarber623/whoistheorchid.com",
   "scripts": {
     "build": "eleventy --quiet",
     "clean": "rm -rf public",
+    "lint": "FORCE_COLOR=1 npm-run-all --continue-on-error --serial lint:**",
+    "lint:scripts": "eslint .",
+    "lint:styles": "stylelint ./src/**/*.css",
     "prebuild": "npm run clean",
     "prestart": "npm run clean",
+    "pretest": "npm run build",
     "start": "eleventy --quiet --serve",
-    "test": "FORCE_COLOR=1 npm-run-all --continue-on-error --serial test:**",
-    "test:scripts": "eslint .",
-    "test:styles": "stylelint ./src/**/*.css"
+    "test": "test -f ./public/index.html"
   },
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1",
