@@ -1,5 +1,5 @@
 .global-footer {
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255 255 255 / 40%);
   text-align: center;
 
   & .bio a {
@@ -22,13 +22,13 @@
 
     /* stylelint-disable no-descending-specificity */
     & a {
-      color: rgba(255, 255, 255, 0.4);
+      color: rgba(255 255 255 / 40%);
       display: block;
       padding: 0.5rem;
 
       &:focus,
       &:hover {
-        color: rgba(255, 255, 255, 0.45);
+        color: rgba(255 255 255 / 45%);
       }
     }
     /* stylelint-enable no-descending-specificity */
