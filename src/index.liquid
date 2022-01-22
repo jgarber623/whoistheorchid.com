@@ -22,6 +22,6 @@ layout: base
   </div>
 
   {% if release.data.bandcamp.id -%}
-    {% include bandcamp_player id: release.data.bandcamp.id %}
+    {% include "bandcamp_player" id: release.data.bandcamp.id %}
   {% endif -%}
 </article>

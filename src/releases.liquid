@@ -8,7 +8,7 @@ title: Releases
 
   <ol class="releases-list ui-list clearfix" reversed>
     {% for release in collections.release reversed -%}
-      {% include release with release %}
+      {% include "release" with release %}
     {% endfor -%}
   </ol>
 </section>
@@ -18,7 +18,7 @@ title: Releases
 
   <ol class="releases-list ui-list clearfix" reversed>
     {% for release in collections.compilation reversed -%}
-      {% include release with release %}
+      {% include "release" with release %}
     {% endfor -%}
   </ol>
 </section>

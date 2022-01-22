@@ -24,7 +24,7 @@
     {% if show.artists -%}
       <ul class="ui-list clearfix">
         {% for artist in show.artists -%}
-          {% include artist with artist %}
+          {% include "artist" with artist %}
         {% endfor -%}
       </ul>
     {% endif -%}
