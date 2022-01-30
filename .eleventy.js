@@ -1,18 +1,18 @@
-module.exports = eleventy => {
-  eleventy.setBrowserSyncConfig(require('@jgarber/browsersync-config/eleventy'));
+module.exports = eleventyConfig => {
+  eleventyConfig.setBrowserSyncConfig(require('@jgarber/browsersync-config/eleventy'));
 
-  eleventy.setLibrary('md', require('./lib/libraries/markdown.js'));
+  eleventyConfig.setLibrary('md', require('./lib/libraries/markdown.js'));
 
-  eleventy.addDataExtension('yml', require('./lib/extensions/yaml.js'));
+  eleventyConfig.addDataExtension('yml', require('./lib/extensions/yaml.js'));
 
-  eleventy.addFilter('date_with_ordinal', require('./lib/filters/date_with_ordinal.js'));
-  eleventy.addFilter('prettify', require('./lib/filters/prettify.js'));
+  eleventyConfig.addFilter('date_with_ordinal', require('./lib/filters/date_with_ordinal.js'));
+  eleventyConfig.addFilter('prettify', require('./lib/filters/prettify.js'));
 
-  eleventy.addPassthroughCopy('./src/assets/images');
-  eleventy.addPassthroughCopy('./src/favicon.ico');
-  eleventy.addPassthroughCopy('./src/robots.txt');
+  eleventyConfig.addPassthroughCopy('./src/assets/images');
+  eleventyConfig.addPassthroughCopy('./src/favicon.ico');
+  eleventyConfig.addPassthroughCopy('./src/robots.txt');
 
-  eleventy.addWatchTarget('./src/assets/stylesheets');
+  eleventyConfig.addWatchTarget('./src/assets/stylesheets');
 
   return {
     dir: {
