@@ -20,14 +20,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <meta name="twitter:card" content="summary">
+  <meta name="twitter:creator" content="@theorchid">
   <meta name="twitter:description" property="og:description" content="{{ site.description }}">
   <meta name="twitter:image" property="og:image" content="{{ site.url }}/icon-512x512.png">
-  <meta name="twitter:site" content="@theorchid">
   <meta name="twitter:title" property="og:title" content="{{ page_title }}">
+  <meta name="twitter:url" property="og:url" content="{{site.url }}{{ page.url }}">
 
   <link rel="apple-touch-icon" href="/icon-256x256.png">
   <link rel="manifest" href="/manifest.webmanifest">
-  <link rel="shortcut icon" href="/icon-256x256.png">
+  <link rel="shortcut icon" href="/favicon.ico">
   <link rel="stylesheet" href="/assets/stylesheets/application.css">
 </head>
 <body>
@@ -83,11 +84,11 @@
   </div>
 
   <script>
-    if (window.NodeList && window.NodeList.prototype.forEach) {
+    (() => {
       document.querySelectorAll('iframe[data-src]').forEach(iframe => {
-        return iframe.src = iframe.getAttribute('data-src') + location.href;
+        iframe.src = iframe.getAttribute('data-src') + location.href;
       });
-    }
+    })();
   </script>
 
 </body>
