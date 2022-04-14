@@ -8,7 +8,7 @@
       default-src 'self'; \
       form-action 'none'; \
       frame-ancestors 'none'; \
-      frame-src 'none'; \
+      frame-src 'self' https://bandcamp.com; \
       img-src * data:; \
       media-src *; \
       object-src 'none'; \
