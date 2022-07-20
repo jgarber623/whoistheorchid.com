@@ -23,7 +23,6 @@
     "@jgarber/eslint-config": "*",
     "@jgarber/stylelint-config": "*",
     "cssnano": "*",
-    "dayjs": "*",
     "npm-run-all": "*",
     "postcss": "*",
     "postcss-easy-import": "*",

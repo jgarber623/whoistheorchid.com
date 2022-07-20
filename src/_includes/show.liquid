@@ -3,9 +3,9 @@
     <h2 class="p-name">
       <time class="dt-start" datetime="{{ show.date | date: '%Y-%m-%d' }}">
         {% if show.url -%}
-          <a href="{{ show.url }}" class="u-url">{{ show.date | date_with_ordinal }}</a>
+          <a href="{{ show.url }}" class="u-url">{{ show.date | date: '%B %e<sup>%q</sup>, %Y' }}</a>
         {% else -%}
-          {{ show.date | date_with_ordinal }}
+          {{ show.date | date: '%B %e<sup>%q</sup>, %Y' }}
         {% endif -%}
       </time>
     </h2>

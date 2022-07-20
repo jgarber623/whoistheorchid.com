@@ -3,8 +3,6 @@ module.exports = eleventyConfig => {
 
   eleventyConfig.addDataExtension('yml', require('./lib/extensions/yaml.js'));
 
-  eleventyConfig.addFilter('date_with_ordinal', require('./lib/filters/date_with_ordinal.js'));
-
   eleventyConfig.addPassthroughCopy('./src/assets/images');
   eleventyConfig.addPassthroughCopy('./src/favicon.ico');
   eleventyConfig.addPassthroughCopy('./src/icon-256x256.png');
