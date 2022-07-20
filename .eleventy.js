@@ -4,7 +4,6 @@ module.exports = eleventyConfig => {
   eleventyConfig.addDataExtension('yml', require('./lib/extensions/yaml.js'));
 
   eleventyConfig.addFilter('date_with_ordinal', require('./lib/filters/date_with_ordinal.js'));
-  eleventyConfig.addFilter('prettify', require('./lib/filters/prettify.js'));
 
   eleventyConfig.addPassthroughCopy('./src/assets/images');
   eleventyConfig.addPassthroughCopy('./src/favicon.ico');
