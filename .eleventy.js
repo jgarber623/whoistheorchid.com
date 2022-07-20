@@ -1,6 +1,4 @@
 module.exports = eleventyConfig => {
-  eleventyConfig.setBrowserSyncConfig(require('@jgarber/browsersync-config/eleventy'));
-
   eleventyConfig.setLibrary('md', require('./lib/libraries/markdown.js'));
 
   eleventyConfig.addDataExtension('yml', require('./lib/extensions/yaml.js'));

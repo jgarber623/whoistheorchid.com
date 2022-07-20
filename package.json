@@ -20,7 +20,6 @@
   },
   "devDependencies": {
     "@11ty/eleventy": "*",
-    "@jgarber/browsersync-config": "*",
     "@jgarber/eslint-config": "*",
     "@jgarber/stylelint-config": "*",
     "cssnano": "*",
