@@ -35,21 +35,3 @@
   to     = "https://whoistheorchid.com/:splat"
   status = 301
   force  = true
-
-[[redirects]]
-  from   = "/biography/*"
-  to     = "/biography/:splat.html"
-  status = 200
-  force  = true
-
-[[redirects]]
-  from   = "/releases/*"
-  to     = "/releases/:splat.html"
-  status = 200
-  force  = true
-
-[[redirects]]
-  from   = "/shows/*"
-  to     = "/shows/:splat.html"
-  status = 200
-  force  = true
