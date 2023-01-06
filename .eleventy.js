@@ -5,8 +5,8 @@ module.exports = eleventyConfig => {
   eleventyConfig.addPlugin(require('./lib/plugins/postcss.js'));
 
   eleventyConfig
-    .addPassthroughCopy('./src/assets/images')
-    .addPassthroughCopy('./src/*.{ico,png,svg,txt}');
+    .addPassthroughCopy('./src/*.{ico,png,svg,txt}')
+    .addPassthroughCopy('./src/assets/images');
 
   return {
     dir: {
