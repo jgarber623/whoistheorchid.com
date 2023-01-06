@@ -1,8 +1,6 @@
 module.exports = eleventyConfig => {
   eleventyConfig.setLibrary('md', require('./lib/libraries/markdown.js'));
 
-  eleventyConfig.addDataExtension('yml', require('./lib/extensions/yaml.js'));
-
   eleventyConfig.addPlugin(require('./lib/plugins/postcss.js'));
 
   eleventyConfig
