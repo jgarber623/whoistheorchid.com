@@ -2,7 +2,8 @@ module.exports = eleventyConfig => {
   eleventyConfig.setLibrary('md', require('./lib/libraries/markdown.js'));
 
   eleventyConfig.addDataExtension('yml', require('./lib/extensions/yaml.js'));
-  eleventyConfig.addExtension('css', require('./lib/extensions/css.js'));
+
+  eleventyConfig.addPlugin(require('./lib/plugins/postcss.js'));
 
   eleventyConfig.addPassthroughCopy('./src/assets/images');
   eleventyConfig.addPassthroughCopy('./src/favicon.ico');
@@ -17,8 +18,6 @@ module.exports = eleventyConfig => {
       input: './src',
       layouts: '_layouts',
       output: './public'
-    },
-
-    templateFormats: ['css', 'liquid', 'md']
+    }
   };
 };
