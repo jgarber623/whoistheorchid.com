@@ -1,0 +1,720 @@
+[
+  {
+    "date": "2009-01-23T00:00:00-0500",
+    "location": {
+      "name": "The Red & The Black",
+      "locality": "Washington",
+      "region": "DC"
+    },
+    "artists": [
+      {
+        "name": "Meow vs. Meow"
+      },
+      {
+        "name": "The Chance",
+        "url": "https://www.facebook.com/thechancedc"
+      },
+      {
+        "name": "Flowers on the Razor Wire"
+      }
+    ]
+  },
+  {
+    "date": "2009-05-26T00:00:00-0400",
+    "location": {
+      "name": "DC9",
+      "locality": "Washington",
+      "region": "DC"
+    },
+    "url": "https://www.facebook.com/events/10153244853636085",
+    "artists": [
+      {
+        "name": "Bellflur"
+      },
+      {
+        "name": "We Read Minds"
+      }
+    ]
+  },
+  {
+    "date": "2009-06-24T00:00:00-0400",
+    "name": "Artomatic",
+    "location": {
+      "locality": "Washington",
+      "region": "DC"
+    },
+    "url": "https://www.facebook.com/events/10153857711095550"
+  },
+  {
+    "date": "2009-09-15T00:00:00-0400",
+    "location": {
+      "name": "The Red & The Black",
+      "locality": "Washington",
+      "region": "DC"
+    },
+    "url": "https://www.facebook.com/events/10153149674060399",
+    "artists": [
+      {
+        "name": "The Modern Society",
+        "url": "https://myspace.com/themodernsociety"
+      },
+      {
+        "name": "Sarah Pray",
+        "url": "http://www.sarahpraymusic.com"
+      }
+    ]
+  },
+  {
+    "date": "2009-10-22T00:00:00-0400",
+    "location": {
+      "name": "DC9",
+      "locality": "Washington",
+      "region": "DC"
+    },
+    "url": "https://www.facebook.com/events/10153425667396756",
+    "artists": [
+      {
+        "name": "Lost In The Trees",
+        "url": "http://www.lostinthetrees.com"
+      }
+    ]
+  },
+  {
+    "date": "2009-11-17T00:00:00-0500",
+    "location": {
+      "name": "IOTA",
+      "locality": "Arlington",
+      "region": "VA"
+    },
+    "url": "https://www.facebook.com/events/10153729098913943",
+    "artists": [
+      {
+        "name": "El Ten Eleven",
+        "url": "http://www.elteneleven.com"
+      }
+    ]
+  },
+  {
+    "date": "2010-02-25T00:00:00-0500",
+    "location": {
+      "name": "The Red & The Black",
+      "locality": "Washington",
+      "region": "DC"
+    },
+    "url": "https://www.facebook.com/events/10152753020665588",
+    "artists": [
+      {
+        "name": "Shadows and Ghosts",
+        "url": "https://myspace.com/shadowsandghosts"
+      }
+    ]
+  },
+  {
+    "date": "2010-06-07T00:00:00-0400",
+    "location": {
+      "name": "Velvet Lounge",
+      "locality": "Washington",
+      "region": "DC"
+    },
+    "url": "https://www.facebook.com/events/956194604392095",
+    "artists": [
+      {
+        "name": "Fall Catalogue",
+        "url": "https://myspace.com/fallcatalogue"
+      }
+    ]
+  },
+  {
+    "date": "2010-09-27T00:00:00-0400",
+    "location": {
+      "name": "IOTA",
+      "locality": "Arlington",
+      "region": "VA"
+    },
+    "url": "https://www.facebook.com/events/1053172734710617",
+    "artists": [
+      {
+        "name": "Six Gallery",
+        "url": "https://sixgallery.bandcamp.com"
+      }
+    ]
+  },
+  {
+    "date": "2011-01-29T00:00:00-0500",
+    "location": {
+      "name": "Gibson's Grille",
+      "locality": "Richmond",
+      "region": "VA"
+    },
+    "url": "https://www.facebook.com/events/888913237813766",
+    "artists": [
+      {
+        "name": "Lobo Marino",
+        "url": "http://www.lobomarinomusic.com"
+      },
+      {
+        "name": "Dave Watkins",
+        "url": "http://www.davewatkinsmusic.com"
+      }
+    ]
+  },
+  {
+    "date": "2011-02-03T00:00:00-0500",
+    "location": {
+      "name": "Kung Fu Necktie",
+      "locality": "Philadelphia",
+      "region": "PA"
+    },
+    "url": "https://www.facebook.com/events/947689738614902",
+    "artists": [
+      {
+        "name": "Bells Bells Bells",
+        "url": "https://myspace.com/bellsbellsbells"
+      },
+      {
+        "name": "Acres of Diamonds",
+        "url": "https://acresofdiamonds.bandcamp.com"
+      }
+    ]
+  },
+  {
+    "date": "2011-04-13T00:00:00-0400",
+    "location": {
+      "name": "DC9",
+      "locality": "Washington",
+      "region": "DC"
+    },
+    "url": "https://www.facebook.com/events/1113933371965876",
+    "artists": [
+      {
+        "name": "Mittenfields",
+        "url": "https://mittenfields.bandcamp.com"
+      },
+      {
+        "name": "The Plums",
+        "url": "https://myspace.com/plumsband"
+      }
+    ]
+  },
+  {
+    "date": "2011-06-26T00:00:00-0400",
+    "location": {
+      "name": "Velvet Lounge",
+      "locality": "Washington",
+      "region": "DC"
+    },
+    "url": "https://www.facebook.com/events/1153275551365180",
+    "artists": [
+      {
+        "name": "The End of the Ocean",
+        "url": "http://theendoftheocean.com"
+      },
+      {
+        "name": "Sunlight Ascending",
+        "url": "https://sunlight-ascending.bandcamp.com"
+      }
+    ]
+  },
+  {
+    "date": "2011-06-27T00:00:00-0400",
+    "location": {
+      "name": "Charm City Art Space",
+      "locality": "Baltimore",
+      "region": "MD"
+    },
+    "url": "https://www.facebook.com/events/1076135535733864",
+    "artists": [
+      {
+        "name": "The End of the Ocean",
+        "url": "http://theendoftheocean.com"
+      },
+      {
+        "name": "Sunlight Ascending",
+        "url": "https://sunlight-ascending.bandcamp.com"
+      },
+      {
+        "name": "Until Sunrise",
+        "url": "https://untilsunrise.bandcamp.com"
+      }
+    ]
+  },
+  {
+    "date": "2011-07-27T00:00:00-0400",
+    "location": {
+      "name": "Velvet Lounge",
+      "locality": "Washington",
+      "region": "DC"
+    },
+    "url": "https://www.facebook.com/events/820771184678446",
+    "artists": [
+      {
+        "name": "Teen Mom",
+        "url": "http://teenmomdc.com"
+      },
+      {
+        "name": "Battle House"
+      }
+    ]
+  },
+  {
+    "date": "2011-10-28T00:00:00-0400",
+    "location": {
+      "name": "IOTA",
+      "locality": "Arlington",
+      "region": "VA"
+    },
+    "url": "https://www.facebook.com/events/1023019594393668",
+    "artists": [
+      {
+        "name": "TONE",
+        "url": "http://tone-dc.com"
+      },
+      {
+        "name": "The Ascent of Everest",
+        "url": "https://www.facebook.com/theascentofeverest"
+      }
+    ]
+  },
+  {
+    "date": "2012-01-19T00:00:00-0500",
+    "location": {
+      "name": "Velvet Lounge",
+      "locality": "Washington",
+      "region": "DC"
+    },
+    "url": "https://www.facebook.com/events/660925060674461",
+    "artists": [
+      {
+        "name": "Zvoov",
+        "url": "https://zvoov.bandcamp.com"
+      },
+      {
+        "name": "Degollado",
+        "url": "https://degollado.bandcamp.com"
+      }
+    ]
+  },
+  {
+    "date": "2012-02-24T00:00:00-0500",
+    "location": {
+      "name": "Black Cat",
+      "locality": "Washington",
+      "region": "DC"
+    },
+    "url": "https://www.facebook.com/events/763510217080456",
+    "artists": [
+      {
+        "name": "Justin Trawick Group",
+        "url": "http://www.justintrawick.com"
+      },
+      {
+        "name": "Tauk",
+        "url": "https://tauk.bandcamp.com"
+      }
+    ]
+  },
+  {
+    "date": "2012-04-28T00:00:00-0400",
+    "location": {
+      "name": "Velvet Lounge",
+      "locality": "Washington",
+      "region": "DC"
+    },
+    "url": "https://www.facebook.com/events/839928279420859",
+    "artists": [
+      {
+        "name": "TONE",
+        "url": "http://tone-dc.com"
+      },
+      {
+        "name": "The Blue Letter",
+        "url": "https://www.facebook.com/theblueletter"
+      }
+    ]
+  },
+  {
+    "date": "2012-07-31T00:00:00-0400",
+    "location": {
+      "name": "The Red Palace",
+      "locality": "Washington",
+      "region": "DC"
+    },
+    "url": "https://www.facebook.com/events/426952400681295",
+    "artists": [
+      {
+        "name": "The End of the Ocean",
+        "url": "http://theendoftheocean.com"
+      },
+      {
+        "name": "sansyou",
+        "url": "https://sansyou.bandcamp.com"
+      }
+    ]
+  },
+  {
+    "date": "2012-10-10T00:00:00-0400",
+    "location": {
+      "name": "Velvet Lounge",
+      "locality": "Washington",
+      "region": "DC"
+    },
+    "url": "https://www.facebook.com/events/396734423725230",
+    "artists": [
+      {
+        "name": "Spikes Out"
+      },
+      {
+        "name": "Port-Royal",
+        "url": "http://www.port-royal.it"
+      }
+    ]
+  },
+  {
+    "date": "2012-11-08T00:00:00-0500",
+    "location": {
+      "name": "Rock & Roll Hotel",
+      "locality": "Washington",
+      "region": "DC"
+    },
+    "url": "https://www.facebook.com/events/119895418158440",
+    "artists": [
+      {
+        "name": "Errors",
+        "url": "http://www.weareerrors.com"
+      },
+      {
+        "name": "The Twilight Sad",
+        "url": "http://www.thetwilightsad.com"
+      }
+    ]
+  },
+  {
+    "date": "2015-05-16T00:00:00-0400",
+    "location": {
+      "name": "Velvet Lounge",
+      "locality": "Washington",
+      "region": "DC"
+    },
+    "url": "https://www.facebook.com/events/1075635229118848",
+    "artists": [
+      {
+        "name": "The Dealbreakers",
+        "url": "https://thedealbreakersnova.bandcamp.com"
+      },
+      {
+        "name": "ShowPony",
+        "url": "http://www.showponyband.com"
+      },
+      {
+        "name": "A Troop of Echoes",
+        "url": "https://atroopofechoes.com"
+      }
+    ]
+  },
+  {
+    "date": "2016-02-20T00:00:00-0500",
+    "location": {
+      "name": "Velvet Lounge",
+      "locality": "Washington",
+      "region": "DC"
+    },
+    "url": "https://www.facebook.com/events/599841410165172",
+    "artists": [
+      {
+        "name": "Time Columns",
+        "url": "http://www.timecolumns.com"
+      },
+      {
+        "name": "TONE",
+        "url": "http://tone-dc.com"
+      }
+    ]
+  },
+  {
+    "date": "2016-06-01T00:00:00-0400",
+    "location": {
+      "name": "Velvet Lounge",
+      "locality": "Washington",
+      "region": "DC"
+    },
+    "url": "https://www.facebook.com/events/1720347458237118",
+    "artists": [
+      {
+        "name": "Fine, Fine",
+        "url": "https://finefine.bandcamp.com"
+      },
+      {
+        "name": "Shy, Low",
+        "url": "http://shylowmusic.com"
+      },
+      {
+        "name": "The Greatest Hoax",
+        "url": "https://thegreatesthoax.bandcamp.com"
+      }
+    ]
+  },
+  {
+    "date": "2016-11-12T00:00:00-0500",
+    "location": {
+      "name": "Cafe Nola",
+      "locality": "Frederick",
+      "region": "MD"
+    },
+    "url": "https://www.facebook.com/events/1762585477337244",
+    "artists": [
+      {
+        "name": "Time Columns",
+        "url": "http://www.timecolumns.com"
+      }
+    ]
+  },
+  {
+    "date": "2016-12-08T00:00:00-0500",
+    "location": {
+      "name": "Rock & Roll Hotel",
+      "locality": "Washington",
+      "region": "DC"
+    },
+    "url": "https://www.facebook.com/events/1135001993262257",
+    "artists": [
+      {
+        "name": "TONE",
+        "url": "http://tone-dc.com"
+      },
+      {
+        "name": "Boat Burning",
+        "url": "http://www.boatburning.com"
+      }
+    ]
+  },
+  {
+    "date": "2017-01-21T00:00:00-0500",
+    "name": "Capital Fringe",
+    "location": {
+      "name": "Logan Fringe Arts Space",
+      "locality": "Washington",
+      "region": "DC"
+    },
+    "url": "https://www.facebook.com/events/1463139857034325",
+    "artists": [
+      {
+        "name": "California Accent",
+        "url": "https://californiaaccent.bandcamp.com"
+      }
+    ]
+  },
+  {
+    "date": "2017-02-18T00:00:00-0500",
+    "name": "'Auditory Learning Experience : Cinematic'",
+    "location": {
+      "locality": "Williamsport",
+      "region": "MD"
+    },
+    "artists": [
+      {
+        "name": "Paul Cogle (PSC3)",
+        "url": "https://www.facebook.com/paul.cogle"
+      },
+      {
+        "name": "BLK TAG",
+        "url": "http://blk_tag.adams-dress.com"
+      },
+      {
+        "name": "Dan Miñoza"
+      },
+      {
+        "name": "INSECT FACTORY",
+        "url": "https://insectfactory.bandcamp.com"
+      },
+      {
+        "name": "onewayness"
+      },
+      {
+        "name": "Brendan Cooper (p.zorito)",
+        "url": "https://pzorito.bandcamp.com"
+      },
+      {
+        "name": "Jason Shawn (dRed)",
+        "url": "https://dred.bandcamp.com"
+      },
+      {
+        "name": "James Wolf",
+        "url": "https://jwolf333.bandcamp.com"
+      },
+      {
+        "name": "Asucré",
+        "url": "https://asucre.bandcamp.com"
+      },
+      {
+        "name": "Phoenix Auto Group",
+        "url": "https://www.facebook.com/phoenixautogroup"
+      },
+      {
+        "name": "David Kresge (Goodnight Stars, Goodnight Air)",
+        "url": "https://www.facebook.com/davidkresge"
+      },
+      {
+        "name": "evolv",
+        "url": "https://evolv.bandcamp.com"
+      },
+      {
+        "name": "smallhands",
+        "url": "https://smallhandsva.bandcamp.com"
+      },
+      {
+        "name": "Stag & Owl"
+      },
+      {
+        "name": "Cheshi",
+        "url": "https://cheshi.bandcamp.com"
+      },
+      {
+        "name": "SPT",
+        "url": "https://www.facebook.com/seenplattetunnel"
+      },
+      {
+        "name": "Christopher Feltner",
+        "url": "https://christophersfeltner.bandcamp.com"
+      }
+    ]
+  },
+  {
+    "date": "2017-06-05T00:00:00-0400",
+    "location": {
+      "name": "Galaxy Hut",
+      "locality": "Arlington",
+      "region": "VA"
+    },
+    "url": "https://www.facebook.com/events/1860457464204194",
+    "artists": [
+      {
+        "name": "Barrows",
+        "url": "http://barrowstheband.com"
+      }
+    ]
+  },
+  {
+    "date": "2017-10-14T00:00:00-0400",
+    "name": "Cognitive Frisson",
+    "location": {
+      "name": "Dharma Studio",
+      "locality": "Winchester",
+      "region": "VA"
+    },
+    "url": "https://www.facebook.com/events/111397642864725",
+    "artists": [
+      {
+        "name": "Cheshi",
+        "url": "https://cheshi.bandcamp.com"
+      },
+      {
+        "name": "evolv",
+        "url": "https://evolv.bandcamp.com"
+      },
+      {
+        "name": "Guillermo Pizarro",
+        "url": "https://guillermopizarro.bandcamp.com"
+      },
+      {
+        "name": "Colin Phils",
+        "url": "https://colinphils.bandcamp.com"
+      }
+    ]
+  },
+  {
+    "date": "2018-07-22T00:00:00-0400",
+    "location": {
+      "name": "Local F.S. 202",
+      "locality": "Washington",
+      "region": "DC"
+    },
+    "url": "https://www.facebook.com/events/804981796292128",
+    "artists": [
+      {
+        "name": "Tristan Welch",
+        "url": "https://tristanwelch.bandcamp.com"
+      },
+      {
+        "name": "Teething Veils",
+        "url": "https://teethingveils.bandcamp.com"
+      },
+      {
+        "name": "EFFEMME",
+        "url": "https://effemme.bandcamp.com"
+      },
+      {
+        "name": "The Touch",
+        "url": "https://www.facebook.com/dothetouch"
+      },
+      {
+        "name": "Colin Phils",
+        "url": "https://colinphils.bandcamp.com"
+      },
+      {
+        "name": "Material Girls",
+        "url": "https://materialgirls.bandcamp.com"
+      }
+    ]
+  },
+  {
+    "date": "2018-08-30T00:00:00-0400",
+    "location": {
+      "name": "Electric Maid Community Exchange",
+      "locality": "Washington",
+      "region": "DC"
+    },
+    "url": "https://www.facebook.com/events/610855749295967",
+    "artists": [
+      {
+        "name": "evolv",
+        "url": "https://evolv.bandcamp.com"
+      },
+      {
+        "name": "Cheshi",
+        "url": "https://cheshi.bandcamp.com"
+      },
+      {
+        "name": "Jakals",
+        "url": "https://jakalsmusic.bandcamp.com"
+      }
+    ]
+  },
+  {
+    "date": "2019-03-19T00:00:00-0400",
+    "location": {
+      "name": "VFW 9274",
+      "locality": "Falls Church",
+      "region": "VA"
+    },
+    "url": "https://www.facebook.com/events/2260445214191528",
+    "artists": [
+      {
+        "name": "Tristan Welch",
+        "url": "https://tristanwelch.bandcamp.com"
+      },
+      {
+        "name": "Tired All The Time",
+        "url": "https://tiredallthetime.bandcamp.com"
+      },
+      {
+        "name": "Elizabeth Colour Wheel",
+        "url": "https://elizabethcolourwheel.bandcamp.com"
+      }
+    ]
+  },
+  {
+    "date": "2019-06-30T00:00:00-0400",
+    "location": {
+      "name": "Galaxy Hut",
+      "locality": "Arlington",
+      "region": "VA"
+    },
+    "url": "https://www.facebook.com/events/451898005623706",
+    "artists": [
+      {
+        "name": "Koshari",
+        "url": "https://koshari.bandcamp.com"
+      }
+    ]
+  }
+]
