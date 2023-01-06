@@ -1,11 +1,11 @@
 <li>
   <div class="show h-event">
     <h2 class="p-name">
-      <time class="dt-start" datetime="{{ show.date | date: '%Y-%m-%d' }}">
+      <time class="dt-start" datetime="{{ show.date | date: dates.iso8601 }}">
         {% if show.url -%}
-          <a href="{{ show.url }}" class="u-url">{{ show.date | date: '%B %e<sup>%q</sup>, %Y' }}</a>
+          <a href="{{ show.url }}" class="u-url">{{ show.date | date: dates.display }}</a>
         {% else -%}
-          {{ show.date | date: '%B %e<sup>%q</sup>, %Y' }}
+          {{ show.date | date: dates.display }}
         {% endif -%}
       </time>
     </h2>
