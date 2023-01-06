@@ -6,12 +6,7 @@ module.exports = eleventyConfig => {
 
   eleventyConfig
     .addPassthroughCopy('./src/assets/images')
-    .addPassthroughCopy('./src/favicon.ico')
-    .addPassthroughCopy('./src/icon-256x256.png')
-    .addPassthroughCopy('./src/icon-384x384.png')
-    .addPassthroughCopy('./src/icon-512x512.png')
-    .addPassthroughCopy('./src/icon.svg')
-    .addPassthroughCopy('./src/robots.txt');
+    .addPassthroughCopy('./src/*.{ico,png,svg,txt}');
 
   return {
     dir: {
