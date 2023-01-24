@@ -23,7 +23,6 @@
 [[headers]]
   for = "/.well-known/webfinger"
   [headers.values]
-    Access-Control-Allow-Origin = "*"
     Content-Type = "application/jrd+json; charset=UTF-8"
 
 [[headers]]
