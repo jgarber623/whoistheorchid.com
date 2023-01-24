@@ -5,6 +5,11 @@ permalink: .well-known/webfinger
   "subject": "acct:{{ site.username }}@whoistheorchid.com",
   "links": [
     {
+      "rel": "http://webfinger.net/rel/profile-page",
+      "type": "text/html",
+      "href": "{{ site.url }}/@{{ site.username }}"
+    },
+    {
       "rel": "self",
       "type": "application/activity+json",
       "href": "{{ site.url }}/users/{{ site.username }}"
