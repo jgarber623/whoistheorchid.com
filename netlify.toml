@@ -47,7 +47,7 @@
   force  = true
 
 [[redirects]]
-  from   = "/theorchid.json"
-  to     = "/theorchid"
+  from   = "/theorchid"
+  to     = "/theorchid.json"
   status = 200
   force  = true
