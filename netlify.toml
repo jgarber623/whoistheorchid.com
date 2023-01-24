@@ -35,8 +35,19 @@
   [headers.values]
     Content-Type = "application/manifest+json; charset=UTF-8"
 
+[[headers]]
+  for = "/theorchid.json"
+  [headers.values]
+    Content-Type = "application/activity+json; charset=UTF-8"
+
 [[redirects]]
   from   = "https://whoistheorchid-com.netlify.app/*"
   to     = "https://whoistheorchid.com/:splat"
   status = 301
+  force  = true
+
+[[redirects]]
+  from   = "/theorchid.json"
+  to     = "/theorchid"
+  status = 200
   force  = true
