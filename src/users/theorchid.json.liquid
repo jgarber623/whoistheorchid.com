@@ -1,17 +1,18 @@
 ---
-permalink: "@theorchid.json"
+permalink: users/theorchid.json
 ---
 {
   "@context": [
     "https://www.w3.org/ns/activitystreams",
     "https://w3id.org/security/v1"
   ],
-  "id": "{{ site.url }}/{{ site.username }}",
+  "id": "{{ site.url }}/users/{{ site.username }}",
   "type": "Group",
+  "inbox": "{{ site.url }}/users/{{ site.username }}/inbox",
   "preferredUsername": "{{ site.username }}",
   "name": "{{ site.name }}",
   "summary": "<p>{{ site.description }}</p>",
-  "url": "{{ site.url }}/{{ site.username }}",
+  "url": "{{ site.url }}/@{{ site.username }}",
   "discoverable": true,
   "published": "2009-01-12T18:48:50Z",
   "attachment": [
