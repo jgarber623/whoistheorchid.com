@@ -1,0 +1,13 @@
+---
+permalink: .well-known/webfinger
+---
+{
+  "subject": "acct:{{ site.username }}@whoistheorchid.com",
+  "links": [
+    {
+      "rel": "self",
+      "type": "application/activity+json",
+      "href": "{{ site.url }}/{{ site.username }}"
+    }
+  ]
+}

@@ -21,6 +21,11 @@
     X-XSS-Protection = "0"
 
 [[headers]]
+  for = "/.well-known/webfinger"
+  [headers.values]
+    Content-Type = "application/jrd+json; charset=UTF-8"
+
+[[headers]]
   for = "/favicon.ico"
   [headers.values]
     Content-Type = "image/x-icon"
