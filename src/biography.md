@@ -1,6 +1,6 @@
 ---
-layout: page
-title: Biography
+layout: "page.liquid"
+title: "Biography"
 ---
 
 Formed in 2008 by guitarists Jason Garber and Jim Jones, The Orchid began life as a four-piece ensemble inspired by a shared appreciation of mind-expanding instrumental music, science fiction, and the unexplained phenomena inhabiting the far corners of the universe.
