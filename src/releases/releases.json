@@ -1,4 +1,0 @@
-{
-  "layout": "release",
-  "permalink": "/releases/{{ page.fileSlug }}/"
-}
