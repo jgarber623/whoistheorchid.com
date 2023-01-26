@@ -1,6 +1,6 @@
 ---
 title: "“Shadowing Lull EP” available now."
-tags: "releases"
+tags: "release"
 bandcamp:
   id: "3995949234"
   title: "Shadowing Lull EP"

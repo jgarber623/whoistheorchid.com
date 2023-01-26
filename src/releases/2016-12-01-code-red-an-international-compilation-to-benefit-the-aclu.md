@@ -1,6 +1,6 @@
 ---
 permalink: false
-tags: "compilations"
+tags: "compilation"
 bandcamp:
   id:
   title: "Code Red: An International Compilation to Benefit the ACLU"
