@@ -1,7 +1,6 @@
 ---
 title: "“New Mexico EP” available now."
-tags:
-  - "releases"
+tags: "releases"
 bandcamp:
   id: "1041240443"
   title: "New Mexico EP"
