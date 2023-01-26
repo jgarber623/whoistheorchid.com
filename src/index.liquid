@@ -2,9 +2,7 @@
 layout: base
 ---
 
-{%- for release in collections.release -%}
-  {%- assign release = release -%}
-{%- endfor -%}
+{%- assign release = collections.releases.last -%}
 
 <article class="release article h-entry">
   <h1 class="page-title p-name">{{ release.data.title }}</h1>
@@ -17,11 +15,9 @@ layout: base
     </figure>
 
     <div class="release-description">
-      {{ release.templateContent }}
+      {{ release.content }}
     </div>
   </div>
 
-  {% if release.data.bandcamp.id -%}
-    {% include "bandcamp_player" id: release.data.bandcamp.id %}
-  {% endif -%}
+  {% include "bandcamp_player" id: release.data.bandcamp.id %}
 </article>
