@@ -1,5 +1,7 @@
 ---
 title: "“Beyond The Vast, Endless Sea” available now."
+tags:
+  - "releases"
 bandcamp:
   id: "1946028992"
   title: "Beyond The Vast, Endless Sea"

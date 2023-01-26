@@ -1,5 +1,7 @@
 ---
 title: "“Apogee, Perigee” available now."
+tags:
+  - "releases"
 bandcamp:
   id: "3656183138"
   title: "Apogee, Perigee"

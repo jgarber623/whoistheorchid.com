@@ -1,4 +1,7 @@
 ---
+permalink: false
+tags:
+  - "compilations"
 bandcamp:
   id:
   title: "We Stand: An International Compilation In Support of Planned Parenthood"
