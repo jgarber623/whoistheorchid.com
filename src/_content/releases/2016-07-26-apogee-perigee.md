@@ -1,9 +1,9 @@
 ---
-title: “Apogee, Perigee” available now.
+title: "“Apogee, Perigee” available now."
 bandcamp:
-  id: 3656183138
-  title: Apogee, Perigee
-  url: https://theorchid.bandcamp.com/album/apogee-perigee
+  id: "3656183138"
+  title: "Apogee, Perigee"
+  url: "https://theorchid.bandcamp.com/album/apogee-perigee"
 ---
 
 The Orchid's sophomore LP is now available exclusively on [Bandcamp](https://theorchid.bandcamp.com/album/apogee-perigee). Six songs exploring the theme of isolation for at least $8<sup><span>.</span>00</sup>.

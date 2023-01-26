@@ -1,9 +1,9 @@
 ---
-title: “New Mexico EP” available now.
+title: "“New Mexico EP” available now."
 bandcamp:
-  id: 1041240443
-  title: New Mexico EP
-  url: https://theorchid.bandcamp.com/album/new-mexico-ep
+  id: "1041240443"
+  title: "New Mexico EP"
+  url: "https://theorchid.bandcamp.com/album/new-mexico-ep"
 ---
 
 The Orchid's debut EP is now available in digital formats exclusively on [Bandcamp](https://theorchid.bandcamp.com). Four dense yet uplifting songs for at least $4<sup><span>.</span>00</sup>. [Get your copy today](https://theorchid.bandcamp.com/album/new-mexico-ep).
