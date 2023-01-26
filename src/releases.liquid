@@ -7,7 +7,7 @@ title: Releases
   <h1 class="page-title">{{ title }}</h1>
 
   <ol class="releases-list ui-list clearfix" reversed>
-    {% for release in collections.release reversed -%}
+    {% for release in collections.releases reversed -%}
       {% include "release" with release %}
     {% endfor -%}
   </ol>
@@ -17,7 +17,7 @@ title: Releases
   <h1 class="page-title">Compilations</h1>
 
   <ol class="releases-list ui-list clearfix" reversed>
-    {% for release in collections.compilation reversed -%}
+    {% for release in collections.compilations reversed -%}
       {% include "release" with release %}
     {% endfor -%}
   </ol>

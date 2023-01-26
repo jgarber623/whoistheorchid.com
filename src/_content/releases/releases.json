@@ -1,5 +1,5 @@
 {
   "layout": "release",
   "permalink": "releases/{{ page.fileSlug }}/",
-  "tags": ["release"]
+  "tags": ["releases"]
 }

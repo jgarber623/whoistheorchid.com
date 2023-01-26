@@ -1,5 +1,5 @@
 <li>
   <a href="{{ release.url | default: release.data.bandcamp.url }}" class="bordered-link">
-    <img src="/assets/images/{{ release.data.tags | first | append: 's' }}/{{ release.fileSlug }}-800.jpg" alt="{{ release.data.bandcamp.title }} cover art">
+    <img src="/assets/images/{{ release.data.tags | first }}/{{ release.fileSlug }}-800.jpg" alt="{{ release.data.bandcamp.title }} cover art">
   </a>
 </li>
