@@ -1,0 +1,15 @@
+---
+layout: "base.liquid"
+permalink: "/@theorchid/index.html"
+title: "Updates"
+---
+
+<div class="h-feed">
+  <h1 class="page-title p-name">{{ title }}</h1>
+
+  <ol class="posts-list ui-list" reversed>
+    {% for post in collections.post reversed -%}
+      <li>{% include "post.liquid" with post %}</li>
+    {% endfor -%}
+  </ol>
+</div>
