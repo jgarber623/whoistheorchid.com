@@ -27,6 +27,11 @@
     Content-Type = "application/jrd+json; charset=UTF-8"
 
 [[headers]]
+  for = "/@theorchid/feed.json"
+  [headers.values]
+    Content-Type = "application/feed+json; charset=UTF-8"
+
+[[headers]]
   for = "/favicon.ico"
   [headers.values]
     Content-Type = "image/x-icon"
@@ -45,8 +50,3 @@
 [[redirects]]
   from   = "https://whoistheorchid-com.netlify.app/*"
   to     = "https://whoistheorchid.com/:splat"
-
-[[redirects]]
-  from   = "/@theorchid"
-  to     = "/@theorchid.html"
-  status = 200
