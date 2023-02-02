@@ -1,7 +1,7 @@
 <article class="post article h-entry">
   <header class="post-header">
     <ul class="ui-list">
-      <li><time class="dt-published" datetime="{{ post.date | date: dates.iso68601_with_time_and_zone }}">{{ post.date | date: dates.display_with_time }}</time></li>
+      <li><time class="dt-published" datetime="{{ post.date | date: dates.iso68601_with_time_and_zone }}">{{ post.date | date: dates.display_with_time, "America/New_York" }}</time></li>
       <li><a href="{{ post.url }}" class="u-uid u-url">permalink</a></li>
     </ul>
   </header>
