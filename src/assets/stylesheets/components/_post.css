@@ -18,6 +18,12 @@
     }
   }
 
+  & sup {
+    margin: 0;
+    text-decoration: none;
+    top: 0.05em;
+  }
+
   & a {
     color: rgba(255 255 255 / 40%);
 
