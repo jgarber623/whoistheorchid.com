@@ -22,7 +22,7 @@ module.exports = class {
         {
           rel: 'self',
           type: 'application/activity+json',
-          href: `${site.url}/users/${site.username}`
+          href: `${site.url}/users/${site.username}.json`
         }
       ]
     })

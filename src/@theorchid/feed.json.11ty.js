@@ -9,12 +9,9 @@ module.exports = class {
     };
   }
 
-  render(data) {
-    const { permalink, site } = data;
-
+  render({ collections, permalink, site }) {
     const items =
-      data
-        .collections
+      collections
         .post
         .map(post => {
           return {
