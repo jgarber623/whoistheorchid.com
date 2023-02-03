@@ -50,3 +50,9 @@
 [[redirects]]
   from   = "https://whoistheorchid-com.netlify.app/*"
   to     = "https://whoistheorchid.com/:splat"
+
+[[redirects]]
+  from   = "/users/*"
+  to     = "/users/:splat.json"
+  status = 200
+  force  = true
