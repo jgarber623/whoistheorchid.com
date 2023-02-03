@@ -1,6 +1,6 @@
 const { absoluteURL } = require('../../lib/utils.js');
 
-const { url } = require('./js');
+const { url } = require('./site.js');
 
 const user = '/users/theorchid';
 
