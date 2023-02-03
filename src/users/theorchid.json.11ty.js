@@ -1,3 +1,5 @@
+const { absoluteURL } = require('../../lib/utils.js');
+
 module.exports = class {
   data() {
     return {
@@ -5,20 +7,20 @@ module.exports = class {
     };
   }
 
-  render({ site }) {
+  render({ activitypub, site }) {
     return JSON.stringify({
       '@context': [
         'https://www.w3.org/ns/activitystreams',
         'https://w3id.org/security/v1'
       ],
-      id: `${site.url}/users/${site.username}.json`,
+      id: activitypub.id,
       type: 'Group',
-      inbox: `${site.url}/users/${site.username}/inbox.json`,
-      outbox: `${site.url}/users/${site.username}/outbox.json`,
-      preferredUsername: `${site.username}`,
+      inbox: activitypub.inbox,
+      outbox: activitypub.outbox,
+      preferredUsername: 'theorchid',
       name: site.name,
       summary: `<p>${site.description}</p>`,
-      url: `${site.url}/@${site.username}`,
+      url: activitypub.url,
       discoverable: true,
       published: '2009-01-12T18:48:50Z',
       attachment: [
@@ -36,12 +38,12 @@ module.exports = class {
       icon: {
         type: 'Image',
         mediaType: 'image/png',
-        url: `${site.url}/icon-512x512.png`
+        url: site.icon
       },
       image: {
         type: 'Image',
         mediaType: 'image/jpeg',
-        url: `${site.url}/assets/images/cover.jpg`
+        url: absoluteURL('/assets/images/cover.jpg', site.url)
       }
     });
   }

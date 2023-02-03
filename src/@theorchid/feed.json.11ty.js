@@ -1,6 +1,4 @@
-const { URL } = require('node:url');
-
-const absoluteURL = (path, base) => new URL(path, base).href;
+const { absoluteURL } = require('../../lib/utils.js');
 
 module.exports = class {
   data() {
@@ -30,12 +28,12 @@ module.exports = class {
       home_page_url: site.url,
       feed_url: absoluteURL(permalink, site.url),
       description: site.description,
-      icon: absoluteURL('/icon-512x512.png', site.url),
+      icon: site.icon,
       authors: [
         {
           name: site.name,
           url: site.url,
-          avatar: absoluteURL('/icon-512x512.png', site.url)
+          avatar: site.icon
         }
       ],
       language: 'en-US',

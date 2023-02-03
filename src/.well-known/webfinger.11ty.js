@@ -5,24 +5,24 @@ module.exports = class {
     };
   }
 
-  render({ site }) {
+  render({ activitypub, site }) {
     return JSON.stringify({
-      subject: `acct:${site.username}@whoistheorchid.com`,
+      subject: 'acct:theorchid@whoistheorchid.com',
       links: [
         {
           rel: 'http://webfinger.net/rel/avatar',
           type: 'image/png',
-          href: `${site.url}/icon-512x512.png`
+          href: site.icon
         },
         {
           rel: 'http://webfinger.net/rel/profile-page',
           type: 'text/html',
-          href: `${site.url}/@${site.username}`
+          href: activitypub.url
         },
         {
           rel: 'self',
           type: 'application/activity+json',
-          href: `${site.url}/users/${site.username}.json`
+          href: activitypub.id
         }
       ]
     })
