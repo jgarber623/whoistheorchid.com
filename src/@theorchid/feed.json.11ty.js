@@ -1,5 +1,3 @@
-const { absoluteURL } = require('../../lib/utils.js');
-
 module.exports = class {
   data() {
     return {
@@ -12,9 +10,11 @@ module.exports = class {
       collections
         .post
         .map(post => {
+          const post_url = `${site.url}${post.url}`;
+
           return {
-            id: absoluteURL(post.url, site.url),
-            url: absoluteURL(post.url, site.url),
+            id: post_url,
+            url: post_url,
             content_html: post.content.trim(),
             content_text: post.template._frontMatter.content.trim(),
             date_published: post.date
@@ -26,7 +26,7 @@ module.exports = class {
       version: 'https://jsonfeed.org/version/1.1',
       title: `Updates from ${site.name}`,
       home_page_url: site.url,
-      feed_url: absoluteURL(permalink, site.url),
+      feed_url: `${site.url}${permalink}`,
       description: site.description,
       icon: site.icon,
       authors: [

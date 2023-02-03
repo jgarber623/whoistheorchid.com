@@ -1,12 +1,12 @@
-const { absoluteURL } = require('../../lib/utils.js');
-
 const { url } = require('./site.js');
 
-const user = '/users/theorchid';
+const actor = `${url}/users/theorchid`;
 
 module.exports = {
-  id: absoluteURL(user, url),
-  inbox: absoluteURL(`${user}/inbox`, url),
-  outbox: absoluteURL(`${user}/outbox`, url),
-  url: absoluteURL('/@theorchid', url)
+  id: actor,
+  inbox: `${actor}/inbox`,
+  outbox: `${actor}/outbox`,
+  url: `${url}/@theorchid`,
+  following: `${actor}/following`,
+  followers: `${actor}/followers`
 };

@@ -1,5 +1,3 @@
-const { absoluteURL } = require('../../lib/utils.js');
-
 module.exports = class {
   data() {
     return {
@@ -15,6 +13,8 @@ module.exports = class {
       ],
       id: activitypub.id,
       type: 'Group',
+      following: activitypub.following,
+      followers: activitypub.followers,
       inbox: activitypub.inbox,
       outbox: activitypub.outbox,
       preferredUsername: 'theorchid',
@@ -43,7 +43,7 @@ module.exports = class {
       image: {
         type: 'Image',
         mediaType: 'image/jpeg',
-        url: absoluteURL('/assets/images/cover.jpg', site.url)
+        url: `${site.url}/assets/images/cover.jpg`
       }
     });
   }
