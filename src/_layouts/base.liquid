@@ -27,7 +27,7 @@
   <meta property="og:url" content="{{site.url }}{{ page.url }}">
 
   <link rel="alternate" href="/@theorchid/feed.json" title="Updates from {{ site.name }}" type="application/feed+json">
-  <link rel="alternate" href="/users/theorchid" type="application/activity+json">
+  <link rel="alternate" href="{{ activitypub_resource_url | default: activitypub.id }}" type="application/activity+json">
   <link rel="apple-touch-icon" href="/icon-256x256.png">
   <link rel="manifest" href="/manifest.webmanifest">
   <link rel="shortcut icon" href="/favicon.ico">
