@@ -23,6 +23,11 @@ module.exports = class {
       url: activitypub.url,
       discoverable: true,
       published: '2009-01-12T18:48:50Z',
+      publicKey: {
+        id: `${activitypub.id}#main-key`,
+        owner: activitypub.id,
+        publicKeyPem: '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAs5uQiGtTk52bLcvV8fQ0\npDbWT7E14biC8FAWQKM5RiAJO6jIRJnClP1P9WOnlatE0Byv7h3scEGNUlKcyWxk\nPvlzHnCTsVFrv8XNxZ/HbfnB2d3p/RkpiiMI8HwedndRMcRbNX2uYYqRg51CS2wl\n1AJm8CKkBXpnQ+7qLBrUxoLEPVxcZ+fu6Pb2ofZatREos8U0OBGb9ZBfR0Z0rQRM\nXEXMnCFCzIF6RCWkATxcCS7B30sdZeB7TXG9Rb4EIMlIEcdlCYNR+Y/oWjK4894p\nMRCncTGp0cOMB3ZniF/abkZphEUwk95oRzKzfqllus5ya8TK/JMD8GjjQVlMdyJm\nhQIDAQAB\n-----END PUBLIC KEY-----\n'
+      },
       attachment: [
         {
           type: 'PropertyValue',
