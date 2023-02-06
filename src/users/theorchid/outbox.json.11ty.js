@@ -13,7 +13,6 @@ module.exports = class {
           const object_url = `${activitypub.id}/posts/${post.fileSlug}`;
 
           return {
-            '@context': 'https://www.w3.org/ns/activitystreams',
             id: `${object_url}/activity`,
             type: 'Create',
             actor: activitypub.id,
