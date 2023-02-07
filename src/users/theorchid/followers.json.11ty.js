@@ -5,13 +5,13 @@ module.exports = class {
     };
   }
 
-  render({ activitypub }) {
+  render({ activitypub, followers }) {
     return JSON.stringify({
       '@context': 'https://www.w3.org/ns/activitystreams',
       id: activitypub.followers,
       type: 'OrderedCollection',
-      totalItems: 0,
-      orderedItems: []
+      totalItems: followers.length,
+      orderedItems: followers
     });
   }
 };
