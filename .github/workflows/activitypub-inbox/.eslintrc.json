@@ -1,0 +1,9 @@
+{
+  "extends": "@jgarber/eslint-config/module",
+  "parserOptions": {
+    "ecmaVersion": 13
+  },
+  "rules": {
+    "indent": ["error", 2, { "SwitchCase": 1 }]
+  }
+}

@@ -1,0 +1,32 @@
+name: ActivityPub Inbox
+
+on:
+  repository_dispatch:
+    types:
+      - process-activitypub-inbox
+
+jobs:
+  process:
+    name: Process new Inbox message
+    permissions:
+      contents: write
+    runs-on: ubuntu-20.04
+    env:
+      CLIENT_PAYLOAD: ${{ toJSON(github.event.client_payload) }}
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          cache-dependency-path: ./github/workflows/activitypub-inbox/package-lock.json
+          node-version-file: .nvmrc
+      - run: node ./github/workflows/activitypub-inbox "$CLIENT_PAYLOAD"
+        env:
+          ACTOR_PRIVATE_KEY: ${{ secrets.ACTOR_PRIVATE_KEY }}
+      - name: Commit and push changed files
+        run: |
+          git diff
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git config --global user.name 'github-actions[bot]'
+          git add -A
+          git commit -m '📬 Processed ActivityPub Inbox (`date +%FT%T%z`)' || exit 0
+          git push
