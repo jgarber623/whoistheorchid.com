@@ -52,6 +52,15 @@
   to     = "https://whoistheorchid.com/:splat"
 
 [[redirects]]
+  from   = "/users/theorchid/inbox"
+  to     = "https://nodejs-http-trigger-molvesvhaa-uc.a.run.app"
+  status = 200
+  force  = true
+  [redirects.headers]
+    X-Forwarded-Host = "whoistheorchid.com"
+    X-Forwarded-Path = "/users/theorchid/inbox"
+
+[[redirects]]
   from   = "/users/*"
   to     = "/users/:splat.json"
   status = 200
