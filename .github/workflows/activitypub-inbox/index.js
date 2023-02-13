@@ -2,7 +2,7 @@ import * as crypto from 'node:crypto';
 import * as process from 'node:process';
 import { Sha256Signer } from 'activitypub-http-signatures';
 
-import { Follow } from './lib/follow.js';
+import Follow from './lib/follow.js';
 
 import { id as user } from '../../../src/_data/activitypub.js';
 
