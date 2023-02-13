@@ -11,6 +11,8 @@ jobs:
     permissions:
       contents: write
     runs-on: ubuntu-20.04
+    env:
+      ACTIONS_STEP_DEBUG: true
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
