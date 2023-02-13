@@ -11,8 +11,6 @@ jobs:
     permissions:
       contents: write
     runs-on: ubuntu-20.04
-    env:
-      CLIENT_PAYLOAD: ${{ toJSON(github.event.client_payload) }}
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
@@ -22,6 +20,7 @@ jobs:
       - run: node .github/workflows/activitypub-inbox "$CLIENT_PAYLOAD"
         env:
           ACTOR_PRIVATE_KEY: ${{ secrets.ACTOR_PRIVATE_KEY }}
+          CLIENT_PAYLOAD: ${{ toJSON(github.event.client_payload) }}
       - name: Commit and push changed files
         run: |
           git diff
