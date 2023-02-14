@@ -10,10 +10,12 @@ const { ACTOR_PRIVATE_KEY } = process.env;
 
 const { headers, body: activity } = JSON.parse(process.argv[2]);
 
+const jsonldContentType = 'application/ld+json; profile="https://www.w3.org/ns/activitystreams"';
+
 const fetchObject = async id => {
   const response = await fetch(id, {
     headers: {
-      accept: 'application/ld+json; profile="https://www.w3.org/ns/activitystreams"'
+      accept: jsonldContentType
     }
   });
 
@@ -58,6 +60,7 @@ const signAndSendActivity = async ({ activity, url }) => {
 
   const headers = {
     date: new Date().toUTCString(),
+    digest: `sha-256=${crypto.createHash('sha256').update(activity).digest('base64')}`,
     host: new URL(url).hostname
   };
 
@@ -76,7 +79,7 @@ const signAndSendActivity = async ({ activity, url }) => {
     method,
     headers: {
       ...headers,
-      accept: 'application/ld+json',
+      'content-type': jsonldContentType,
       signature
     },
     body: activity
