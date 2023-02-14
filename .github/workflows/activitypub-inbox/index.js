@@ -87,12 +87,12 @@ const signAndSendActivity = async ({ activity, url }) => {
   });
 
   console.log('📤 Sending signed Activity to Inbox:', url);
-  console.log('Request headers:', request.headers);
-  console.log('Request body:', request.body);
+  console.log('Request headers:', Object.fromEntries(request.headers));
+  console.log('Request body:', body);
 
   const response = await fetch(request);
 
-  console.log('Response status:', response.status);
+  console.log('📥 Received response with status:', response.status);
   console.log('Response headers:', Object.fromEntries(response.headers));
   console.log('Response body:', await response.text());
 
