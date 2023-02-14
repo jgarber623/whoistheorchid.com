@@ -88,7 +88,7 @@ switch(activity.type.toLowerCase()) {
     handleFollowActivity(activity);
     break;
   case 'undo':
-    handleUndoActivity();
+    handleUndoActivity(activity);
     break;
   default:
     throw new Error(`Received Activity of unknown type: ${activity.type}`);
