@@ -83,7 +83,7 @@ const signAndSendActivity = async ({ activity, url }) => {
   });
 
   console.log('Response status:', response.status);
-  console.log('Response headers:', response.headers);
+  console.log('Response headers:', Object.fromEntries(...response.headers));
   console.log('Response body:', await response.json());
 
   return response;
