@@ -46,7 +46,7 @@ const handleUndoActivity = async undoActivity => {
 
   switch(object.type.toLowerCase()) {
     case 'follow':
-      Follow.destroy();
+      Follow.destroy(actor);
       break;
     default:
       throw new Error(`Received Undo Activity with object of unknown type: ${object.type}`);
@@ -54,6 +54,9 @@ const handleUndoActivity = async undoActivity => {
 };
 
 const signAndSendActivity = async ({ activity, url }) => {
+  console.log('📤 Signing and sending activity:', activity);
+  console.log('URL:', url);
+
   const headers = {
     date: new Date().toUTCString(),
     host: new URL(url).hostname
@@ -68,7 +71,7 @@ const signAndSendActivity = async ({ activity, url }) => {
 
   const signature = signer.sign({ url, method, headers });
 
-  return await fetch(url, {
+  const response = await fetch(url, {
     method,
     headers: {
       ...headers,
@@ -77,11 +80,17 @@ const signAndSendActivity = async ({ activity, url }) => {
     },
     body: activity
   });
+
+  console.log('Response status:', response.status);
+  console.log('Response headers:', ...response.headers);
+  console.log('Response body:', response.json());
+
+  return response;
 };
 
 console.log('📥 Received new ActivityPub Inbox activity!');
-console.log('Headers:', headers);
-console.log('Activity:', activity);
+console.log('Payload headers:', headers);
+console.log('Payload activity:', activity);
 
 switch(activity.type.toLowerCase()) {
   case 'follow':
