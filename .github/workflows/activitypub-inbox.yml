@@ -18,6 +18,7 @@ jobs:
           cache-dependency-path: .github/workflows/activitypub-inbox/package-lock.json
           node-version-file: .nvmrc
       - run: npm ci
+        working-directory: .github/workflows/activitypub-inbox
       - run: node .github/workflows/activitypub-inbox "$CLIENT_PAYLOAD"
         env:
           ACTOR_PRIVATE_KEY: ${{ secrets.ACTOR_PRIVATE_KEY }}
