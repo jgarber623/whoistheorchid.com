@@ -60,7 +60,7 @@ const signAndSendActivity = async ({ activity, url }) => {
 
   const headers = {
     date: new Date().toUTCString(),
-    digest: `sha-256=${crypto.createHash('sha256').update(activity).digest('base64')}`,
+    digest: `sha-256=${crypto.createHash('sha256').update(JSON.stringify(activity)).digest('base64')}`,
     host: new URL(url).hostname
   };
 
