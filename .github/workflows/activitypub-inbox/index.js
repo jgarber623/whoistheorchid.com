@@ -54,7 +54,7 @@ const handleUndoActivity = async undoActivity => {
 };
 
 const signAndSendActivity = async ({ activity, url }) => {
-  console.log('📤 Signing and sending activity:', activity);
+  console.log('📤 Generating signature for Activity:', activity);
 
   const headers = {
     date: new Date().toUTCString(),
@@ -70,7 +70,7 @@ const signAndSendActivity = async ({ activity, url }) => {
 
   const signature = signer.sign({ url, method, headers });
 
-  console.log('Sending activity to inbox:', url);
+  console.log('📤 Sending signed Activity to Inbox:', url);
 
   const response = await fetch(url, {
     method,
@@ -89,7 +89,7 @@ const signAndSendActivity = async ({ activity, url }) => {
   return response;
 };
 
-console.log('📥 Received new ActivityPub Inbox activity!');
+console.log('📥 Received new payload to ActivityPub Inbox');
 console.log('Payload headers:', headers);
 console.log('Payload activity:', activity);
 
