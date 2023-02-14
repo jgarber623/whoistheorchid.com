@@ -73,6 +73,8 @@ const signAndSendActivity = async ({ activity, url }) => {
 
   const signature = signer.sign({ url, method, headers });
 
+  console.log('Generated signature:', signature);
+
   console.log('📤 Sending signed Activity to Inbox:', url);
 
   const response = await fetch(url, {
@@ -87,7 +89,7 @@ const signAndSendActivity = async ({ activity, url }) => {
 
   console.log('Response status:', response.status);
   console.log('Response headers:', Object.fromEntries(response.headers));
-  console.log('Response body:', await response.json());
+  console.log('Response body:', await response.text());
 
   return response;
 };
