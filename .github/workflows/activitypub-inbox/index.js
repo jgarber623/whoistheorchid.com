@@ -58,13 +58,15 @@ const handleUndoActivity = async undoActivity => {
 const signAndSendActivity = async ({ activity, url }) => {
   console.log('📤 Generating signature for Activity:', activity);
 
+  const method = 'POST';
+
+  const body = JSON.stringify(activity);
+
   const headers = {
     date: new Date().toUTCString(),
-    digest: `sha-256=${crypto.createHash('sha256').update(JSON.stringify(activity)).digest('base64')}`,
+    digest: `sha-256=${crypto.createHash('sha256').update(body).digest('base64')}`,
     host: new URL(url).hostname
   };
-
-  const method = 'POST';
 
   const signer = new Sha256Signer({
     headerNames: ['(request-target)'].concat(Object.keys(headers)),
@@ -74,19 +76,21 @@ const signAndSendActivity = async ({ activity, url }) => {
 
   const signature = signer.sign({ url, method, headers });
 
-  console.log('Generated signature:', signature);
-
-  console.log('📤 Sending signed Activity to Inbox:', url);
-
-  const response = await fetch(url, {
+  const request = new Request(url, {
     method,
-    headers: {
+    headers: new Headers({
       ...headers,
       'content-type': jsonldContentType,
       signature
-    },
-    body: activity
+    }),
+    body
   });
+
+  console.log('📤 Sending signed Activity to Inbox:', url);
+  console.log('Request headers:', request.headers);
+  console.log('Request body:', request.body);
+
+  const response = await fetch(request);
 
   console.log('Response status:', response.status);
   console.log('Response headers:', Object.fromEntries(response.headers));
