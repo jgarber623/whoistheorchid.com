@@ -67,6 +67,7 @@ const signAndSendActivity = async ({ activity, url }) => {
   const method = 'POST';
 
   const signer = new Sha256Signer({
+    headerNames: ['(request-target)'].concat(Object.keys(headers)),
     publicKeyId: `${user}#main-key`,
     privateKey: ACTOR_PRIVATE_KEY
   });
