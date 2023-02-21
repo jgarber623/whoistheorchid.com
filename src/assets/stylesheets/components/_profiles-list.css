@@ -1,0 +1,83 @@
+.profiles-list {
+  margin: 1.25rem 0;
+
+  & li {
+    display: inline-block;
+    margin: 0.25rem;
+  }
+
+  & a {
+    color: rgba(255 255 255 / 40%);
+    display: block;
+    padding: 0.5rem;
+
+    &:focus,
+    &:hover {
+      color: rgba(255 255 255 / 45%);
+    }
+  }
+
+  & .profile-apple-music {
+    &:focus,
+    &:hover {
+      color: var(--profile-apple-music);
+    }
+  }
+
+  & .profile-bandcamp {
+    &:focus,
+    &:hover {
+      color: var(--profile-bandcamp);
+    }
+  }
+
+  & .profile-facebook {
+    &:focus,
+    &:hover {
+      color: var(--profile-facebook);
+    }
+  }
+
+  & .profile-mastodon {
+    &:focus,
+    &:hover {
+      color: var(--profile-mastodon);
+    }
+  }
+
+  & .profile-soundcloud {
+    &:focus,
+    &:hover {
+      color: var(--profile-soundcloud);
+    }
+  }
+
+  & .profile-spotify {
+    &:focus,
+    &:hover {
+      color: var(--profile-spotify);
+    }
+  }
+
+  & .profile-twitter {
+    &:focus,
+    &:hover {
+      color: var(--profile-twitter);
+    }
+  }
+
+  & .profile-vimeo {
+    &:focus,
+    &:hover {
+      color: var(--profile-vimeo);
+    }
+  }
+
+  & svg {
+    /* stylelint-disable-next-line value-keyword-case */
+    fill: currentColor;
+    height: 1.5rem;
+    vertical-align: middle;
+    width: 1.5rem;
+  }
+}

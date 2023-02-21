@@ -1,9 +1,10 @@
 :root {
-  --profile-bandcamp: #629aa9;
-  --profile-facebook: #3b5998;
-  --profile-itunes: #fff;
+  --profile-apple-music: #fa243c;
+  --profile-bandcamp: #408294;
+  --profile-facebook: #1877f2;
+  --profile-mastodon: #6364ff;
   --profile-soundcloud: #f30;
-  --profile-spotify: #2ebd59;
-  --profile-twitter: #55acee;
+  --profile-spotify: #1db954;
+  --profile-twitter: #1da1f2;
   --profile-vimeo: #1ab7ea;
 }
