@@ -1,0 +1,11 @@
+{
+  "private": true,
+  "name": "activitypub-outbox",
+  "type": "module",
+  "dependencies": {
+    "activitypub-http-signatures": "^2.0.1"
+  },
+  "devDependencies": {
+    "@jgarber/eslint-config": "*"
+  }
+}
