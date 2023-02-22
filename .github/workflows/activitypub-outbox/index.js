@@ -71,6 +71,6 @@ for (const activity of activities) {
   for (const target of targets) {
     const { inbox } = await fetchObject(target);
 
-    signAndSendActivity(activity, inbox);
+    signAndSendActivity({ activity, inbox });
   }
 }
