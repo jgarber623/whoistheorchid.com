@@ -69,8 +69,8 @@ const { orderedItems: activities } = await fetchObject(outbox);
 
 for (const activity of activities) {
   for (const target of targets) {
-    const { inbox } = await fetchObject(target);
+    const { inbox: url } = await fetchObject(target);
 
-    signAndSendActivity({ activity, inbox });
+    signAndSendActivity({ activity, url });
   }
 }
