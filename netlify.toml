@@ -1,3 +1,6 @@
+[[plugins]]
+  package = "/netlify/plugins/github-repository-dispatch"
+
 [[headers]]
   for = "/*"
   [headers.values]

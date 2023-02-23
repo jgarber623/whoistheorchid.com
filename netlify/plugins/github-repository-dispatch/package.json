@@ -1,0 +1,11 @@
+{
+  "private": "true",
+  "name": "github-repository-dispatch",
+  "type": "module",
+  "dependencies": {
+    "octokit": "^2.0.14"
+  },
+  "devDependencies": {
+    "@jgarber/eslint-config": "*"
+  }
+}
