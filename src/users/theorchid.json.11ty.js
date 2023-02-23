@@ -32,12 +32,12 @@ module.exports = class {
         {
           type: 'PropertyValue',
           name: 'Website',
-          value: `<a href="${site.url}" rel="me">whoistheorchid.com</a>`
+          value: `<a href="${site.url}" rel="me"><span class="invisible">https://</span>whoistheorchid.com</a>`
         },
         {
           type: 'PropertyValue',
           name: 'Bandcamp',
-          value: '<a href="https://theorchid.bandcamp.com" rel="me">theorchid.bandcamp.com</a>'
+          value: '<a href="https://theorchid.bandcamp.com" rel="me"><span class="invisible">https://</span>theorchid.bandcamp.com</a>'
         }
       ],
       icon: {
