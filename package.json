@@ -24,6 +24,7 @@
     "@jgarber/stylelint-config": "*",
     "cssnano": "*",
     "npm-run-all": "*",
+    "octokit": "^2.0.14",
     "postcss": "*",
     "postcss-easy-import": "*",
     "postcss-nesting": "*"
