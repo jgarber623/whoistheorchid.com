@@ -1,4 +1,4 @@
-[[plugins]]
+[[context.production.plugins]]
   package = "/netlify/plugins/github-repository-dispatch"
 
 [[headers]]
