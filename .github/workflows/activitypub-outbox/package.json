@@ -6,6 +6,6 @@
     "activitypub-http-signatures": "^2.0.1"
   },
   "devDependencies": {
-    "@jgarber/eslint-config": "*"
+    "@jgarber/eslint-config": "^0.2.0"
   }
 }
