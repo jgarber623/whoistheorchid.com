@@ -37,7 +37,7 @@ module.exports = class {
         {
           type: 'PropertyValue',
           name: 'Bandcamp',
-          value: '<a href="https://theorchid.bandcamp.com" rel="me"><span class="invisible">https://</span>theorchid.bandcamp.com</a>'
+          value: '<a href="https://theorchid.bandcamp.com/music" rel="me"><span class="invisible">https://</span>theorchid.bandcamp.com/music</a>'
         }
       ],
       icon: {
