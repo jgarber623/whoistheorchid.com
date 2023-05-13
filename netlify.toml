@@ -24,6 +24,16 @@
     X-XSS-Protection = "0"
 
 [[headers]]
+  for = "/*.png"
+  [headers.values]
+    Cache-Control = "public, s-max-age=604800"
+
+[[headers]]
+  for = "/*.svg"
+  [headers.values]
+    Cache-Control = "public, s-max-age=604800"
+
+[[headers]]
   for = "/.well-known/webfinger"
   [headers.values]
     Access-Control-Allow-Origin = "*"
@@ -35,8 +45,14 @@
     Content-Type = "application/feed+json; charset=UTF-8"
 
 [[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, s-max-age=604800"
+
+[[headers]]
   for = "/favicon.ico"
   [headers.values]
+    Cache-Control = "public, s-max-age=604800"
     Content-Type = "image/x-icon"
 
 [[headers]]
