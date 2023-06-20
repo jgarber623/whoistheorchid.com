@@ -28,6 +28,6 @@
     "octokit": "^2.0.22",
     "postcss": "^8.4.24",
     "postcss-easy-import": "^4.0.0",
-    "postcss-nesting": "^11.2.2"
+    "postcss-nesting": "^11.3.0"
   }
 }
