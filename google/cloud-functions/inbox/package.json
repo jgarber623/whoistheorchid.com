@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "activitypub-http-signatures": "^2.0.1",
-    "octokit": "^2.0.22"
+    "octokit": "^2.1.0"
   },
   "devDependencies": {
     "@google-cloud/functions-framework": "^3.2.0",
