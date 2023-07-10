@@ -1,4 +1,4 @@
-import { default as httpSignatureParser } from 'activitypub-http-signatures';
+import httpSignatureParser from 'activitypub-http-signatures';
 import { Octokit } from 'octokit';
 
 const { GITHUB_ACCESS_TOKEN } = process.env;
