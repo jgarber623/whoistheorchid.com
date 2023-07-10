@@ -10,11 +10,11 @@ module.exports = class {
       collections
         .post
         .map(post => {
-          const post_url = `${app.start_url}${post.url}`;
+          const url = `${app.start_url}${post.url}`;
 
           return {
-            id: post_url,
-            url: post_url,
+            id: url,
+            url,
             content_html: post.content.trim(),
             content_text: post.template._frontMatter.content.trim(),
             date_published: post.date

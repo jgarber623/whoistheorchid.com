@@ -10,16 +10,16 @@ module.exports = class {
       collections
         .post
         .map(post => {
-          const object_url = `${activitypub.id}/posts/${post.fileSlug}`;
+          const object = `${activitypub.id}/posts/${post.fileSlug}`;
 
           return {
-            id: `${object_url}/activity`,
+            id: `${object}/activity`,
             type: 'Create',
             actor: activitypub.id,
             published: post.date,
             to: ['https://www.w3.org/ns/activitystreams#Public'],
             cc: [activitypub.followers],
-            object: object_url
+            object
           };
         })
         .reverse();
