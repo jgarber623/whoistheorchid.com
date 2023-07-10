@@ -46,7 +46,7 @@ const handleUndoActivity = async undoActivity => {
     throw new Error('Undo Activity actor and embedded object actor do not match');
   }
 
-  switch(object.type.toLowerCase()) {
+  switch (object.type.toLowerCase()) {
     case 'follow':
       Follow.destroy(actor);
       break;
@@ -103,7 +103,7 @@ console.log('📥 Received new payload to ActivityPub Inbox');
 console.log('Payload headers:', headers);
 console.log('Payload activity:', activity);
 
-switch(activity.type.toLowerCase()) {
+switch (activity.type.toLowerCase()) {
   case 'follow':
     handleFollowActivity(activity);
     break;
