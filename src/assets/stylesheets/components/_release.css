@@ -17,7 +17,7 @@
   width: 100%;
 }
 
-@media (min-width: 35em) and (max-height: 28em) {
+@media (width >= 35em) and (height <= 28em) {
   .release-content {
     display: flex;
     justify-content: space-around;
