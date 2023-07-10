@@ -5,7 +5,10 @@
   "bugs": "https://github.com/jgarber623/whoistheorchid.com/issues",
   "license": "CC-BY-NC-SA-4.0",
   "author": "Jason Garber <jason@sixtwothree.org> (https://sixtwothree.org)",
-  "repository": "github.com:jgarber623/whoistheorchid.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jgarber623/whoistheorchid.com"
+  },
   "scripts": {
     "build": "eleventy --quiet",
     "clean": "rm -rf public",

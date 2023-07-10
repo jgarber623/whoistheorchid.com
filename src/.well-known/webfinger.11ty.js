@@ -5,14 +5,14 @@ module.exports = class {
     };
   }
 
-  render({ activitypub, site }) {
+  render({ activitypub, app }) {
     return JSON.stringify({
       subject: 'acct:theorchid@whoistheorchid.com',
       links: [
         {
           rel: 'http://webfinger.net/rel/avatar',
           type: 'image/png',
-          href: site.icon
+          href: `${app.start_url}${app.icons[2].src}`
         },
         {
           rel: 'http://webfinger.net/rel/profile-page',

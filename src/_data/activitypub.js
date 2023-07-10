@@ -1,5 +1,4 @@
-const { url } = require('./site.js');
-
+const url = 'https://whoistheorchid.com';
 const actor = `${url}/users/theorchid`;
 
 module.exports = {

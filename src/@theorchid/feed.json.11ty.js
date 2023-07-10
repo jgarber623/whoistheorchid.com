@@ -5,12 +5,12 @@ module.exports = class {
     };
   }
 
-  render({ collections, permalink, site }) {
+  render({ app, collections, permalink }) {
     const items =
       collections
         .post
         .map(post => {
-          const post_url = `${site.url}${post.url}`;
+          const post_url = `${app.start_url}${post.url}`;
 
           return {
             id: post_url,
@@ -22,22 +22,24 @@ module.exports = class {
         })
         .reverse();
 
+    const icon = `${app.start_url}${app.icons[2].src}`;
+
     return JSON.stringify({
       version: 'https://jsonfeed.org/version/1.1',
-      title: `Updates from ${site.name}`,
-      home_page_url: site.url,
-      feed_url: `${site.url}${permalink}`,
-      description: site.description,
-      icon: site.icon,
+      title: `Updates from ${app.name}`,
+      home_page_url: app.start_url,
+      feed_url: `${app.start_url}${permalink}`,
+      description: app.description,
+      icon,
       authors: [
         {
-          name: site.name,
-          url: site.url,
-          avatar: site.icon
+          name: app.name,
+          url: app.start_url,
+          avatar: icon
         }
       ],
       language: 'en-US',
-      items: items
+      items
     });
   }
 };

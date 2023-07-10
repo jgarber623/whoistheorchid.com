@@ -10,13 +10,13 @@ module.exports = class {
     };
   }
 
-  render({ activitypub, page, post, site}) {
+  render({ activitypub, app, page, post }) {
     return JSON.stringify({
       '@context': 'https://www.w3.org/ns/activitystreams',
-      id: `${site.url}${page.url}`.replace('.json', ''),
+      id: `${app.start_url}${page.url}`.replace('.json', ''),
       type: 'Note',
       published: post.date,
-      url: `${site.url}${post.url}`,
+      url: `${app.start_url}${post.url}`,
       attributedTo: activitypub.id,
       to: ['https://www.w3.org/ns/activitystreams#Public'],
       cc: [activitypub.followers],

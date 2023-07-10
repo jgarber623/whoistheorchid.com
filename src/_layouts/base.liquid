@@ -5,30 +5,30 @@
 
   {% capture page_title -%}
     {%- if title -%}
-      {{ title }} — {{ site.name }}
+      {{ title }} — {{ app.name }}
     {%- else -%}
-      {{ site.name }} — {{ site.short_description }}
+      {{ app.name }} — an instrumental post-rock band from Washington, DC
     {%- endif -%}
   {% endcapture -%}
 
   <title>{{ page_title }}</title>
 
-  <meta name="apple-mobile-web-app-title" content="{{ site.name }}">
-  <meta name="application-name" content="{{ site.name }}">
-  <meta name="description" content="{{ site.description }}">
-  <meta name="theme-color" content="{{ site.theme_color }}">
+  <meta name="apple-mobile-web-app-title" content="{{ app.name }}">
+  <meta name="application-name" content="{{ app.name }}">
+  <meta name="description" content="{{ app.description }}">
+  <meta name="theme-color" content="{{ app.theme_color }}">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta property="og:author_name" content="{{ site.name }}">
-  <meta property="og:author_url" content="{{ site.url }}">
-  <meta property="og:description" content="{{ site.description }}">
-  <meta property="og:image" content="{{ site.icon }}">
+  <meta property="og:author_name" content="{{ app.name }}">
+  <meta property="og:author_url" content="{{ app.start_url }}">
+  <meta property="og:description" content="{{ app.description }}">
+  <meta property="og:image" content="{{ app.icons[2].src }}">
   <meta property="og:title" content="{{ page_title }}">
-  <meta property="og:url" content="{{site.url }}{{ page.url }}">
+  <meta property="og:url" content="{{ app.start_url }}{{ page.url }}">
 
-  <link rel="alternate" href="/@theorchid/feed.json" title="Updates from {{ site.name }}" type="application/feed+json">
+  <link rel="alternate" href="/@theorchid/feed.json" title="Updates from {{ app.name }}" type="application/feed+json">
   <link rel="alternate" href="{{ activitypub_resource_url | default: activitypub.id }}" type="application/activity+json">
-  <link rel="apple-touch-icon" href="/icon-256x256.png">
+  <link rel="apple-touch-icon" href="{{ app.icons[0].src }}">
   <link rel="manifest" href="/manifest.webmanifest">
   <link rel="shortcut icon" href="/favicon.ico">
   <link rel="stylesheet" href="/assets/stylesheets/application.css">
@@ -71,7 +71,7 @@
 
       <ul class="profiles-list ui-list">
         <li><a href="https://theorchid.bandcamp.com" class="profile-bandcamp u-url" rel="me">{% include "../assets/images/icons/bandcamp.svg" %}</a></li>
-        <li><a href="{{ site.url }}/@theorchid" class="profile-mastodon u-url" rel="me">{% include "../assets/images/icons/mastodon.svg" %}</a></li>
+        <li><a href="{{ app.start_url }}/@theorchid" class="profile-mastodon u-url" rel="me">{% include "../assets/images/icons/mastodon.svg" %}</a></li>
         <li><a href="https://twitter.com/theorchid" class="profile-twitter u-url" rel="me">{% include "../assets/images/icons/twitter.svg" %}</a></li>
         <li><a href="https://www.facebook.com/whoistheorchid" class="profile-facebook u-url" rel="me">{% include "../assets/images/icons/facebook.svg" %}</a></li>
         <li><a href="https://itunes.apple.com/us/artist/the-orchid/id77784209" class="profile-apple-music u-url" rel="me">{% include "../assets/images/icons/apple-music.svg" %}</a></li>
@@ -82,7 +82,7 @@
 
       <p>Correspondence: <a href="mailto:booking&#064;whoistheorchid&#46;com" class="u-email">booking&#064;whoistheorchid&#46;com</a></p>
 
-      <small>Some rights reserved. This site’s content is licensed under a <a href="{{ site.license.url }}" rel="license">{{ site.license.name }} license</a>. Source code available on <a href="{{ site.source.url }}" rel="source">{{ site.source.name }}</a>.</small>
+      <small>Some rights reserved. This site’s content is licensed under a <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="license">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International license</a>. Source code available on <a href="{{ pkg.repository.url }}" rel="source">GitHub</a>.</small>
     </footer>
   </div>
 

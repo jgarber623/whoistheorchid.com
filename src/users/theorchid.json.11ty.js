@@ -5,7 +5,7 @@ module.exports = class {
     };
   }
 
-  render({ activitypub, site }) {
+  render({ activitypub, app }) {
     return JSON.stringify({
       '@context': [
         'https://www.w3.org/ns/activitystreams',
@@ -18,8 +18,8 @@ module.exports = class {
       inbox: activitypub.inbox,
       outbox: activitypub.outbox,
       preferredUsername: 'theorchid',
-      name: site.name,
-      summary: `<p>${site.description}</p>`,
+      name: app.name,
+      summary: `<p>${app.description}</p>`,
       url: activitypub.url,
       discoverable: true,
       published: '2009-01-12T18:48:50Z',
@@ -32,7 +32,7 @@ module.exports = class {
         {
           type: 'PropertyValue',
           name: 'Website',
-          value: `<a href="${site.url}" rel="me"><span class="invisible">https://</span>whoistheorchid.com</a>`
+          value: `<a href="${app.start_url}" rel="me"><span class="invisible">https://</span>whoistheorchid.com</a>`
         },
         {
           type: 'PropertyValue',
@@ -43,12 +43,12 @@ module.exports = class {
       icon: {
         type: 'Image',
         mediaType: 'image/png',
-        url: site.icon
+        url: `${app.start_url}${app.icons[2].src}`
       },
       image: {
         type: 'Image',
         mediaType: 'image/jpeg',
-        url: `${site.url}/assets/images/cover.jpg`
+        url: `${app.start_url}/assets/images/cover.jpg`
       }
     });
   }
