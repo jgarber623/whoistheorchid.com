@@ -74,7 +74,6 @@
   }
 
   & svg {
-    /* stylelint-disable-next-line value-keyword-case */
     fill: currentColor;
     height: 1.5rem;
     vertical-align: middle;
