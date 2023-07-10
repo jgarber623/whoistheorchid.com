@@ -25,6 +25,6 @@ module.exports = class {
           href: activitypub.id
         }
       ]
-    })
+    });
   }
 };
