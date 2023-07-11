@@ -11,7 +11,7 @@ module.exports = function(eleventyConfig) {
     });
 
   // Libraries
-  eleventyConfig.amendLibrary('md', require('./lib/libraries/markdown.js'));
+  eleventyConfig.setLibrary('md', require('./lib/libraries/markdown.js'));
   eleventyConfig.setLiquidOptions(require('./lib/libraries/liquid.js'));
 
   // Plugins
