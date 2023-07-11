@@ -1,12 +1,12 @@
 .profiles-list {
   margin: 1.25rem 0;
 
-  & li {
+  li {
     display: inline-block;
     margin: 0.25rem;
   }
 
-  & a {
+  a {
     color: rgba(255 255 255 / 40%);
     display: block;
     padding: 0.5rem;
@@ -17,63 +17,63 @@
     }
   }
 
-  & .profile-apple-music {
+  .profile-apple-music {
     &:focus,
     &:hover {
       color: var(--profile-apple-music);
     }
   }
 
-  & .profile-bandcamp {
+  .profile-bandcamp {
     &:focus,
     &:hover {
       color: var(--profile-bandcamp);
     }
   }
 
-  & .profile-facebook {
+  .profile-facebook {
     &:focus,
     &:hover {
       color: var(--profile-facebook);
     }
   }
 
-  & .profile-mastodon {
+  .profile-mastodon {
     &:focus,
     &:hover {
       color: var(--profile-mastodon);
     }
   }
 
-  & .profile-soundcloud {
+  .profile-soundcloud {
     &:focus,
     &:hover {
       color: var(--profile-soundcloud);
     }
   }
 
-  & .profile-spotify {
+  .profile-spotify {
     &:focus,
     &:hover {
       color: var(--profile-spotify);
     }
   }
 
-  & .profile-twitter {
+  .profile-twitter {
     &:focus,
     &:hover {
       color: var(--profile-twitter);
     }
   }
 
-  & .profile-vimeo {
+  .profile-vimeo {
     &:focus,
     &:hover {
       color: var(--profile-vimeo);
     }
   }
 
-  & svg {
+  svg {
     fill: currentColor;
     height: 1.5rem;
     vertical-align: middle;

@@ -8,23 +8,23 @@
   font-size: 1rem;
   margin-bottom: 1rem;
 
-  & li {
+  li {
     display: inline-block;
 
-    & + li::before {
+    + li::before {
       content: "•";
       display: inline-block;
       margin: 0 0.5rem 0 0.25rem;
     }
   }
 
-  & sup {
+  sup {
     margin: 0;
     text-decoration: none;
     top: 0.05em;
   }
 
-  & a {
+  a {
     color: rgba(255 255 255 / 40%);
 
     &:focus,
@@ -37,15 +37,15 @@
 .post-content {
   margin-bottom: 0;
 
-  & p {
+  p {
     text-align: left;
   }
 
-  & li {
+  li {
     list-style-type: disc;
   }
 
-  & > :last-child {
+  > :last-child {
     margin-bottom: 0;
   }
 }

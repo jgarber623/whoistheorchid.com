@@ -1,7 +1,7 @@
 .release-content {
   max-width: 26rem;
 
-  & blockquote p {
+  blockquote p {
     text-align: center;
   }
 }

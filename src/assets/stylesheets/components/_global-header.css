@@ -3,19 +3,19 @@
   max-width: 26rem;
   text-align: center;
 
-  & h1 {
+  h1 {
     font-size: 1rem;
     line-height: 1;
     margin: 0;
   }
 
-  & a {
+  a {
     display: block;
     margin: -0.5rem;
     padding: 0.5rem;
   }
 
-  & svg {
+  svg {
     fill: #fff;
   }
 }

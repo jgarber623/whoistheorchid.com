@@ -2,17 +2,17 @@
   color: rgba(255 255 255 / 40%);
   text-align: center;
 
-  & .bio a {
+  .bio a {
     color: inherit;
     text-decoration: none;
   }
 
-  & abbr {
+  abbr {
     border: 0;
     text-decoration: none;
   }
 
-  & small {
+  small {
     display: block;
     font-size: 0.875rem;
     margin-top: 3rem;
