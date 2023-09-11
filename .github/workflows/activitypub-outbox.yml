@@ -11,7 +11,7 @@ jobs:
     name: Process Outbox messages
     runs-on: ubuntu-20.04
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - uses: actions/setup-node@v3
         with:
           cache-dependency-path: .github/workflows/activitypub-outbox/package-lock.json
