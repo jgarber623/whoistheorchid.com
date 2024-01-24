@@ -1,4 +1,4 @@
 module.exports = {
-  layout: 'release.liquid',
+  layout: 'layouts/release.liquid',
   permalink: '/releases/{{ page.fileSlug }}/'
 };
