@@ -11,17 +11,20 @@ module.exports = function(eleventyConfig) {
     });
 
   // Libraries
-  eleventyConfig.setLibrary('md', require('./lib/libraries/markdown.js'));
   eleventyConfig.setLiquidOptions(require('./lib/libraries/liquid.js'));
 
   // Plugins
-  eleventyConfig.addPlugin(require('./lib/plugins/postcss.js'));
+  eleventyConfig.addPlugin(require('@jgarber/eleventy-plugin-markdown'), {
+    plugins: [
+      [require('markdown-it-handle'), { attributes: false }]
+    ]
+  });
+
+  eleventyConfig.addPlugin(require('@jgarber/eleventy-plugin-postcss'));
 
   return {
     dir: {
-      input: './src',
-      layouts: '_layouts',
-      output: './public'
+      input: './src'
     }
   };
 };
