@@ -23,9 +23,7 @@
 
     {% if show.artists -%}
       <ul class="ui-list clearfix">
-        {% for artist in show.artists -%}
-          {% include "artist.liquid" with artist %}
-        {% endfor -%}
+        {% render "artist.liquid" for show.artists as artist %}
       </ul>
     {% endif -%}
   </div>

@@ -4,7 +4,6 @@ title: "Shows"
 ---
 
 <ol class="shows-list ui-list" reversed>
-  {% for show in shows reversed -%}
-    {% include "show.liquid" with show %}
-  {% endfor -%}
+  {% assign shows = shows | reverse -%}
+  {% render "show.liquid" for shows as show %}
 </ol>

@@ -7,9 +7,8 @@ title: "Releases"
   <h1 class="page-title">{{ title }}</h1>
 
   <ol class="releases-list ui-list clearfix" reversed>
-    {% for release in collections.release reversed -%}
-      {% include "release.liquid" with release %}
-    {% endfor -%}
+    {% assign releases = collections.release | reverse -%}
+    {% render "release.liquid" for releases as release %}
   </ol>
 </section>
 
@@ -17,8 +16,7 @@ title: "Releases"
   <h1 class="page-title">Compilations</h1>
 
   <ol class="releases-list ui-list clearfix" reversed>
-    {% for release in collections.compilation reversed -%}
-      {% include "release.liquid" with release %}
-    {% endfor -%}
+    {% assign compilations = collections.compilation | reverse -%}
+    {% render "release.liquid" for compilations as release %}
   </ol>
 </section>
