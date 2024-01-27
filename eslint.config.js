@@ -1,1 +1,1 @@
-module.exports = require('@jgarber/eslint-config');
+export { default } from '@jgarber/eslint-config';

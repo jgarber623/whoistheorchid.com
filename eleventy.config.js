@@ -1,6 +1,14 @@
-module.exports = function(eleventyConfig) {
+import fs from 'node:fs/promises';
+
+import markdownItHandle from 'markdown-it-handle';
+import markdownPlugin from '@jgarber/eleventy-plugin-markdown';
+import postcssPlugin from '@jgarber/eleventy-plugin-postcss';
+
+import liquidOptions from './lib/libraries/liquid.js';
+
+export default async function(eleventyConfig) {
   // Global Data
-  eleventyConfig.addGlobalData('app', require('./src/manifest.webmanifest.json'));
+  eleventyConfig.addGlobalData('app', JSON.parse(await fs.readFile('./src/manifest.webmanifest.json')));
 
   // Passthrough File Copy
   eleventyConfig
@@ -11,20 +19,20 @@ module.exports = function(eleventyConfig) {
     });
 
   // Libraries
-  eleventyConfig.setLiquidOptions(require('./lib/libraries/liquid.js'));
+  eleventyConfig.setLiquidOptions(liquidOptions);
 
   // Plugins
-  eleventyConfig.addPlugin(require('@jgarber/eleventy-plugin-markdown'), {
+  eleventyConfig.addPlugin(markdownPlugin, {
     plugins: [
-      [require('markdown-it-handle'), { attributes: false }]
+      [markdownItHandle, { attributes: false }]
     ]
   });
 
-  eleventyConfig.addPlugin(require('@jgarber/eleventy-plugin-postcss'));
+  eleventyConfig.addPlugin(postcssPlugin);
 
   return {
     dir: {
       input: './src'
     }
   };
-};
+}
