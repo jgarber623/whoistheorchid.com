@@ -1,5 +1,15 @@
-<li>
-  <a href="{{ release.url | default: release.data.bandcamp.url }}" class="bordered-link">
-    <img src="/assets/images/releases/{{ release.fileSlug }}-800.jpg" alt="{{ release.data.bandcamp.title }} cover art">
-  </a>
-</li>
+<article class="release article h-entry">
+  <h1 class="page-title p-name">{{ title }}</h1>
+
+  <div class="release-content article-content e-content">
+    <figure class="release-artwork">
+      {% render "release-link.liquid", title: bandcamp.title, url: bandcamp.url %}
+    </figure>
+
+    <div class="release-description">
+      {{ content }}
+    </div>
+  </div>
+
+  <iframe class="bandcamp-player" loading="lazy" src="https://bandcamp.com/EmbeddedPlayer/album={{ bandcamp.id }}/size=large/bgcol=333333/linkcol=aa8b54/tracklist=false/artwork=none/transparent=true" title="Bandcamp Player"></iframe>
+</article>
