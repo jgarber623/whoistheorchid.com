@@ -1,5 +1,5 @@
 .global-footer {
-  color: rgba(255 255 255 / 40%);
+  color: var(--black-40);
   text-align: center;
 
   .bio a {

@@ -11,16 +11,14 @@ html {
 
 body {
   color: #ced4d7;
+  display: flex;
+  flex-direction: column;
   font-family: Baskerville, Georgia, serif;
+  gap: 3rem;
   line-height: 1.5;
-  margin: 0;
-}
-
-footer,
-header,
-main,
-nav {
-  display: block;
+  margin: 3rem auto 6rem;
+  max-width: 40rem;
+  padding: 0 1rem;
 }
 
 a {
@@ -34,7 +32,7 @@ a {
   }
 
   &:focus {
-    outline: 1px dotted rgba(255 255 255 / 50%);
+    outline: 1px dotted var(--black-50);
   }
 }
 

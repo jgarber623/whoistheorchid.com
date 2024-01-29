@@ -1,5 +1,5 @@
 .show {
-  background: rgba(255 255 255 / 5%);
+  background: var(--black-5);
   font-size: 1rem;
   padding: 1rem;
 
@@ -21,20 +21,20 @@
   }
 
   ul {
+    column-gap: 0.25rem;
+    display: flex;
+    flex-wrap: wrap;
+
     &::before {
       content: "w/";
-      float: left;
-      margin-right: 0.25rem;
     }
 
     li {
-      float: left;
       font-size: 0;
 
       &::after {
         content: ",";
         font-size: 1rem;
-        margin-right: 0.25rem;
       }
 
       &:last-child::after {

@@ -5,7 +5,7 @@
   margin: 0 0 1.5rem;
   text-align: center;
 
-  @media (width >= 35em) {
+  @media (width >= 35rem) {
     font-size: 1.75rem;
   }
 }

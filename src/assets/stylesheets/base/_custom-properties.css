@@ -1,10 +1,6 @@
 :root {
-  --profile-apple-music: #fa243c;
-  --profile-bandcamp: #408294;
-  --profile-facebook: #1877f2;
-  --profile-mastodon: #6364ff;
-  --profile-soundcloud: #f30;
-  --profile-spotify: #1db954;
-  --profile-twitter: #1da1f2;
-  --profile-vimeo: #1ab7ea;
+  --black-5: rgba(255 255 255 / 5%);
+  --black-40: rgba(255 255 255 / 40%);
+  --black-45: rgba(255 255 255 / 45%);
+  --black-50: rgba(255 255 255 / 50%);
 }
