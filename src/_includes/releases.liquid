@@ -1,0 +1,13 @@
+<section class="releases">
+  <h1 class="page-title">{{ title }}</h1>
+
+  <ol class="releases-list ui-list" reversed>
+    {% for release in releases reversed -%}
+      <li>
+        <a href="{{ release.url }}" class="bordered-link">
+          <img src="/assets/images/releases/{{ release.data.bandcamp.title | slugify }}-800.jpg" alt="{{ release.data.bandcamp.title }} cover art">
+        </a>
+      </li>
+    {% endfor -%}
+  </ol>
+</section>

@@ -3,7 +3,9 @@
 
   <div class="release-content article-content e-content">
     <figure class="release-artwork">
-      {% render "release-link.liquid", title: bandcamp.title, url: bandcamp.url %}
+      <a href="{{ bandcamp.url }}" class="bordered-link">
+        <img src="/assets/images/releases/{{ bandcamp.title | slugify }}-800.jpg" alt="{{ bandcamp.title }} cover art">
+      </a>
     </figure>
 
     <div class="release-description">
