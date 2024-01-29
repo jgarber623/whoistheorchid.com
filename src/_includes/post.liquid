@@ -1,0 +1,12 @@
+<article class="post article h-entry">
+  <header class="post-header">
+    <ul class="ui-list">
+      <li><time class="dt-published" datetime="{{ date | date }}">{{ date | date: dates.display_with_time, "America/New_York" }}</time></li>
+      <li><a href="{{ url }}" class="u-uid u-url">permalink</a></li>
+    </ul>
+  </header>
+
+  <div class="post-content article-content e-content">
+    {{ content }}
+  </div>
+</article>

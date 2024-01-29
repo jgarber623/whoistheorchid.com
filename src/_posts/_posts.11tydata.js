@@ -1,5 +1,5 @@
-module.exports = {
-  layout: 'post.liquid',
-  permalink: '/@theorchid/{{ page.fileSlug }}/',
+export default {
+  layout: 'layouts/post.liquid',
+  permalink: '/updates/{{ page.fileSlug }}/',
   tags: ['post']
 };

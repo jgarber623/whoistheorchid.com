@@ -1,0 +1,16 @@
+---
+layout: "layouts/base.liquid"
+title: "Updates"
+---
+
+<section class="h-feed">
+  <h1 class="page-title p-name">{{ title }}</h1>
+
+  <ol class="posts-list ui-list" reversed>
+    {% for post in collections.post reversed -%}
+      <li>
+        {% render "post.liquid", content: post.content, date: post.date, url: post.url %}
+      </li>
+    {% endfor -%}
+  </ol>
+</section>
