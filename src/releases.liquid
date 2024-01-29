@@ -6,7 +6,7 @@ title: "Releases"
 <section class="releases">
   <h1 class="page-title">{{ title }}</h1>
 
-  <ol class="releases-list ui-list clearfix" reversed>
+  <ol class="releases-list ui-list" reversed>
     {% for release in collections.release reversed -%}
       <li>{% render "release-link.liquid", title: release.data.bandcamp.title, url: release.url %}</li>
     {% endfor -%}
@@ -16,7 +16,7 @@ title: "Releases"
 <section class="releases">
   <h1 class="page-title">Compilations</h1>
 
-  <ol class="releases-list ui-list clearfix" reversed>
+  <ol class="releases-list ui-list" reversed>
     {% for release in collections.compilation reversed -%}
       <li>{% render "release-link.liquid", title: release.data.bandcamp.title, url: release.data.bandcamp.url %}</li>
     {% endfor -%}
