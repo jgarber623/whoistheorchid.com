@@ -13,21 +13,3 @@ updates:
       interval: "monthly"
     assignees:
       - "jgarber623"
-  - package-ecosystem: "npm"
-    directory: "/.github/workflows/activitypub-inbox"
-    schedule:
-      interval: "monthly"
-    assignees:
-      - "jgarber623"
-  - package-ecosystem: "npm"
-    directory: "/.github/workflows/activitypub-outbox"
-    schedule:
-      interval: "monthly"
-    assignees:
-      - "jgarber623"
-  - package-ecosystem: "npm"
-    directory: "/google/cloud-functions/inbox"
-    schedule:
-      interval: "monthly"
-    assignees:
-      - "jgarber623"
