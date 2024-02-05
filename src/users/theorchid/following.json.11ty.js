@@ -1,17 +1,20 @@
-module.exports = class {
+export default class {
   data() {
     return {
-      permalink: '/users/theorchid/following.json'
+      permalink: ({ activitypub }) => `${activitypub.following.pathname}.json`
     };
   }
 
   render({ activitypub }) {
+    const orderedItems = [];
+
+    /* eslint-disable sort-keys */
     return JSON.stringify({
       '@context': 'https://www.w3.org/ns/activitystreams',
       id: activitypub.following,
-      type: 'OrderedCollection',
-      totalItems: 0,
-      orderedItems: []
-    });
+      totalItems: orderedItems.length,
+      orderedItems
+    }, null, 2);
+    /* eslint-enable sort-keys */
   }
-};
+}
