@@ -1,5 +1,9 @@
 ---
 layout: "layouts/base.liquid"
+eleventyComputed:
+  alternates:
+    activity: "{{ activitypub.id }}/{{ page.fileSlug }}/activity"
+    object: "{{ activitypub.id }}/{{ page.fileSlug }}"
 ---
 
 {% render "post.liquid", content: content, date: page.date, url: page.url %}
