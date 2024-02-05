@@ -1,24 +1,7 @@
 ---
-layout: "base.liquid"
+layout: "layouts/base.liquid"
 title: "Releases"
 ---
 
-<section class="releases">
-  <h1 class="page-title">{{ title }}</h1>
-
-  <ol class="releases-list ui-list clearfix" reversed>
-    {% for release in collections.release reversed -%}
-      {% include "release.liquid" with release %}
-    {% endfor -%}
-  </ol>
-</section>
-
-<section class="releases">
-  <h1 class="page-title">Compilations</h1>
-
-  <ol class="releases-list ui-list clearfix" reversed>
-    {% for release in collections.compilation reversed -%}
-      {% include "release.liquid" with release %}
-    {% endfor -%}
-  </ol>
-</section>
+{% render "releases.liquid", releases: collections.release, title: title %}
+{% render "releases.liquid", releases: collections.compilation, title: "Compilations" %}

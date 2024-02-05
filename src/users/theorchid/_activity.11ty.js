@@ -1,4 +1,4 @@
-module.exports = class {
+export default class {
   data() {
     return {
       pagination: {
@@ -6,22 +6,22 @@ module.exports = class {
         data: 'collections.post',
         size: 1
       },
-      permalink: ({ post }) => `/users/theorchid/posts/${post.fileSlug}/activity.json`
+      permalink: ({ activitypub, post }) => `${activitypub.id.pathname}/${post.fileSlug}/activity.json`
     };
   }
 
-  render({ activitypub, app, page, post }) {
-    const activityUrl = `${app.start_url}${page.url}`;
-
+  render({ activitypub, post }) {
+    /* eslint-disable sort-keys */
     return JSON.stringify({
       '@context': 'https://www.w3.org/ns/activitystreams',
-      id: activityUrl.replace('.json', ''),
+      id: post.data.alternates.activity,
       type: 'Create',
       actor: activitypub.id,
       published: post.date,
       to: ['https://www.w3.org/ns/activitystreams#Public'],
       cc: [activitypub.followers],
-      object: activityUrl.replace('/activity.json', '')
-    });
+      object: post.data.alternates.object
+    }, null, 2);
+    /* eslint-enable sort-keys */
   }
-};
+}

@@ -1,11 +1,9 @@
-.releases-list li {
-  float: left;
-  margin-bottom: 1rem;
-  padding-right: 0.5rem;
-  width: 50%;
+.releases-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
 
-  &:nth-child(even) {
-    float: right;
-    padding: 0 0 0 0.5rem;
+  li {
+    flex: 1 1 calc(50% - 1rem);
   }
 }

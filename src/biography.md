@@ -1,5 +1,5 @@
 ---
-layout: "page.liquid"
+layout: "layouts/page.liquid"
 title: "Biography"
 ---
 
@@ -15,4 +15,4 @@ Shortly after, though, two of the band's founding members (Jones and Malhinha) w
 
 In the fall of 2015, the band partnered with engineer Kenny Eaton to record <cite>[Apogee, Perigee](/releases/apogee-perigee)</cite> at his [Mystery Ton Studios](https://www.facebook.com/MysteryTonStudios) in rural Maryland. From the opener, <cite>The Astronaut (Escape Velocity),</cite> which begins with a string overture before erupting into a massive, three-guitar assault, to the haunting, suffocating sparseness of the closing <cite>Life In Retrograde,</cite> the album weaves together influences ranging from Morricone's Spaghetti Western soundscapes to DC-infused punk and math rock. The album moves effortlessly from crushing rhythms to delicate, intertwined arpeggiated guitars, often within a single song, as the group explores the theme of isolation.
 
-In their fourteen years performing together, The Orchid has shared stages with nationally and internationally touring acts such as [The Twilight Sad](https://thetwilightsad.com) (FatCat Records), Lost In The Trees (ANTI- Records), [El Ten Eleven](https://www.elteneleven.com) (Fake Record Label), and The End Of The Ocean (Future Recordings).
+In their sixteen years performing together, The Orchid has shared stages with nationally and internationally touring acts such as [The Twilight Sad](https://thetwilightsad.com) (FatCat Records), Lost In The Trees (ANTI- Records), [El Ten Eleven](https://www.elteneleven.com) (Fake Record Label), and [The End Of The Ocean](https://theendoftheocean.com) (Future Recordings).

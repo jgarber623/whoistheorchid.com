@@ -1,23 +1,6 @@
 ---
-layout: "base.liquid"
+layout: "layouts/base.liquid"
 ---
 
 {%- assign release = collections.release.last -%}
-
-<article class="release article h-entry">
-  <h1 class="page-title p-name">{{ release.data.title }}</h1>
-
-  <div class="release-content article-content e-content">
-    <figure class="release-artwork">
-      <a href="{{ release.data.bandcamp.url }}" class="bordered-link">
-        <img src="/assets/images/releases/{{ release.fileSlug }}-800.jpg" alt="{{ release.data.bandcamp.title }} cover art">
-      </a>
-    </figure>
-
-    <div class="release-description">
-      {{ release.content }}
-    </div>
-  </div>
-
-  {% include "bandcamp_player.liquid" id: release.data.bandcamp.id %}
-</article>
+{% render "release.liquid", bandcamp: release.data.bandcamp, content: release.content, title: release.data.title %}

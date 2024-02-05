@@ -1,9 +1,18 @@
-module.exports = function(eleventyConfig) {
+import fs from 'node:fs/promises';
+
+import markdownItHandle from 'markdown-it-handle';
+import markdownPlugin from '@jgarber/eleventy-plugin-markdown';
+import postcssPlugin from '@jgarber/eleventy-plugin-postcss';
+
+import liquidOptions from './lib/libraries/liquid.js';
+
+export default async function(eleventyConfig) {
   // Global Data
-  eleventyConfig.addGlobalData('app', require('./src/manifest.webmanifest.json'));
+  eleventyConfig.addGlobalData('app', JSON.parse(await fs.readFile('./src/manifest.webmanifest.json')));
 
   // Passthrough File Copy
   eleventyConfig
+    .addPassthroughCopy('./src/_{headers,redirects}')
     .addPassthroughCopy('./src/*.{ico,png,svg,txt}')
     .addPassthroughCopy('./src/assets/images')
     .addPassthroughCopy({
@@ -11,17 +20,20 @@ module.exports = function(eleventyConfig) {
     });
 
   // Libraries
-  eleventyConfig.setLibrary('md', require('./lib/libraries/markdown.js'));
-  eleventyConfig.setLiquidOptions(require('./lib/libraries/liquid.js'));
+  eleventyConfig.setLiquidOptions(liquidOptions);
 
   // Plugins
-  eleventyConfig.addPlugin(require('./lib/plugins/postcss.js'));
+  eleventyConfig.addPlugin(markdownPlugin, {
+    plugins: [
+      [markdownItHandle, { attributes: false }]
+    ]
+  });
+
+  eleventyConfig.addPlugin(postcssPlugin);
 
   return {
     dir: {
-      input: './src',
-      layouts: '_layouts',
-      output: './public'
+      input: './src'
     }
   };
-};
+}

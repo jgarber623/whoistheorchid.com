@@ -1,75 +1,86 @@
 .profiles-list {
+  --apple-music: #fa243c;
+  --bandcamp: #408294;
+  --facebook: #1877f2;
+  --mastodon: #6364ff;
+  --soundcloud: #f30;
+  --spotify: #1db954;
+  --twitter: #1da1f2;
+  --vimeo: #1ab7ea;
+
+  display: flex;
+  gap: 0.25rem;
+  justify-content: center;
   margin: 1.25rem 0;
 
   li {
-    display: inline-block;
-    margin: 0.25rem;
+    padding: 0.25rem;
   }
 
   a {
-    color: rgba(255 255 255 / 40%);
+    color: var(--black-40);
     display: block;
     padding: 0.5rem;
 
     &:focus,
     &:hover {
-      color: rgba(255 255 255 / 45%);
+      color: var(--black-45);
     }
   }
 
   .profile-apple-music {
     &:focus,
     &:hover {
-      color: var(--profile-apple-music);
+      color: var(--apple-music);
     }
   }
 
   .profile-bandcamp {
     &:focus,
     &:hover {
-      color: var(--profile-bandcamp);
+      color: var(--bandcamp);
     }
   }
 
   .profile-facebook {
     &:focus,
     &:hover {
-      color: var(--profile-facebook);
+      color: var(--facebook);
     }
   }
 
   .profile-mastodon {
     &:focus,
     &:hover {
-      color: var(--profile-mastodon);
+      color: var(--mastodon);
     }
   }
 
   .profile-soundcloud {
     &:focus,
     &:hover {
-      color: var(--profile-soundcloud);
+      color: var(--soundcloud);
     }
   }
 
   .profile-spotify {
     &:focus,
     &:hover {
-      color: var(--profile-spotify);
+      color: var(--spotify);
     }
   }
 
   .profile-twitter {
     &:focus,
     &:hover {
-      color: var(--profile-twitter);
+      color: var(--twitter);
     }
   }
 
   .profile-vimeo {
     &:focus,
     &:hover {
-      color: var(--profile-vimeo);
+      color: var(--vimeo);
     }
   }
 

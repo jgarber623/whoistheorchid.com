@@ -1,21 +1,23 @@
 .post {
-  background: rgba(255 255 255 / 5%);
+  background: var(--black-5);
+  display: flex;
+  flex-direction: column;
   padding: 1rem;
 }
 
 .post-header {
-  color: rgba(255 255 255 / 40%);
+  color: var(--black-40);
   font-size: 1rem;
-  margin-bottom: 1rem;
+  margin-top: 1rem;
+  order: 1;
 
-  li {
-    display: inline-block;
+  ul {
+    display: flex;
+  }
 
-    + li::before {
-      content: "•";
-      display: inline-block;
-      margin: 0 0.5rem 0 0.25rem;
-    }
+  li + li::before {
+    content: "•";
+    margin: 0 0.5rem;
   }
 
   sup {
@@ -25,17 +27,17 @@
   }
 
   a {
-    color: rgba(255 255 255 / 40%);
+    color: var(--black-40);
 
     &:focus,
     &:hover {
-      color: rgba(255 255 255 / 50%);
+      color: var(--black-50);
     }
   }
 }
 
 .post-content {
-  margin-bottom: 0;
+  margin: 0;
 
   p {
     text-align: left;

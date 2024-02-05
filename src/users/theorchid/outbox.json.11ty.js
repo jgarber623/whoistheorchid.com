@@ -1,35 +1,37 @@
-module.exports = class {
+export default class {
   data() {
     return {
-      permalink: '/users/theorchid/outbox.json'
+      permalink: ({ activitypub }) => `${activitypub.outbox.pathname}.json`
     };
   }
 
   render({ activitypub, collections }) {
-    const items =
+    const orderedItems =
       collections
         .post
         .map(post => {
-          const object = `${activitypub.id}/posts/${post.fileSlug}`;
-
+          /* eslint-disable sort-keys */
           return {
-            id: `${object}/activity`,
+            '@context': 'https://www.w3.org/ns/activitystreams',
+            id: post.data.alternates.activity,
             type: 'Create',
             actor: activitypub.id,
             published: post.date,
             to: ['https://www.w3.org/ns/activitystreams#Public'],
             cc: [activitypub.followers],
-            object
+            object: post.data.alternates.object
           };
+          /* eslint-enable sort-keys */
         })
         .reverse();
 
+    /* eslint-disable sort-keys */
     return JSON.stringify({
       '@context': 'https://www.w3.org/ns/activitystreams',
       id: activitypub.outbox,
-      type: 'OrderedCollection',
-      totalItems: items.length,
-      orderedItems: items
-    });
+      totalItems: orderedItems.length,
+      orderedItems
+    }, null, 2);
+    /* eslint-enable sort-keys */
   }
-};
+}
