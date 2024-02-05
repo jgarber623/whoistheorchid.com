@@ -12,6 +12,7 @@ export default async function(eleventyConfig) {
 
   // Passthrough File Copy
   eleventyConfig
+    .addPassthroughCopy('./src/_{headers,redirects}')
     .addPassthroughCopy('./src/*.{ico,png,svg,txt}')
     .addPassthroughCopy('./src/assets/images')
     .addPassthroughCopy({
