@@ -1,18 +1,19 @@
-module.exports = class {
+export default class {
   data() {
     return {
-      permalink: '/.well-known/webfinger'
+      permalink: '.well-known/webfinger.json'
     };
   }
 
-  render({ activitypub, app }) {
+  render({ activitypub }) {
+    /* eslint-disable sort-keys */
     return JSON.stringify({
-      subject: 'acct:theorchid@whoistheorchid.com',
+      subject: `acct:${activitypub.preferredUsername}@${activitypub.id.hostname}`,
       links: [
         {
           rel: 'http://webfinger.net/rel/avatar',
-          type: 'image/png',
-          href: `${app.start_url}${app.icons[2].src}`
+          type: activitypub.icon.mediaType,
+          href: activitypub.icon.url
         },
         {
           rel: 'http://webfinger.net/rel/profile-page',
@@ -25,6 +26,7 @@ module.exports = class {
           href: activitypub.id
         }
       ]
-    });
+    }, null, 2);
+    /* eslint-enable sort-keys */
   }
-};
+}
