@@ -1,7 +1,7 @@
 export default class {
   data() {
     return {
-      permalink: ({ activitypub }) => `${activitypub.followers.pathname}.json`
+      permalink: ({ activitypub }) => `${activitypub.followers.pathname}.json`,
     };
   }
 
@@ -10,10 +10,10 @@ export default class {
 
     /* eslint-disable sort-keys */
     return JSON.stringify({
-      '@context': 'https://www.w3.org/ns/activitystreams',
+      "@context": "https://www.w3.org/ns/activitystreams",
       id: activitypub.followers,
       totalItems: orderedItems.length,
-      orderedItems
+      orderedItems,
     }, null, 2);
     /* eslint-enable sort-keys */
   }

@@ -1,7 +1,7 @@
 export default class {
   data() {
     return {
-      permalink: '.well-known/webfinger.json'
+      permalink: ".well-known/webfinger.json",
     };
   }
 
@@ -11,21 +11,21 @@ export default class {
       subject: `acct:${activitypub.preferredUsername}@${activitypub.id.hostname}`,
       links: [
         {
-          rel: 'http://webfinger.net/rel/avatar',
+          rel: "http://webfinger.net/rel/avatar",
           type: activitypub.icon.mediaType,
-          href: activitypub.icon.url
+          href: activitypub.icon.url,
         },
         {
-          rel: 'http://webfinger.net/rel/profile-page',
-          type: 'text/html',
-          href: activitypub.url
+          rel: "http://webfinger.net/rel/profile-page",
+          type: "text/html",
+          href: activitypub.url,
         },
         {
-          rel: 'self',
-          type: 'application/activity+json',
-          href: activitypub.id
-        }
-      ]
+          rel: "self",
+          type: "application/activity+json",
+          href: activitypub.id,
+        },
+      ],
     }, null, 2);
     /* eslint-enable sort-keys */
   }

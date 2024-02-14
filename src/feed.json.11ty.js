@@ -1,7 +1,7 @@
 export default class {
   data() {
     return {
-      permalink: 'feed.json'
+      permalink: "feed.json",
     };
   }
 
@@ -9,7 +9,7 @@ export default class {
     const items =
       collections
         .post
-        .map(post => {
+        .map((post) => {
           const id = new URL(post.url, app.start_url);
 
           /* eslint-disable sort-keys */
@@ -18,7 +18,7 @@ export default class {
             url: id,
             content_html: post.content.trim(),
             content_text: post.rawInput.trim(),
-            date_published: post.date
+            date_published: post.date,
           };
           /* eslint-enable sort-keys */
         })
@@ -28,7 +28,7 @@ export default class {
 
     /* eslint-disable sort-keys */
     return JSON.stringify({
-      version: 'https://jsonfeed.org/version/1.1',
+      version: "https://jsonfeed.org/version/1.1",
       title: `Updates from ${app.name}`,
       home_page_url: app.start_url,
       feed_url: new URL(permalink, app.start_url),
@@ -38,11 +38,11 @@ export default class {
         {
           name: app.name,
           url: app.start_url,
-          avatar: icon
-        }
+          avatar: icon,
+        },
       ],
-      language: 'en-US',
-      items
+      language: app.lang,
+      items,
     });
     /* eslint-enable sort-keys */
   }

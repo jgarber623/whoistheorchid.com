@@ -1,7 +1,7 @@
 export default class {
   data() {
     return {
-      permalink: ({ activitypub }) => `${activitypub.outbox.pathname}.json`
+      permalink: ({ activitypub }) => `${activitypub.outbox.pathname}.json`,
     };
   }
 
@@ -9,17 +9,17 @@ export default class {
     const orderedItems =
       collections
         .post
-        .map(post => {
+        .map((post) => {
           /* eslint-disable sort-keys */
           return {
-            '@context': 'https://www.w3.org/ns/activitystreams',
+            "@context": "https://www.w3.org/ns/activitystreams",
             id: post.data.alternates.activity,
-            type: 'Create',
+            type: "Create",
             actor: activitypub.id,
             published: post.date,
-            to: ['https://www.w3.org/ns/activitystreams#Public'],
+            to: ["https://www.w3.org/ns/activitystreams#Public"],
             cc: [activitypub.followers],
-            object: post.data.alternates.object
+            object: post.data.alternates.object,
           };
           /* eslint-enable sort-keys */
         })
@@ -27,10 +27,10 @@ export default class {
 
     /* eslint-disable sort-keys */
     return JSON.stringify({
-      '@context': 'https://www.w3.org/ns/activitystreams',
+      "@context": "https://www.w3.org/ns/activitystreams",
       id: activitypub.outbox,
       totalItems: orderedItems.length,
-      orderedItems
+      orderedItems,
     }, null, 2);
     /* eslint-enable sort-keys */
   }
