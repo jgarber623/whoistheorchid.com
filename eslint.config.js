@@ -1,1 +1,1 @@
-export { default } from '@jgarber/eslint-config';
+export { default } from "@jgarber/eslint-config";

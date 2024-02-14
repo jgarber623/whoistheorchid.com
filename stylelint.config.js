@@ -1,6 +1,6 @@
 export default {
-  extends: '@jgarber/stylelint-config',
+  extends: "@jgarber/stylelint-config",
   rules: {
-    'value-keyword-case': ['lower', { ignoreKeywords: ['currentColor'] }]
-  }
+    "value-keyword-case": ["lower", { ignoreKeywords: ["currentColor"] }],
+  },
 };
