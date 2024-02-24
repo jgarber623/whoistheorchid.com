@@ -20,13 +20,13 @@
   },
   "devDependencies": {
     "@11ty/eleventy": "3.0.0-alpha.4",
-    "@jgarber/eleventy-plugin-markdown": "^0.1.2",
-    "@jgarber/eleventy-plugin-postcss": "^0.3.2",
-    "@jgarber/eslint-config": "^4.2.0",
+    "@jgarber/eleventy-plugin-markdown": "^0.1.3",
+    "@jgarber/eleventy-plugin-postcss": "^0.3.3",
+    "@jgarber/eslint-config": "^4.2.1",
     "@jgarber/stylelint-config": "4.0.0",
-    "cssnano": "^6.0.3",
+    "cssnano": "^6.0.4",
     "markdown-it-handle": "^0.1.0",
     "postcss-easy-import": "^4.0.0",
-    "postcss-nesting": "^12.0.2"
+    "postcss-nesting": "^12.0.3"
   }
 }
