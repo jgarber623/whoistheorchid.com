@@ -1,10 +1,9 @@
 import fs from "node:fs/promises";
 
 import markdownItHandle from "markdown-it-handle";
+import liquidPlugin from "@jgarber/eleventy-plugin-liquid";
 import markdownPlugin from "@jgarber/eleventy-plugin-markdown";
 import postcssPlugin from "@jgarber/eleventy-plugin-postcss";
-
-import liquidOptions from "./lib/libraries/liquid.js";
 
 export default async function(eleventyConfig) {
   // Global Data
@@ -20,7 +19,7 @@ export default async function(eleventyConfig) {
     });
 
   // Plugins
-  eleventyConfig.addPlugin(require("@jgarber/eleventy-plugin-liquid"), {
+  eleventyConfig.addPlugin(liquidPlugin, {
     globals: {
       dates: {
         display: "%B %e<sup>%q</sup>, %Y",
