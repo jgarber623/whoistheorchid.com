@@ -19,10 +19,17 @@ export default async function(eleventyConfig) {
       "./src/manifest.webmanifest.json": "manifest.webmanifest",
     });
 
-  // Libraries
-  eleventyConfig.setLiquidOptions(liquidOptions);
-
   // Plugins
+  eleventyConfig.addPlugin(require("@jgarber/eleventy-plugin-liquid"), {
+    globals: {
+      dates: {
+        display: "%B %e<sup>%q</sup>, %Y",
+        display_with_time: "%B %e<sup>%q</sup>, %Y at %-l:%M %p",
+        iso8601: "%Y-%m-%d",
+      },
+    },
+  });
+
   eleventyConfig.addPlugin(markdownPlugin, {
     plugins: [
       [markdownItHandle, { attributes: false }],
