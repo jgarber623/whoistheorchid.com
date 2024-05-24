@@ -1,5 +1,5 @@
 /*
-  Content-Security-Policy: base-uri 'self'; block-all-mixed-content; child-src 'self' https://bandcamp.com; form-action 'none'; frame-ancestors 'none'; frame-src 'self' https://bandcamp.com; object-src 'none'; script-src 'self' 'unsafe-inline'; worker-src 'none';
+  Content-Security-Policy: base-uri 'self'; child-src 'self' https://bandcamp.com; default-src 'none'; frame-src 'self' https://bandcamp.com; img-src 'self'; manifest-src 'self';
   Referrer-Policy: no-referrer-when-downgrade
   X-Frame-Options: DENY
   X-XSS-Protection: 0
