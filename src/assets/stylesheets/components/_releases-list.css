@@ -6,4 +6,9 @@
   li {
     flex: 1 1 calc(50% - 1rem);
   }
+
+  img {
+    aspect-ratio: 1;
+    display: block;
+  }
 }
