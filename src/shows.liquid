@@ -4,13 +4,13 @@ title: "Shows"
 ---
 
 <ol class="shows-list ui-list" reversed>
-  {% for show in shows reversed -%}
+  {% for show in collections.show reversed -%}
     <li>
       <article class="show h-event">
         <h2 class="p-name">
           <time class="dt-start" datetime="{{ show.date | date: dates.iso8601 }}">
-            {% if show.url -%}
-              <a href="{{ show.url }}" class="u-url">{{ show.date | date: dates.display }}</a>
+            {% if show.data.url -%}
+              <a href="{{ show.data.url }}" class="u-url">{{ show.date | date: dates.display }}</a>
             {% else -%}
               {{ show.date | date: dates.display }}
             {% endif -%}
@@ -18,19 +18,19 @@ title: "Shows"
         </h2>
 
         <p class="p-location h-card">
-          {% if show.name -%}
-            “{{ show.name }},”
+          {% if show.data.name -%}
+            “{{ show.data.name }},”
           {% endif -%}
-          {% if show.location.name -%}
-            <span class="p-name">{{ show.location.name }}</span>,
+          {% if show.data.location.name -%}
+            <span class="p-name">{{ show.data.location.name }}</span>,
           {% endif -%}
-          <span class="p-locality">{{ show.location.locality }}</span>,
-          <span class="p-region">{{ show.location.region }}</span>
+          <span class="p-locality">{{ show.data.location.locality }}</span>,
+          <span class="p-region">{{ show.data.location.region }}</span>
         </p>
 
-        {% if show.artists -%}
+        {% if show.data.artists -%}
           <ul class="ui-list">
-            {% for artist in show.artists -%}
+            {% for artist in show.data.artists -%}
               <li class="h-card">
                 {% if artist.url -%}
                   <a href="{{ artist.url }}" class="p-name u-url">{{ artist.name }}</a>
