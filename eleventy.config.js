@@ -3,6 +3,7 @@ import markdownItHandle from "markdown-it-handle";
 import eleventyPluginLiquid from "@jgarber/eleventy-plugin-liquid";
 import eleventyPluginMarkdown from "@jgarber/eleventy-plugin-markdown";
 import eleventyPluginPostcss from "@jgarber/eleventy-plugin-postcss";
+import eleventyPluginWebfinger from "@jgarber/eleventy-plugin-webfinger";
 
 import manifest from "./src/manifest.webmanifest.json" with { type: "json" };
 
@@ -40,6 +41,7 @@ export default async function(eleventyConfig) {
   });
 
   eleventyConfig.addPlugin(eleventyPluginPostcss);
+  eleventyConfig.addPlugin(eleventyPluginWebfinger);
 }
 
 export const config = {
