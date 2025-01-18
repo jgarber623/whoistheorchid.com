@@ -10,6 +10,9 @@ export default async function(eleventyConfig) {
   // Global Data
   eleventyConfig.addGlobalData("app", manifest);
 
+  // Configuration
+  eleventyConfig.setDataFileBaseName("_data");
+
   // Passthrough File Copy
   eleventyConfig
     .addPassthroughCopy("./src/_{headers,redirects}")
