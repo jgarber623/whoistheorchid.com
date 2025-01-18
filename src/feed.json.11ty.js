@@ -1,16 +1,20 @@
 export default class {
   data() {
     return {
+      layout: "layouts/base.11ty.js",
       permalink: "feed.json",
     };
   }
 
-  render({ app, collections, permalink }) {
+  render({ activitypub: { actor }, app, collections, permalink }) {
+    const { description, lang: language, name, start_url: url } = app;
+    const { icon } = actor;
+
     const items =
       collections
         .post
         .map((post) => {
-          const id = new URL(post.url, app.start_url);
+          const id = new URL(post.url, url);
 
           /* eslint-disable sort-keys */
           return {
@@ -24,26 +28,24 @@ export default class {
         })
         .reverse();
 
-    const icon = new URL(app.icons[2].src, app.start_url);
-
     /* eslint-disable sort-keys */
-    return JSON.stringify({
+    return {
       version: "https://jsonfeed.org/version/1.1",
-      title: `Updates from ${app.name}`,
-      home_page_url: app.start_url,
-      feed_url: new URL(permalink, app.start_url),
-      description: app.description,
+      title: `Updates from ${name}`,
+      home_page_url: url,
+      feed_url: new URL(permalink, url),
+      description,
       icon,
       authors: [
         {
-          name: app.name,
-          url: app.start_url,
-          avatar: icon,
-        },
+          name,
+          url,
+          avatar: icon
+        }
       ],
-      language: app.lang,
+      language,
       items,
-    });
+    };
     /* eslint-enable sort-keys */
   }
 }
