@@ -4,8 +4,8 @@
   <ol class="releases-list ui-list" reversed>
     {% for release in releases reversed -%}
       <li>
-        <a href="{{ release.url | default: release.data.bandcamp.url }}" class="bordered-link">
-          <img src="/assets/images/releases/{{ release.data.bandcamp.title | slugify }}-800.jpg" alt="{{ release.data.bandcamp.title }} cover art">
+        <a href="{{ release.url | default: release.data.alternates.bandcamp.url }}" class="bordered-link">
+          <img src="/assets/images/releases/{{ release.data.alternates.bandcamp.title | slugify }}-800.jpg" alt="{{ release.data.alternates.bandcamp.title }} cover art">
         </a>
       </li>
     {% endfor -%}

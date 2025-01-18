@@ -3,4 +3,4 @@ layout: "layouts/base.liquid"
 ---
 
 {%- assign release = collections.release.last -%}
-{% render "release.liquid", bandcamp: release.data.bandcamp, content: release.content, title: release.data.title %}
+{% render "release.liquid", bandcamp: release.data.alternates.bandcamp, content: release.content, title: release.data.title %}
