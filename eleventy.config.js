@@ -1,8 +1,8 @@
 import markdownItHandle from "markdown-it-handle";
 
-import liquidPlugin from "@jgarber/eleventy-plugin-liquid";
-import markdownPlugin from "@jgarber/eleventy-plugin-markdown";
-import postcssPlugin from "@jgarber/eleventy-plugin-postcss";
+import eleventyPluginLiquid from "@jgarber/eleventy-plugin-liquid";
+import eleventyPluginMarkdown from "@jgarber/eleventy-plugin-markdown";
+import eleventyPluginPostcss from "@jgarber/eleventy-plugin-postcss";
 
 import manifest from "./src/manifest.webmanifest.json" with { type: "json" };
 
@@ -20,7 +20,7 @@ export default async function(eleventyConfig) {
     });
 
   // Plugins
-  eleventyConfig.addPlugin(liquidPlugin, {
+  eleventyConfig.addPlugin(eleventyPluginLiquid, {
     globals: {
       dates: {
         display: "%B %e<sup>%q</sup>, %Y",
@@ -30,13 +30,13 @@ export default async function(eleventyConfig) {
     },
   });
 
-  eleventyConfig.addPlugin(markdownPlugin, {
+  eleventyConfig.addPlugin(eleventyPluginMarkdown, {
     plugins: [
       [markdownItHandle, { attributes: false }],
     ],
   });
 
-  eleventyConfig.addPlugin(postcssPlugin);
+  eleventyConfig.addPlugin(eleventyPluginPostcss);
 }
 
 export const config = {
