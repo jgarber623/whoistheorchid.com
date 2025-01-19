@@ -1,7 +1,6 @@
 export default class {
   data() {
     return {
-      layout: "layouts/base.11ty.js",
       permalink: "feed.json",
     };
   }
@@ -29,7 +28,7 @@ export default class {
         .reverse();
 
     /* eslint-disable sort-keys */
-    return {
+    return JSON.stringify({
       version: "https://jsonfeed.org/version/1.1",
       title: `Updates from ${name}`,
       home_page_url: url,
@@ -45,7 +44,7 @@ export default class {
       ],
       language,
       items,
-    };
+    }, null, 2);
     /* eslint-enable sort-keys */
   }
 }
