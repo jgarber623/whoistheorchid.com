@@ -1,12 +1,4 @@
 {
-  "eleventyComputed": {
-    "alternates": {
-      "activitypub": {
-        "activity": "{{ activitypub.collections.activities }}/{{ page.fileSlug }}",
-        "object": "{{ activitypub.collections.objects }}/{{ page.fileSlug }}"
-      }
-    }
-  },
   "layout": "layouts/post.liquid",
-  "tags": ["post"]
+  "tags": "post"
 }
