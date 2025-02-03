@@ -8,6 +8,10 @@
   Access-Control-Allow-Origin: *
   Content-Type: application/jrd+json; charset=UTF-8
 
+/activitypub/*
+  Access-Control-Allow-Origin: *
+  Content-Type: application/activity+json; charset=UTF-8
+
 /favicon.ico
   Content-Type: image/x-icon
 
@@ -16,7 +20,3 @@
 
 /manifest.webmanifest
   Content-Type: application/manifest+json; charset=UTF-8
-
-/users/*
-  Access-Control-Allow-Origin: *
-  Content-Type: application/activity+json; charset=UTF-8

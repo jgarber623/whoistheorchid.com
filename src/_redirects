@@ -1,2 +1,3 @@
-/.well-known/webfinger /.well-known/webfinger.json 200
-/users/* /users/:splat.json 200
+/@theorchid              /
+/activitypub/activities  /updates
+/activitypub/objects     /updates
