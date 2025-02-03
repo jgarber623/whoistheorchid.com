@@ -1,33 +1,34 @@
-import actor from "./activitypub/actor.js";
+export default ({ app }) => {
+  const { icons, start_url } = app;
 
-const { icon, id, preferredUsername, url } = actor;
+  const url = new URL(start_url);
+  const id = new URL("activitypub/actor", url);
 
-const subject = `acct:${preferredUsername}@${url.hostname}`;
-
-const aliases = [
-  "mailto:booking@whoistheorchid.com",
-  url,
-  new URL("@theorchid", url),
-  id,
-];
-
-const links = [
-  {
-    href: icon.url,
-    rel: "http://webfinger.net/rel/avatar",
-    type: icon.mediaType,
-  },
-  {
-    href: url,
-    rel: "http://webfinger.net/rel/profile-page",
-    type: "text/html",
-  },
-  {
-    href: id,
-    rel: "self",
-    type: "application/activity+json",
-  },
-];
-
-/* eslint-disable-next-line sort-keys */
-export default { subject, aliases, links };
+  /* eslint-disable-next-line sort-keys */
+  return {
+    subject: `acct:theorchid@${url.hostname}`,
+    aliases: [
+      `mailto:booking@${url.hostname}`,
+      url,
+      new URL("@theorchid", url),
+      id,
+    ],
+    links: [
+      {
+        href: new URL(icons[2].src, url),
+        rel: "http://webfinger.net/rel/avatar",
+        type: icons[2].type,
+      },
+      {
+        href: url,
+        rel: "http://webfinger.net/rel/profile-page",
+        type: "text/html",
+      },
+      {
+        href: id,
+        rel: "self",
+        type: "application/activity+json",
+      },
+    ]
+  };
+};
