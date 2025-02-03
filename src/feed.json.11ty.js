@@ -1,13 +1,15 @@
 export default class {
   data() {
     return {
+      eleventyExcludeFromCollections: true,
+      layout: "layouts/base.11ty.js",
       permalink: "feed.json",
     };
   }
 
-  render({ activitypub: { actor }, app, collections, permalink }) {
+  render({ app, collections, permalink }) {
     const { description, lang: language, name, start_url: url } = app;
-    const { icon } = actor;
+    const icon = new URL(app.icons[2].src, url);
 
     const items =
       collections
@@ -28,7 +30,7 @@ export default class {
         .reverse();
 
     /* eslint-disable sort-keys */
-    return JSON.stringify({
+    return {
       version: "https://jsonfeed.org/version/1.1",
       title: `Updates from ${name}`,
       home_page_url: url,
@@ -39,12 +41,12 @@ export default class {
         {
           name,
           url,
-          avatar: icon
-        }
+          avatar: icon,
+        },
       ],
       language,
       items,
-    }, null, 2);
+    };
     /* eslint-enable sort-keys */
   }
 }
