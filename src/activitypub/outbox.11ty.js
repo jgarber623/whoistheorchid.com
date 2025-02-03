@@ -8,7 +8,7 @@ export default class {
     };
   }
 
-  render({ activitypub, collections }) {
+  render({ activitypub }) {
     const orderedItems = [];
 
     /* eslint-disable sort-keys */

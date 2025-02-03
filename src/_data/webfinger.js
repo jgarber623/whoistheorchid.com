@@ -4,7 +4,7 @@ export default ({ app }) => {
   const url = new URL(start_url);
   const id = new URL("activitypub/actor", url);
 
-  /* eslint-disable-next-line sort-keys */
+  /* eslint-disable sort-keys */
   return {
     subject: `acct:theorchid@${url.hostname}`,
     aliases: [
@@ -29,6 +29,7 @@ export default ({ app }) => {
         rel: "self",
         type: "application/activity+json",
       },
-    ]
+    ],
   };
+  /* eslint-enable sort-keys */
 };
