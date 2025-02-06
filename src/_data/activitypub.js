@@ -35,7 +35,7 @@ export default ({ app }) => {
     `.replace(/ /g, ""),
     },
     icon: {
-      mediaType: "image/png",
+      mediaType: icons[2].type,
       type: "Image",
       url: new URL(icons[2].src, url),
     },
