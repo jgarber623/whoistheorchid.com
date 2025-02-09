@@ -5,7 +5,6 @@
   --mastodon: #6364ff;
   --soundcloud: #f30;
   --spotify: #1db954;
-  --twitter: #1da1f2;
   --vimeo: #1ab7ea;
 
   display: flex;
@@ -67,13 +66,6 @@
     &:focus,
     &:hover {
       color: var(--spotify);
-    }
-  }
-
-  .profile-twitter {
-    &:focus,
-    &:hover {
-      color: var(--twitter);
     }
   }
 
