@@ -2,7 +2,6 @@
   --apple-music: #fa243c;
   --bandcamp: #408294;
   --facebook: #1877f2;
-  --mastodon: #6364ff;
   --soundcloud: #f30;
   --spotify: #1db954;
   --vimeo: #1ab7ea;
@@ -45,13 +44,6 @@
     &:focus,
     &:hover {
       color: var(--facebook);
-    }
-  }
-
-  .profile-mastodon {
-    &:focus,
-    &:hover {
-      color: var(--mastodon);
     }
   }
 
